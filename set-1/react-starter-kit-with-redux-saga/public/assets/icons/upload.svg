@@ -1,0 +1,5 @@
+<svg id="image_black_24dp" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 30 30">
+  <path id="Path_5623" data-name="Path 5623" d="M0,0H24V24H0Z" fill="none"/>
+  <path id="Path_5624" data-name="Path 5624" d="M5,19H19V5H5Zm4-5.86,2.14,2.58,3-3.87L18,17H6l3-3.86Z" transform="translate(0 0)" fill="#fff" opacity="0.3"/>
+  <path id="Path_5625" data-name="Path 5625" d="M19,3H5A2.006,2.006,0,0,0,3,5V19a2.006,2.006,0,0,0,2,2H19a2.006,2.006,0,0,0,2-2V5A2.006,2.006,0,0,0,19,3Zm0,16H5V5H19Zm-4.86-7.14-3,3.86L9,13.14,6,17H18Z" fill="#fff"/>
+</svg>
