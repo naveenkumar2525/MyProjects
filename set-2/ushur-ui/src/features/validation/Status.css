@@ -1,0 +1,29 @@
+.val-status-active {
+  color: #414141;
+  background: #f3f3f3;
+  width: 55px;
+}
+
+.val-status-incomplete {
+  color: #414141;
+  background-color: #ff8c8c;
+  width: 85px;
+}
+
+.val-status-complete {
+  color: #414141;
+  background-color: #6fcf97;
+  width: 75px;
+}
+/*Keeping this code, as it might be used later*/
+/* .error {
+    color: #fff;
+    background-color: #FF0000;
+    width: 50px;
+} */
+
+.pill {
+  border-radius: 20px;
+  text-transform: capitalize;
+  padding: 5px 10px;
+}

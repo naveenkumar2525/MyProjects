@@ -1,0 +1,92 @@
+.react-daterange-picker__wrapper {
+  border: none !important;
+  border-radius: 5px;
+  padding: 3px 10px;
+  background: #f4f5f7;
+}
+
+.react-daterange-picker__wrapper input,
+.react-daterange-picker__wrapper span {
+  color: #2f80ed;
+}
+
+.sl-actions .ushur-secondary-btn {
+  background: #f4f5f7;
+  border: none;
+  box-shadow: none;
+}
+
+.sl-refresh button {
+  border: 1px solid #2f80ed;
+}
+
+.tags-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.sl-tag {
+  background: #f3f3f3;
+  height: 24px;
+  padding: 4px 8px;
+  margin-right: 16px;
+  position: relative;
+  font-size: 12px;
+}
+
+.sl-tag:before {
+  content: "";
+  position: absolute;
+  right: -12px;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-left: 12px solid #f3f3f3;
+  border-top: 12px solid transparent;
+  border-bottom: 12px solid transparent;
+  font-size: 12px;
+}
+
+.sl-tag-container {
+  min-height: 32px;
+  border: 1px solid #ccc;
+  padding: 4px;
+  padding-bottom: 6px;
+  border-radius: 4px;
+  background-color: #e9ecef;
+}
+
+.sl-tags-wrap {
+  min-height: 32px; 
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 0 4px;
+}
+
+.sl-tags-wrap:hover {
+  border:1px solid #2F80ED;
+}
+
+.sl-tags-wrap:focus {
+  border:1px solid #2F80ED;
+  box-shadow: 0px 0px 2px #2f80ed;
+}
+
+.sl-tags-wrap .ushur-input {
+  border: 0
+}
+
+.sl-tags-wrap .ushur-input:hover,
+.sl-tags-wrap .ushur-input:focus,
+.sl-tags-wrap .ushur-input:active,
+.sl-tags-wrap .ushur-input:hover:focus {
+  border: 0;
+  box-shadow: none;;
+}
+
+.sl-search {
+  margin-left: 8px;
+  margin-right: 8px;
+}

@@ -1,0 +1,11 @@
+{
+  "extends": "@istanbuljs/nyc-config-typescript",
+  "check-coverage": true,
+  "include": [
+    "src/features/canvas/**/*"
+  ],
+  "branches": 0,
+  "lines": 0,
+  "functions": 0, 
+  "statements": 0
+}

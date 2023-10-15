@@ -1,0 +1,34 @@
+.hide-label .ushur-label {
+  display: none;
+}
+
+.hide-label .helper-text {
+  display: none;
+}
+
+.error-limit.border-0 .ushur-input,
+.error-branch-dropdown.border-0 .dropdown-toggle,
+.menu-branch-dropdown.border-0 .dropdown-toggle {
+  border: none !important;
+}
+
+.error-limit.box-shadow-0 .ushur-input,
+.error-branch-dropdown.box-shadow-0 .dropdown-toggle,
+.menu-branch-dropdown.box-shadow-0 .dropdown-toggle {
+  box-shadow: none !important;
+}
+
+.error-limit.m-0 .ushur-input {
+  margin: 0;
+}
+
+.error-limit.p-0 .ushur-input {
+  padding: 0;
+}
+
+.menu-branch-dropdown .dropdown-menu {
+  width: fit-content !important;
+}
+.menu-branch-dropdown .dropdown-menu .each-option .action-btn {
+  padding: 0px !important;
+}

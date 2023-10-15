@@ -1,0 +1,58 @@
+.engagement-details {
+  height: 2rem;
+  background: #f4f5f7;
+  display: flex;
+  margin: 0px 10px;
+  align-items: center;
+}
+
+.engagement-title {
+  padding: 0.5rem 0.563rem;
+  font-size: 0.75rem;
+  color: #ccc;
+  white-space: nowrap;
+}
+
+.engagement-details .username {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  width: max-content;
+}
+
+.engagement-details .folder-open {
+  display: inline-block;
+}
+
+.engagement-icon {
+  margin: 0px 0.188rem;
+}
+
+.engagement-icon .rotate-90 {
+  transform: rotate(90deg);
+}
+
+.engagement-icon.icon-black svg path {
+  color: #333;
+}
+
+.username {
+  font-size: 0.75rem;
+  margin-left: 0.18rem;
+  margin-right: 0.18rem;
+}
+
+.engagement-status {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  margin-top: -0.31rem;
+}
+
+.activity-summary-modal-overlay-tooltip > .tooltip-inner {
+  max-width: 15.6rem;
+  background-color: #373D3F;
+}
+
+.activity-summary-modal-overlay-tooltip > .tooltip-arrow::before {
+  border-top-color: #373D3F;
+}

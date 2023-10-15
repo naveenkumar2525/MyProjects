@@ -1,0 +1,2781 @@
+openapi: 3.0.2
+info:
+  title: Ushur UI API Specification
+  description: |-
+    This specification defines APIs used by Ushur UI
+  version: "1.0"
+servers:
+  - url: https://ushur/api
+paths:
+  /workflow:
+    post:
+      tags:
+        - Workflow
+      summary: Create a workflow
+      description: Create a new workflow
+      operationId: createWorkflow
+      requestBody:
+        $ref: "#/components/requestBodies/CreateWorkflowRequest"
+      responses:
+        "200":
+          $ref: "#/components/responses/CreateWorkflowResponse"
+        "400":
+          description: Bad request
+    get:
+      tags:
+        - Workflow
+      summary: Get all workflows
+      description: Get all workflows
+      operationId: getAllWorkflows
+      responses:
+        "200":
+          $ref: "#/components/responses/GetWorkflowsResponse"
+        "400":
+          description: Bad request
+  /workflow/{workflowId}:
+    get:
+      tags:
+        - Workflow
+      summary: Find workflow by ID
+      description: Returns an existing workflow
+      operationId: getWorkflowById
+      parameters:
+        - name: workflowId
+          in: path
+          description: ID of workflow
+          required: true
+          schema:
+            type: string
+      responses:
+        "200":
+          $ref: "#/components/responses/GetWorkflowResponse"
+        "400":
+          description: Bad request
+        "404":
+          description: Workflow not found
+    patch:
+      tags:
+        - Workflow
+      summary: Patch a workflow
+      description: "Patch a workflow"
+      operationId: updateWorkflow
+      parameters:
+        - name: workflowId
+          in: path
+          description: ID of workflow that needs to be patched
+          required: true
+          schema:
+            type: string
+      requestBody:
+        $ref: "#/components/requestBodies/PatchWorkflowRequest"
+      responses:
+        "200":
+          $ref: "#/components/responses/PatchWorkflowResponse"
+        "400":
+          description: Bad request
+        "404":
+          description: Workflow not found
+    delete:
+      tags:
+        - Workflow
+      summary: Deletes a workflow
+      description: Delete a workflow
+      operationId: deleteWorkflow
+      parameters:
+        - name: workflowId
+          in: path
+          description: Workflow id to delete
+          required: true
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Successful operation
+        "400":
+          description: Invalid workflow id
+  /workflow/{workflowId}/step:
+    post:
+      tags:
+        - Workflow Step
+      summary: Create a workflow step
+      description: Create a new workflow step
+      operationId: createWorkflowStep
+      parameters:
+        - name: workflowId
+          in: path
+          description: Workflow id to delete
+          required: true
+          schema:
+            type: string
+      requestBody:
+        $ref: "#/components/requestBodies/CreateWorkflowStepRequest"
+      responses:
+        "200":
+          $ref: "#/components/responses/CreateWorkflowStepResponse"
+        "400":
+          description: Bad request
+    get:
+      tags:
+        - Workflow Step
+      summary: Fetch all steps for a workflow
+      description: Fetch all steps for a workflow
+      operationId: getWorkflowSteps
+      parameters:
+        - name: workflowId
+          in: path
+          description: Workflow id to delete
+          required: true
+          schema:
+            type: string
+      responses:
+        "200":
+          $ref: "#/components/responses/GetWorkflowStepsResponse"
+        "400":
+          description: Bad request
+  /workflow/{workflowId}/step/{stepId}:
+    get:
+      tags:
+        - Workflow Step
+      summary: Find workflow step by ID
+      description: Returns an existing workflow
+      operationId: getWorkflowByStep
+      parameters:
+        - name: workflowId
+          in: path
+          description: ID of workflow
+          required: true
+          schema:
+            type: string
+        - name: stepId
+          in: path
+          description: ID of step
+          required: true
+          schema:
+            type: string
+      responses:
+        "200":
+          $ref: "#/components/responses/GetWorkflowStepResponse"
+        "400":
+          description: Bad request
+        "404":
+          description: Workflow step not found
+    patch:
+      tags:
+        - Workflow Step
+      summary: Patches a workflow step
+      description: "Patch a workflow"
+      operationId: patchWorkflowStep
+      parameters:
+        - name: workflowId
+          in: path
+          description: ID of workflow that needs to be patched
+          required: true
+          schema:
+            type: string
+        - name: stepId
+          in: path
+          description: ID of step
+          required: true
+          schema:
+            type: string
+      requestBody:
+        $ref: "#/components/requestBodies/PatchWorkflowStepRequest"
+      responses:
+        "200":
+          $ref: "#/components/responses/PatchWorkStepflowResponse"
+        "400":
+          description: Bad request
+        "404":
+          description: Workflow step not found
+    delete:
+      tags:
+        - Workflow Step
+      summary: Deletes a workflow step
+      description: Delete a workflow
+      operationId: deleteWorkflowStep
+      parameters:
+        - name: workflowId
+          in: path
+          description: Workflow id to delete
+          required: true
+          schema:
+            type: string
+        - name: stepId
+          in: path
+          description: ID of step
+          required: true
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Successful operation
+        "400":
+          description: Bad request
+  /workflow/{workflowId}/step/{stepId}/module:
+    post:
+      tags:
+        - Workflow Step Module
+      summary: Create a workflow step
+      description: Create a new workflow step
+      operationId: createWorkflowStepModule
+      parameters:
+        - name: workflowId
+          in: path
+          description: Workflow id to delete
+          required: true
+          schema:
+            type: string
+        - name: stepId
+          in: path
+          description: ID of step
+          required: true
+          schema:
+            type: string
+      requestBody:
+        $ref: "#/components/requestBodies/CreateWorkflowRequest"
+      responses:
+        "200":
+          $ref: "#/components/responses/CreateWorkflowStepModuleResponse"
+        "400":
+          description: Bad request
+    get:
+      tags:
+        - Workflow Step Module
+      summary: Get all modules for a workflow step
+      description: Get all modules for a workflow step
+      operationId: getAllWorkflowStepModules
+      parameters:
+        - name: workflowId
+          in: path
+          description: Workflow id to delete
+          required: true
+          schema:
+            type: string
+        - name: stepId
+          in: path
+          description: ID of step
+          required: true
+          schema:
+            type: string
+      responses:
+        "200":
+          $ref: "#/components/responses/GetWorkflowStepModulesResponse"
+        "400":
+          description: Bad request
+  /workflow/{workflowId}/step/{stepId}/module/{moduleId}:
+    get:
+      tags:
+        - Workflow Step Module
+      summary: Find workflow module by workflow id, step id and module id
+      description: Returns an existing workflow
+      operationId: getWorkflowStepModule
+      parameters:
+        - name: workflowId
+          in: path
+          description: ID of workflow
+          required: true
+          schema:
+            type: string
+        - name: stepId
+          in: path
+          description: ID of step
+          required: true
+          schema:
+            type: string
+        - name: moduleId
+          in: path
+          description: ID of module
+          required: true
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Successful operation
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Workflow"
+        "400":
+          description: Bad request
+        "404":
+          description: Workflow not found
+    patch:
+      tags:
+        - Workflow Step Module
+      summary: Patch a workflow module
+      description: Patch a workflow module
+      operationId: updateWorkflowStepModule
+      parameters:
+        - name: workflowId
+          in: path
+          description: ID of workflow that needs to be updated
+          required: true
+          schema:
+            type: string
+        - name: stepId
+          in: path
+          description: ID of step
+          required: true
+          schema:
+            type: string
+        - name: moduleId
+          in: path
+          description: ID of module
+          required: true
+          schema:
+            type: string
+      requestBody:
+        $ref: "#/components/requestBodies/PatchWorkflowStepModuleRequest"
+      responses:
+        "200":
+          description: Successful operation
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Workflow"
+        "400":
+          description: Bad request
+        "404":
+          description: Workflow not found
+    delete:
+      tags:
+        - Workflow Step Module
+      summary: Deletes a workflow module
+      description: Delete a workflow
+      operationId: deleteWorkflowStepModule
+      parameters:
+        - name: workflowId
+          in: path
+          description: Workflow id to delete
+          required: true
+          schema:
+            type: string
+        - name: stepId
+          in: path
+          description: ID of step
+          required: true
+          schema:
+            type: string
+        - name: moduleId
+          in: path
+          description: ID of module
+          required: true
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Successful operation
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Workflow"
+        "400":
+          description: Bad request
+  /infoQuery:
+    post:
+      tags:
+        - Legacy Workflow
+      summary: Legacy workflow api
+      description: Legacy workflow api
+      operationId: legacyWorkflowApi
+      requestBody:
+        $ref: "#/components/requestBodies/WorkflowLegacyRequest"
+      responses:
+        "200":
+          $ref: "#/components/responses/WorkflowLegacyResponse"
+        "400":
+          description: Bad request
+  /rest/upnTable/v2/setCampaignActivation:
+    post:
+      tags:
+        - Workflow activation
+      description: Workflow activation
+      operationId: workflowActivation
+      requestBody:
+        $ref: "#/components/requestBodies/WorkflowActivationRequest"
+      responses:
+        "200":
+          $ref: "#/components/responses/WorkflowActivationResponse"
+        "400":
+          description: Bad request
+  /api/v1/ushur/init:
+    post:
+      tags:
+        - Initialize Workflow Simulator
+      summary: Initialize Workflow Simulator
+      description: Initialize Workflow Simulator
+      operationId: initUshur
+      requestBody:
+        $ref: "#/components/requestBodies/initUshurRequest"
+      responses:
+        "200":
+          $ref: "#/components/responses/initUshurResponse"
+        "400":
+          description: Bad request
+  /api/v1/ushur/continue:
+    post:
+      tags:
+        - Continue Workflow Simulator Step
+      summary: Continue Workflow Simulator Step
+      description: Continue Workflow Simulator Step
+      operationId: continueUshur
+      requestBody:
+        $ref: "#/components/requestBodies/continueUshurRequest"
+      responses:
+        "200":
+          $ref: "#/components/responses/continueUshurResponse"
+        "400":
+          description: Bad request
+components:
+  securitySchemes:
+    legacyHeaders:
+      type: apiKey
+      in: header
+      name: X-Username
+  schemas:
+    LegacyWorkflow:
+      type: object
+      properties:
+        visuallyUshur:
+          type: boolean
+        virtualPhoneNumber:
+          type: string
+        newCampaign:
+          type: boolean
+        callbackNumber:
+          type: string
+        skipMenu:
+          type: boolean
+        author:
+          type: string
+        AppContext:
+          type: string
+        helpTrigger:
+          type: string
+        Languages:
+          type: object
+        lastEdited:
+          type: string
+        version:
+          type: string
+        visualData:
+          type: object
+        name:
+          type: string
+        id:
+          type: string
+        ui:
+          type: object
+          properties:
+            campaignId:
+              type: string
+            active:
+              type: boolean
+            UeTagStructure:
+              type: object
+              properties:
+                result:
+                  type: array
+                  items:
+                    type: object
+                    properties:
+                      message:
+                        type: string
+                      UeTag:
+                        type: string
+                ushurId:
+                  type: string
+                tagCount:
+                  type: number
+            version:
+              type: string
+            welcome:
+              type: string
+            sections:
+              type: array
+              items:
+                oneOf:
+                  - $ref: "#/components/schemas/LegacyWelcomeModuleSection"
+                  - $ref: "#/components/schemas/LegacySendIAModuleSection"
+                  - $ref: "#/components/schemas/LegacyMessageModuleSection"
+                  - $ref: "#/components/schemas/LegacyMenuModuleSection"
+                  - $ref: "#/components/schemas/LegacyFormModuleSection"
+            cells:
+              description: Used only if the legacy workflow is used to store Canvas 2.0 content.
+              type: array
+              items:
+                oneOf:
+                  - $ref: "#/components/schemas/WorkflowStep"
+                  - $ref: "#/components/schemas/WorkflowLink"
+          required:
+            - cells
+            - sections
+        status:
+          type: string
+        isEmptyUshur:
+          type: boolean
+        options:
+          type: object
+        expiry:
+          type: object
+          properties:
+            hours:
+              type: number
+            minutes:
+              type: number
+            days:
+              type: number
+            message:
+              type: string
+        routines:
+          $ref: "#/components/schemas/RootRoutine"
+        lang:
+          type: string
+        prompt:
+          type: string
+        userResponse:
+          type: string
+        landlineFlag:
+          type: string
+      required:
+        - AppContext
+        - id
+        - name
+        - author
+        - languages
+        - virtualPhoneNumber
+        - callbackNumber
+        - lastEdited
+        - UshurDescriptions
+        - lang
+        - steps
+        - ia
+        - ui
+        - routines
+    LegacyWorkflowUpdateResponse:
+      type: object
+      properties:
+        status:
+          type: string
+        respCode:
+          type: number
+        respText:
+          type: string
+    LegacyRootModule:
+      type: object
+      properties:
+        cmd:
+          type: string
+        campaignId:
+          type: string
+        campaignData:
+          $ref: "#/components/schemas/LegacyWorkflow"
+    LegacySubRoot:
+      type: object
+      oneOf:
+        - $ref: "#/components/schemas/LegacySubModuleMessage"
+    LegacySubRootBase:
+      type: object
+      properties:
+        id:
+          type: string
+        module:
+          type: string
+      required:
+        - id
+        - module
+    LegacySubRootMessage:
+      allOf:
+        - $ref: "#/components/schemas/LegacySubRootBase"
+      type: object
+      properties:
+        skipMenu:
+          type: boolean
+        UeTag:
+          type: string
+        routines:
+          type: object
+          properties:
+            Ushur_Initial_Routine:
+              type: object
+              properties:
+                next:
+                  type: object
+                  properties:
+                    routine:
+                      type: string
+                  required:
+                    - tourine
+                action:
+                  type: string
+                params:
+                  type: object
+                  properties:
+                    text:
+                      type: string
+                  required:
+                    - text
+              required:
+                - next
+                - action
+                - params
+            goToNextSection:
+              type: object
+              properties:
+                action:
+                  type: string
+                params:
+                  type: object
+                  properties:
+                    menuId:
+                      type: string
+                    stayInCampaign:
+                      type: boolean
+                  required:
+                    - menuId
+                    - stayInCampaign
+              required:
+                - action
+                - params
+          required:
+            - Ushur_Initial_Routine
+            - goToNextSection
+        isMenu:
+          type: string
+        prompt:
+          type: string
+        version:
+          type: string
+        option:
+          type: object
+        passString:
+          type: string
+      required:
+        - skipMenu
+        - UeTag
+        - module
+        - id
+        - routines
+        - isMenu
+        - prompt
+        - version
+        - option
+        - passString
+    LegacySubRootMenuOptionDefault:
+      type: object
+      properties:
+        default:
+          type: object
+          properties:
+            next:
+              type: object
+              properties:
+                routine:
+                  type: string
+              required:
+                - routine
+          required:
+            - next
+    LegacySubRootMenuOptionValue:
+      type: object
+      properties:
+        next:
+          type: object
+          properties:
+            routine:
+              type: string
+          required:
+            - routine
+        UeTag:
+          type: string
+        compText:
+          type: string
+        expressions:
+          type: array
+          items:
+            type: string
+      required:
+        - next
+        - UeTag
+        - compText
+        - expressions
+    LegacySubRootMenuRoutines:
+      type: object
+      default:
+        type: object
+        properties:
+          next:
+            type: object
+            properties:
+              routine:
+                type: string
+              onMaxError:
+                type: string
+            required:
+              - routine
+              - onMaxError
+          action:
+            type: string
+          params:
+            type: object
+            properties:
+              maxError:
+              type: string
+              required:
+                - maxError
+          required:
+            - next
+            - action
+            - params
+        Ushur_Default:
+          type: object
+          properties:
+            next:
+              type: object
+            properties:
+            routine:
+              type: string
+            required:
+              - routine
+            action:
+              type: string
+            params:
+              type: object
+              properties:
+                text:
+                  type: string
+              required:
+                - text
+          required:
+            - next
+            - action
+            - params
+        returnToRoot:
+          type: object
+          properties:
+            action:
+              type: string
+              params:
+                type: object
+            required:
+              - action
+              - params
+      required:
+        - default
+        - Ushur_Default
+        - Ushur_Error
+        - returnToRoot
+    LegacySubRootMenu:
+      allOf:
+        - $ref: "#/components/schemas/LegacySubRootBase"
+      type: object
+      properties:
+        question:
+          type: string
+        UeTag:
+          type: string
+        helpInfo:
+          type: object
+        isMenu:
+          type: boolean
+        prompt:
+          type: string
+        version:
+          type: string
+        passString:
+          type: string
+        options:
+          type: object
+          additionalProperties:
+            oneOf:
+              - $ref: "#/components/schemas/LegacySubRootMenuOptionValue"
+              - $ref: "#/components/schemas/LegacySubRootMenuOptionDefault"
+        routines::
+          $ref: "#/components/schemas/LegacySubRootMenuRoutines"
+    text:
+      type: string
+      required:
+        - question
+        - UeTag
+        - helpInfo
+        - routines
+        - isMenu
+        - prompt
+        - version
+        - passString
+    FormElement:
+      type: object
+      properties:
+        id:
+          type: string
+        name:
+          type: string
+        title:
+          type: string
+        type:
+          type: string
+        data:
+          type: FormTextInput
+    FormTextInput:
+      type: object
+      properties:
+        id:
+          type: string
+        name:
+          type: string
+        text:
+          type: string
+        fieldValue:
+          type: string
+        validationType:
+          type: string
+        validationErrorTxt:
+          type: string
+    FormInput:
+      type: object
+      oneOf:
+        - $ref: '#/components/schemas/FormElement'
+        - $ref: '#/components/schemas/FormTextInput'
+    LegacySubRootModule:
+      type: object
+      oneOf:
+        - $ref: "#/components/schemas/LegacySubModuleCompare"
+        - $ref: "#/components/schemas/LegacySubModuleStore"
+        - $ref: "#/components/schemas/LegacySubModuleFetch"
+        - $ref: "#/components/schemas/LegacySubModuleSendIA"
+        - $ref: "#/components/schemas/LegacySubModuleMultipleChoice"
+        - $ref: "#/components/schemas/LegacySubModuleOpenResponse"
+        - $ref: "#/components/schemas/LegacySubModuleMessage"
+        - $ref: "#/components/schemas/LegacySubModuleFileUpload"
+        - $ref: "#/components/schemas/LegacySubModuleLocation"
+        - $ref: "#/components/schemas/LegacySubModuleCompute"
+        - $ref: "#/components/schemas/LegacySubModuleFormInput"
+        - $ref: "#/components/schemas/LegacySubModuleCreditCard"
+        - $ref: "#/components/schemas/LegacySubModuleStartInvisibleApp"
+        - $ref: "#/components/schemas/LegacySubModuleStartIntegrations"
+        - $ref: "#/components/schemas/LegacySubModuleStartOutboundWebhook"
+        - $ref: "#/components/schemas/LegacySubModuleStartInboundWebhook"
+        - $ref: "#/components/schemas/LegacySubModulePhoneCall"
+        - $ref: "#/components/schemas/LegacySubModuleTexting"
+        - $ref: "#/components/schemas/LegacySubModuleEmail"
+        - $ref: "#/components/schemas/LegacySubModuleDelay"
+        - $ref: "#/components/schemas/LegacySubModuleLI"
+        - $ref: "#/components/schemas/LegacySubModuleIncomingEmailProcessing"
+        - $ref: "#/components/schemas/LegacySubModuleDataExtractor"
+        - $ref: "#/components/schemas/LegacySubModuleOCR"
+        - $ref: "#/components/schemas/LegacySubModuleDocumentProcessor"
+        - $ref: "#/components/schemas/LegacySubModuleOperator"
+        - $ref: "#/components/schemas/LegacySubModuleCustomSource"
+    SubRootModuleBase:
+      type: object
+      properties:
+        cmd:
+          type: string
+          enum:
+            - "addModule"
+            - "updateModule"
+        campaignId:
+          type: string
+        campaignData:
+            $ref: './schemas/SubRootModuleDataBase.yaml#/SubRootModuleDataBase'
+        ushurLi:
+          type: boolean
+        train:
+          type: boolean
+    LegacySubModuleCompare:
+      allOf:
+        - $ref: "#/components/schemas/SubRootModuleBase"
+        - type: object
+          properties:
+            compare:
+              type: object
+              properties:
+                using:
+                  type: string
+                against:
+                  type: string
+                operator:
+                  type: string
+    LegacySubModuleStore:
+      allOf:
+        - $ref: "#/components/schemas/SubRootModuleBase"
+        - type: object
+          properties:
+            compare:
+              type: object
+              properties:
+                using:
+                  type: string
+                against:
+                  type: string
+                operator:
+                  type: string
+    LegacySubModuleFetch:
+      allOf:
+        - $ref: "#/components/schemas/SubRootModuleBase"
+        - type: object
+          properties:
+            compare:
+              type: object
+              properties:
+                using:
+                  type: string
+                against:
+                  type: string
+                operator:
+                  type: string
+    LegacySubModuleSendIA:
+      allOf:
+        - $ref: "#/components/schemas/SubRootModuleBase"
+        - type: object
+          properties:
+            isVisualIndication:
+              type: string
+            terminateProcessing:
+              type: string
+    LegacySubModuleMultipleChoice:
+      allOf:
+        - $ref: "#/components/schemas/SubRootModuleBase"
+        - type: object
+          properties:
+            compare:
+              type: object
+              properties:
+                using:
+                  type: string
+                against:
+                  type: string
+                operator:
+                  type: string
+    LegacySubModuleOpenResponse:
+      allOf:
+        - $ref: "#/components/schemas/SubRootModuleBase"
+        - type: object
+          properties:
+            compare:
+              type: object
+              properties:
+                using:
+                  type: string
+                against:
+                  type: string
+                operator:
+                  type: string
+    LegacySubModuleMessage:
+      allOf:
+        - $ref: "#/components/schemas/SubRootModuleBase"
+        - type: object
+          properties:
+            compare:
+              type: object
+              properties:
+                using:
+                  type: string
+                against:
+                  type: string
+                operator:
+                  type: string
+    LegacySubModuleFileUpload:
+      allOf:
+        - $ref: "#/components/schemas/SubRootModuleBase"
+        - type: object
+          properties:
+            compare:
+              type: object
+              properties:
+                using:
+                  type: string
+                against:
+                  type: string
+                operator:
+                  type: string
+    LegacySubModuleLocation:
+      allOf:
+        - $ref: "#/components/schemas/SubRootModuleBase"
+        - type: object
+          properties:
+            compare:
+              type: object
+              properties:
+                using:
+                  type: string
+                against:
+                  type: string
+                operator:
+                  type: string
+    LegacySubModuleCompute:
+      allOf:
+        - $ref: "#/components/schemas/SubRootModuleBase"
+        - type: object
+          properties:
+            compare:
+              type: object
+              properties:
+                using:
+                  type: string
+                against:
+                  type: string
+                operator:
+                  type: string
+    LegacySubModuleFormInput:
+      allOf:
+        - $ref: '#/components/schemas/SubRootModuleBase'
+    LegacySubModuleCreditCard:
+      allOf:
+        - $ref: "#/components/schemas/SubRootModuleBase"
+        - type: object
+          properties:
+            compare:
+              type: object
+              properties:
+                using:
+                  type: string
+                against:
+                  type: string
+                operator:
+                  type: string
+    LegacySubModuleStartInvisibleApp:
+      allOf:
+        - $ref: "#/components/schemas/SubRootModuleBase"
+        - type: object
+          properties:
+            compare:
+              type: object
+              properties:
+                using:
+                  type: string
+                against:
+                  type: string
+                operator:
+                  type: string
+    LegacySubModuleStartIntegrations:
+      allOf:
+        - $ref: "#/components/schemas/SubRootModuleBase"
+        - type: object
+          properties:
+            compare:
+              type: object
+              properties:
+                using:
+                  type: string
+                against:
+                  type: string
+                operator:
+                  type: string
+    LegacySubModuleStartOutboundWebhook:
+      allOf:
+        - $ref: "#/components/schemas/SubRootModuleBase"
+        - type: object
+          properties:
+            compare:
+              type: object
+              properties:
+                using:
+                  type: string
+                against:
+                  type: string
+                operator:
+                  type: string
+    LegacySubModuleStartInboundWebhook:
+      allOf:
+        - $ref: "#/components/schemas/SubRootModuleBase"
+        - type: object
+          properties:
+            compare:
+              type: object
+              properties:
+                using:
+                  type: string
+                against:
+                  type: string
+                operator:
+                  type: string
+    LegacySubModulePhoneCall:
+      allOf:
+        - $ref: "#/components/schemas/SubRootModuleBase"
+        - type: object
+          properties:
+            compare:
+              type: object
+              properties:
+                using:
+                  type: string
+                against:
+                  type: string
+                operator:
+                  type: string
+    LegacySubModuleTexting:
+      allOf:
+        - $ref: "#/components/schemas/SubRootModuleBase"
+        - type: object
+          properties:
+            compare:
+              type: object
+              properties:
+                using:
+                  type: string
+                against:
+                  type: string
+                operator:
+                  type: string
+    LegacySubModuleEmail:
+      allOf:
+        - $ref: "#/components/schemas/SubRootModuleBase"
+        - type: object
+          properties:
+            compare:
+              type: object
+              properties:
+                using:
+                  type: string
+                against:
+                  type: string
+                operator:
+                  type: string
+    LegacySubModuleDelay:
+      allOf:
+        - $ref: "#/components/schemas/SubRootModuleBase"
+        - type: object
+          properties:
+            compare:
+              type: object
+              properties:
+                using:
+                  type: string
+                against:
+                  type: string
+                operator:
+                  type: string
+    LegacySubModuleLI:
+      allOf:
+        - $ref: "#/components/schemas/SubRootModuleBase"
+        - type: object
+          properties:
+            compare:
+              type: object
+              properties:
+                using:
+                  type: string
+                against:
+                  type: string
+                operator:
+                  type: string
+    LegacySubModuleIncomingEmailProcessing:
+      allOf:
+        - $ref: "#/components/schemas/SubRootModuleBase"
+        - type: object
+          properties:
+            compare:
+              type: object
+              properties:
+                using:
+                  type: string
+                against:
+                  type: string
+                operator:
+                  type: string
+    LegacySubModuleDataExtractor:
+      allOf:
+        - $ref: "#/components/schemas/SubRootModuleBase"
+        - type: object
+          properties:
+            compare:
+              type: object
+              properties:
+                using:
+                  type: string
+                against:
+                  type: string
+                operator:
+                  type: string
+    LegacySubModuleOCR:
+      allOf:
+        - $ref: "#/components/schemas/SubRootModuleBase"
+        - type: object
+          properties:
+            compare:
+              type: object
+              properties:
+                using:
+                  type: string
+                against:
+                  type: string
+                operator:
+                  type: string
+    LegacySubModuleDocumentProcessor:
+      allOf:
+        - $ref: "#/components/schemas/SubRootModuleBase"
+        - type: object
+          properties:
+            compare:
+              type: object
+              properties:
+                using:
+                  type: string
+                against:
+                  type: string
+                operator:
+                  type: string
+    LegacySubModuleOperator:
+      allOf:
+        - $ref: "#/components/schemas/SubRootModuleBase"
+        - type: object
+          properties:
+            compare:
+              type: object
+              properties:
+                using:
+                  type: string
+                against:
+                  type: string
+                operator:
+                  type: string
+    LegacySubModuleCustomSource:
+      allOf:
+        - $ref: "#/components/schemas/SubRootModuleBase"
+        - type: object
+          properties:
+            compare:
+              type: object
+              properties:
+                using:
+                  type: string
+                against:
+                  type: string
+                operator:
+                  type: string
+    EmptyRoutine:
+      type: object
+      properties:
+        Ushur_Initial_Routine:
+          type: object
+          properties:
+            action:
+              type: string
+            params:
+              type: object
+              properties:
+                menuId:
+                  type: string
+                stayInCampaign:
+                  type: boolean
+    RootRoutine:
+      type: object
+      properties:
+        Ushur_Initial_Routine:
+          type: object
+          properties:
+            action:
+              type: string
+            params:
+              type: object
+              properties:
+                menuId:
+                  type: string
+                stayInCampaign:
+                  type: boolean
+              required:
+                - menuId
+                - stayInCampaign
+          required:
+            - UeTag
+            - action
+            - params
+        On_Return:
+          type: object
+          properties:
+            UeTag:
+              type: string
+            action:
+              type: string
+            params:
+              type: object
+              properties:
+                menuId:
+                  type: string
+                stayInCampaign:
+                  type: boolean
+              required:
+                - menuId
+                - stayInCampaign
+          required:
+            - UeTag
+            - action
+            - params
+      required:
+        - Ushur_Initial_Routine
+    LegacyWelcomeModuleSection:
+      allOf:
+        - $ref: "#/components/schemas/LegacyModuleSectionBase"
+        - type: object
+          properties:
+            currentStep:
+              type: string
+            note:
+              type: string
+            moduleIcon:
+              type: string
+            position:
+              type: object
+              properties:
+                x:
+                  type: number
+                y:
+                  type: number
+            previousPosition:
+              type: object
+              properties:
+                x:
+                  type: number
+                y:
+                  type: number
+            onReturn:
+              type: object
+              properties:
+                UeTag:
+                  type: string
+                jumpText:
+                  type: string
+                jump:
+                  type: string
+              required:
+                - UeTag
+                - jumpText
+                - jump
+            message:
+              type: string
+            isFormEntry:
+              type: boolean
+            jump:
+              type: object
+              properties:
+                jump:
+                  type: string
+                jumpText:
+                  type: string
+              required:
+                - jumpText
+                - jump
+          required:
+            - uid
+            - jump
+            - UeTag
+            - message
+            - onReturn
+    LegacySendIAModuleSection:
+      allOf:
+        - $ref: "#/components/schemas/LegacyMessageModuleSection"
+        - type: object
+          properties:
+            terminateProcessing:
+              type: string
+            isVisualIndication:
+              type: string
+          required:
+            - terminateProcessing
+            - isVisualIndication
+    LegacyMessageModuleSection:
+      allOf:
+        - $ref: "#/components/schemas/LegacyModuleSectionBase"
+        - type: object
+          properties:
+            isFormEntry:
+              type: boolean
+            onReturn:
+              type: object
+              properties:
+                UeTag:
+                  type: string
+                jumpText:
+                  type: string
+                jump:
+                  type: string
+              required:
+                - UeTag
+                - jumpText
+                - jump
+            additionalDetails:
+              type: object
+              properties:
+                activated:
+                  type: boolean
+                details:
+                  type: array
+                  items:
+                    type: object
+                    properties:
+                      order:
+                        type: string
+                      title:
+                        type: string
+                      content:
+                        type: string
+                      image:
+                        type: string
+                      link:
+                        type: string
+            iAppProps:
+              type: object
+              properties:
+                centerAlign:
+                  type: boolean
+                hideResponse:
+                  type: boolean
+                toggleResponse:
+                  type: boolean
+                optionalResponse:
+                  type: boolean
+                typePassword:
+                  type: boolean
+                multiSelectOptions:
+                  type: boolean
+                locSearchLabel:
+                  type: string
+                enableHTML:
+                  type: string
+            UshurDescriptions:
+              type: object
+            note:
+              type: string
+            moduleIcon:
+              type: string
+            message:
+              type: string
+            attachment:
+              type: string
+            hasManualPhrases:
+              type: boolean
+            uliTopics:
+              type: array
+              items:
+                type: object
+            position:
+              type: object
+              properties:
+                x:
+                  type: number
+                y:
+                  type: number
+            previousPosition:
+              type: object
+              properties:
+                x:
+                  type: number
+                y:
+                  type: number
+            jump:
+              type: object
+              properties:
+                jump:
+                  type: string
+                jumpText:
+                  type: string
+              required:
+                - jump
+                - jumpText
+          required:
+            - message
+            - jump
+    LegacyMenuModuleSection:
+      allOf:
+        - $ref: "#/components/schemas/LegacyModuleSectionBase"
+        - type: object
+          properties:
+            choices:
+              type: array
+              items:
+                type: object
+                properties:
+                  choice:
+                    type: string
+                  UeTag:
+                    type: string
+                  isFormEntry:
+                    type: boolean
+                  jump:
+                    type: string
+                  vertices:
+                    type: array
+                    items:
+                      type: object
+                  jumpText:
+                    type: string
+            isFormEntry:
+              type: boolean
+            onReturn:
+              type: object
+              properties:
+                UeTag:
+                  type: string
+                jumpText:
+                  type: string
+                jump:
+                  type: string
+              required:
+                - UeTag
+                - jumpText
+                - jump
+            dropDown:
+              type: boolean
+            errorLimit:
+              type: object
+              properties:
+                UeTag:
+                  type: string
+                limit:
+                  type: number
+                jump:
+                  type: string
+                jumpText:
+                  type: string
+                vertices:
+                  type: array
+                  items:
+                    type: object
+            multiSelectJump:
+              type: object
+              properties:
+                jump:
+                  type: string
+                jumpText:
+                  type: string
+            reminder:
+              type: object
+              properties:
+                activation:
+                  type: boolean
+                duration:
+                  type: object
+                  properties:
+                    days:
+                      type: string
+                    hours:
+                      type: string
+                    minutes:
+                      type: string
+                notificationCheck:
+                  type: boolean
+                notificationMessage:
+                  type: string
+                jump:
+                  type: object
+                  properties:
+                    UeTag:
+                      type: string
+                    jump:
+                      type: string
+                    jumpText:
+                      type: string
+                reminderLimit:
+                  type: object
+                  properties:
+                    UeTag:
+                      type: string
+                    limit:
+                      type: string
+                    jump:
+                      type: string
+                    jumpText:
+                      type: string
+            additionalDetails:
+              type: object
+              properties:
+                activated:
+                  type: boolean
+                details:
+                  type: array
+                  items:
+                    type: object
+                    properties:
+                      order:
+                        type: string
+                      title:
+                        type: string
+                      content:
+                        type: string
+                      image:
+                        type: string
+                      link:
+                        type: string
+            iAppProps:
+              type: object
+              properties:
+                centerAlign:
+                  type: boolean
+                hideResponse:
+                  type: boolean
+                toggleResponse:
+                  type: boolean
+                optionalResponse:
+                  type: boolean
+                typePassword:
+                  type: boolean
+                multiSelectOptions:
+                  type: boolean
+                locSearchLabel:
+                  type: string
+                enableHTML:
+                  type: string
+            horizontalBars:
+              type: boolean
+            helpText:
+              type: string
+            question:
+              type: string
+            campaignVariable:
+              type: string
+            campaignVariableText:
+              type: string
+            campaignVariableLoc:
+              type: string
+            hasManualPhrases:
+              type: boolean
+            ushurLi:
+              type: boolean
+            dropdown:
+              type: boolean
+            checkbox:
+              type: boolean
+            radio:
+              type: boolean
+            mcPrompt:
+              type: string
+            invalidPrompt:
+              type: string
+            UshurDescriptions:
+              type: object
+            note:
+              type: string
+            moduleIcon:
+              type: string
+            uliTopics:
+              type: array
+              items:
+                type: object
+            position:
+              type: object
+              properties:
+                x:
+                  type: number
+                y:
+                  type: number
+            previousPosition:
+              type: object
+              properties:
+                x:
+                  type: number
+                y:
+                  type: number
+          required:
+            - choices
+            - question
+    LegacyFormModuleSection:
+      allOf:
+      - $ref: "#/components/schemas/LegacyModuleSectionBase"
+    WorkflowVariables:
+      type: object
+      properties:
+        id:
+          type: string
+        content:
+          type: array
+          items:
+            type: object
+            properties:
+              _id:
+                type: object
+                properties:
+                  $oid:
+                    type: string
+              vars:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    variable:
+                      type: string
+                    desc:
+                      type: string
+                    type:
+                      type: string
+                    private:
+                      type: string
+                    additionalProperties:
+                      type: string
+        campaignId:
+          type: string
+    WorkflowAttributes:
+      type: object
+      properties:
+        id:
+          type: string
+        label:
+          type: object
+          properties:
+            text:
+              type: string
+        labelText:
+          type: object
+          properties:
+            text:
+              type: string
+        description:
+          type: object
+          properties:
+            text:
+              type: string
+        icon:
+          type: object
+          properties:
+            text:
+              type: string
+        position:
+          type: object
+          properties:
+            x:
+              type: string
+            y:
+              type: string
+            distance:
+              type: number
+            offset:
+              type: number
+            angle:
+              type: number
+        attrs:
+          type: object
+          properties:
+            labelText:
+              type: object
+              properties:
+                text:
+                  type: string
+    WorkflowPosition:
+      type: object
+      properties:
+        x:
+          type: number
+        y:
+          type: number
+    ModuleBase:
+      type: object
+      properties:
+        id:
+          type: string
+        title:
+          type: string
+        type:
+          type: string
+        uetag:
+          type: string
+      required:
+        - id
+        - title
+        - type
+    MessageModule:
+      allOf:
+        - $ref: "#/components/schemas/ModuleBase"
+        - type: object
+          properties:
+            text:
+              type: string
+          required:
+            - text
+    MenuModule:
+      allOf:
+        - $ref: "#/components/schemas/ModuleBase"
+        - type: object
+          properties:
+            text:
+              type: string
+            menuOptions:
+              type: array
+              items:
+                $ref: "#/components/schemas/MenuOption"
+            menuUserSelection:
+              type: string
+            errorLimitValue:
+              type: string
+            errorBranchTo:
+              type: string
+          required:
+            - text
+            - menuOptions
+            - menuUserSelection
+            - errorLimitValue
+            - errorBranchTo
+    FormModule:
+      allOf:
+        - $ref: "#/components/schemas/ModuleBase"
+        - type: object
+          properties:
+            fields:
+              type: array
+              items:
+                $ref: '#/components/schemas/FormElement'
+          required:
+            - fields
+    MenuOption:
+      type: object
+      properties:
+        id:
+          type: string
+        title:
+          type: string
+        branchToStepId:
+          type: string
+      required:
+        - id
+        - title
+        - branchToStepId
+    WorkflowStep:
+      type: object
+      properties:
+        id:
+          type: string
+        type:
+          type: string
+        ports:
+          type: object
+          properties:
+            items:
+              type: array
+              items:
+                type: object
+                properties:
+                  id:
+                    type: string
+                  group:
+                    type: string
+
+        labels:
+          type: array
+          items:
+            $ref: "#/components/schemas/WorkflowAttributes"
+        attrs:
+          $ref: "#/components/schemas/WorkflowAttributes"
+        position:
+          $ref: "#/components/schemas/WorkflowPosition"
+        modules:
+          type: array
+          items:
+            oneOf:
+              - $ref: "#/components/schemas/ModuleBase"
+              - $ref: "#/components/schemas/MessageModule"
+              - $ref: "#/components/schemas/MenuModule"
+              - $ref: "#/components/schemas/FormModule"
+      required:
+        - id
+        - modules
+    WorkflowLink:
+      type: object
+      properties:
+        id:
+          type: string
+        labels:
+          type: array
+          items:
+            $ref: "#/components/schemas/WorkflowAttributes"
+        attrs:
+          $ref: "#/components/schemas/WorkflowAttributes"
+        source:
+          type: object
+          properties:
+            id:
+              type: string
+            magnet:
+              type: string
+            port:
+              type: string
+          required:
+            - id
+        target:
+          type: object
+          properties:
+            id:
+              type: string
+            magnet:
+              type: string
+            port:
+              type: string
+          required:
+            - id
+        z:
+          type: number
+        type:
+          type: string
+      required:
+        - id
+        - source
+        - target
+    LegacyModuleSectionBase:
+      type: object
+      properties:
+        uid:
+          type: string
+        UeTag:
+          type: string
+        sectionType:
+          type: string
+        userTitle:
+          type: string
+      required:
+        - uid
+        - UeTag
+        - sectiontype
+        - userTitle
+    Workflow:
+      type: object
+      properties:
+        id:
+          type: string
+        AppContext:
+          type: string
+        name:
+          type: string
+        newCampaign:
+          description: "legacy field"
+          type: boolean
+        author:
+          type: string
+        languages:
+          type: object
+        virtualPhoneNumber:
+          type: string
+        callbackNumber:
+          type: string
+        lastEdited:
+          type: string
+        UshurDescriptions:
+          type: object
+        lang:
+          type: string
+        isEmptyUshur:
+          type: boolean
+        active:
+          type: boolean
+        version:
+          type: string
+        prompt:
+          type: string
+        skipMenu:
+          type: boolean
+        visuallyUshur:
+          type: object
+        routines:
+          $ref: "#/components/schemas/RootRoutine"
+        ui:
+          type: object
+          properties:
+            cells:
+              type: array
+              items:
+                oneOf:
+                  - $ref: "#/components/schemas/WorkflowStep"
+                  - $ref: "#/components/schemas/WorkflowLink"
+            campaignId:
+              type: string
+            active:
+              type: boolean
+            UeTagStructure:
+              type: object
+              properties:
+                result:
+                  type: array
+                  items:
+                    type: object
+                    properties:
+                      message:
+                        type: string
+                      UeTag:
+                        type: string
+                ushurId:
+                  type: string
+                tagCount:
+                  type: number
+            version:
+              type: string
+            welcome:
+              type: string
+            sections:
+              type: array
+              items:
+                oneOf:
+                  - $ref: "#/components/schemas/LegacyWelcomeModuleSection"
+                  - $ref: "#/components/schemas/LegacySendIAModuleSection"
+                  - $ref: "#/components/schemas/LegacyMessageModuleSection"
+                  - $ref: "#/components/schemas/LegacyMenuModuleSection"
+                  - $ref: "#/components/schemas/LegacyFormModuleSection"
+          required:
+            - cells
+            - sections
+        ia:
+          type: object
+          properties:
+            centerAlign:
+              type: boolean
+            locSearchLabel:
+              type: string
+            multiSelectOptions:
+              type: boolean
+            typePassword:
+              type: boolean
+            hideResponse:
+              type: boolean
+            optionalResponse:
+              type: boolean
+            toggleResponse:
+              type: boolean
+            enableHTML:
+              type: string
+      required:
+        - AppContext
+        - name
+        - author
+        - languages
+        - virtualPhoneNumber
+        - callbackNumber
+        - lastEdited
+        - UshurDescriptions
+        - lang
+        - steps
+        - ia
+        - ui
+        - id
+        - routines
+    UpdateWorkflowLegacyRequest:
+      type: object
+      properties:
+        campaignName:
+          type: string
+        cmd:
+          type: string
+        tokenId:
+          type: string
+        actionContext:
+          type: string
+        apiVer:
+          type: string
+        modules:
+          type: array
+          items:
+            oneOf:
+              - $ref: "#/components/schemas/LegacyRootModule"
+              - $ref: "#/components/schemas/LegacySubRootModule"
+      required:
+        - campaignName
+        - cmd
+        - token
+        - actionContext
+        - apiVer
+        - modules
+    CreateWorkflowLegacyRequest:
+      type: object
+      properties:
+        id:
+          description: "A frontend generated id, used by Canvas 2.0"
+          type: string
+        tokenId:
+          type: string
+        cmd:
+          type: string
+        campaignId:
+          type: string
+        Languages:
+          type: object
+        campaignData:
+          type: object
+          properties:
+            name:
+              type: string
+            version:
+              type: string
+            author:
+              type: string
+            id:
+              type: string
+            IsInvisible:
+              type: string
+            description:
+              type: string
+            virtualPhoneNumber:
+              type: string
+            visuallyUshur:
+              type: boolean
+            AppContext:
+              type: string
+            prompt:
+              type: string
+            skipMenu:
+              type: boolean
+            lastEdited:
+              type: string
+            lang:
+              type: string
+            isEmptyUshur:
+              type: boolean
+            options:
+              type: object
+            expiry:
+              type: object
+              properties:
+                days:
+                  type: number
+                hours:
+                  type: number
+                minutes:
+                  type: number
+                message:
+                  type: string
+            routines:
+              type: object
+              properties:
+                Ushur_Initial_Routine:
+                  type: object
+                  properties:
+                    action:
+                      type: string
+                    params:
+                      type: object
+                      properties:
+                        menuId:
+                          type: string
+                        stayInCampaign:
+                          type: boolean
+                On_Return:
+                  type: object
+                  properties:
+                    UeTag:
+                      type: string
+                    action:
+                      type: string
+                    params:
+                      type: object
+                      properties:
+                        menuId:
+                          type: string
+                        stayInCampaign:
+                          type: boolean
+            ui:
+              type: object
+            visualData:
+              type: object
+        actionContext:
+          type: string
+        apiVer:
+          type: string
+    GetWorkflowLegacyRequest:
+      type: object
+      properties:
+        campaignId:
+          type: string
+        cmd:
+          type: string
+        tokenId:
+          type: string
+        apiVer:
+          type: string
+    DeleteWorkflowLegacyRequest:
+      type: object
+      properties:
+        campaignId:
+          type: string
+        cmd:
+          type: string
+        tokenId:
+          type: string
+        apiVer:
+          type: string
+        Languages:
+          type: object
+        actionContext:
+          type: string
+        inclAllXlatedUshurs:
+          type: boolean
+        removeAssociations:
+          type: boolean
+
+    GetWorkflowVariablesRequest:
+      type: object
+      properties:
+        id:
+          type: string
+        campaignId:
+          type: string
+        scope:
+          type: string
+        cmd:
+          type: string
+        tokenId:
+          type: string
+        apiVer:
+          type: string
+        type:
+          type: string
+    CreateWorkflowVariableRequest:
+      type: object
+      properties:
+        cmd:
+          type: string
+        scope:
+          type: string
+        tokenId:
+          type: string
+        id:
+          type: string
+        apiVer:
+          type: string
+        type:
+          type: string
+        campaignId:
+          type: string
+        content:
+          type: array
+          items:
+            properties:
+              vars:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    variable:
+                      type: string
+                    desc:
+                      type: string
+                    type:
+                      type: string
+                    private:
+                      type: string
+                    additionalProperties:
+                      type: string
+    WorkflowActivationRequest:
+      type: object
+      properties:
+        userName:
+          type: string
+        campaignId:
+          type: string
+        virtualNo:
+          type: array
+          items:
+            type: string
+        active:
+          type: string
+        actionContext:
+          type: string
+    initUshurRequest:
+      type: object
+      properties:
+        ushurId:
+          type: string
+        accumulateResponses:
+          type: boolean
+        ignoreState:
+          type: boolean
+        getVars:
+          type: boolean
+    continueUshurRequest:
+      type: object
+      properties:
+        response:
+          oneOf:
+            - type: string
+            - type: integer
+        sid:
+          type: string
+    accumulatedData:
+      type: object
+      properties:
+        sid:
+          type: string
+        engagementStatus:
+          type: string
+        module:
+          type: string
+        uetag:
+          type: string
+        choiceOptions:
+          type: array
+          items:
+            type: string
+        promptText:
+          type: string
+        input_type:
+          type: string
+        horizontalBars:
+          type: boolean
+        addProps:
+          type: object
+          properties:
+            passSendWelcomeMsgToUser:
+              type: string
+            RelMemOnOpenResponse:
+              type: string
+    initUshurResponse:
+      type: object
+      properties:
+        accumulatedData:
+          type: array
+          items:
+            $ref: "#/components/schemas/accumulatedData"
+    continueUshurResponse:
+      type: object
+      properties:
+        accumulatedData:
+          type: array
+          items:
+            $ref: '#/components/schemas/accumulatedData'
+    GetVariablesByUeTagRequest:
+      type: object
+      properties:
+        campaignId:
+          type: string
+        cmd:
+          type: string
+        filterCmd:
+          type: string
+        UeTag:
+          type: string
+        tokenId:
+          type: string
+        apiVer:
+          type: string
+        nRecords:
+          type: number
+    GetVariablesByUeTagResponse:
+      type: object
+      properties:
+        result:
+          type: array
+          items:
+            type: object
+            properties:
+              lastEngagementTime:
+                type: string
+              requestId:
+                type: string
+              variables:
+                type: object
+                additionalProperties: true
+              ueTag:
+                type: string
+    GetTagTypesRequest:
+      type: object
+      properties:
+        id:
+          type: string
+        scope:
+          type: string
+        cmd:
+          type: string
+        tokenId:
+          type: string
+        type:
+          type: string
+        apiVer:
+          type: string
+    GetTagTypesResponse:
+      type: object
+      properties:
+        id:
+          type: string
+        content:
+          type: array
+          items:
+            type: object
+            properties:
+              _id:
+                type: object
+                properties:
+                  $oid:
+                    type: string
+              type:
+                type: string
+              title:
+                type: string
+              desc:
+                type: string
+              computeOperations:
+                type: string
+              errorTxt:
+                type: string
+    GetTagsRequest:
+      type: object
+      properties:
+        id:
+          type: string
+        campaignId:
+          type: string
+        scope:
+          type: string  
+        cmd:
+          type: string
+        tokenId:
+          type: string
+        apiVer:
+          type: string
+        type:
+          type: string
+    GetTagsResponse:
+      type: object
+      properties:
+        id:
+          type: string
+        content:
+          type: array
+          items:
+            type: object
+            properties:
+              campaignId:
+                type: string
+              vars:
+                type: array
+                items:
+                  type: object
+                  additionalProperties:
+                    type: object
+              _id:
+                type: object
+                properties:
+                  $oid:
+                    type: string
+    CreateTagRequest:
+      type: object
+      properties:
+        id:
+          type: string
+        scope:
+          type: string
+        cmd:
+          type: string
+        tokenId:
+          type: string
+        type:
+          type: string
+        apiVer:
+          type: string
+        content:
+          type: object
+          properties:
+            campaignId:
+              type: string
+            vars:
+              type: array
+              items:
+                type: object
+                additionalProperties:
+                  type: object
+    CreateTagResponse:
+      type: object
+      properties:
+        respCode:
+          type: integer
+        respText:
+          type: string
+        status:
+          type: string
+    GetDatatableTagsRequest:
+      type: object
+      properties:
+        id:
+          type: string
+        AppContext:
+          type: string
+        scope:
+          type: string
+        cmd:
+          type: string
+        tokenId:
+          type: string
+        apiVer:
+          type: string
+        type:
+          type: string
+    GetDatatableTagsResponseContentId:
+      type: object
+      properties:
+        _id:
+          type: object
+          properties:
+            $oid:
+              type: string
+    GetDatatableTagsResponseContentItem:
+      type: object
+      properties:
+        prefix:
+          type: string
+        id:
+          type: string
+        suffix:
+          type: string
+        type:
+          type: string
+        desc:
+          type: string
+    GetDatatableTagsResponse:
+      type: object
+      properties:
+        id:
+          type: object
+        content:
+          type: array
+          items:
+            type: object
+            additionalProperties:
+              type: object
+  requestBodies:
+    CreateWorkflowRequest:
+      description: Workflow object that needs to be created
+      content:
+        application/json:
+          schema:
+            $ref: "#/components/schemas/Workflow"
+    PatchWorkflowRequest:
+      description: Workflow data that needs to change
+      content:
+        application/json:
+          schema:
+            $ref: "#/components/schemas/Workflow"
+    CreateWorkflowStepRequest:
+      description: Workflow object that needs to be created
+      content:
+        application/json:
+          schema:
+            $ref: "#/components/schemas/Workflow"
+    PatchWorkflowStepRequest:
+      description: Workflow data that needs to change
+      content:
+        application/json:
+          schema:
+            $ref: "#/components/schemas/Workflow"
+    CreateWorkflowStepModuleRequest:
+      description: Workflow object that needs to be created
+      content:
+        application/json:
+          schema:
+            $ref: "#/components/schemas/Workflow"
+    PatchWorkflowStepModuleRequest:
+      description: Workflow data that needs to change
+      content:
+        application/json:
+          schema:
+            $ref: "#/components/schemas/Workflow"
+    WorkflowLegacyRequest:
+      description: Legacy Workflow data that needs to change
+      content:
+        application/json:
+          schema:
+            oneOf:
+              - $ref: '#/components/schemas/CreateWorkflowLegacyRequest'
+              - $ref: '#/components/schemas/GetWorkflowLegacyRequest'
+              - $ref: '#/components/schemas/UpdateWorkflowLegacyRequest'
+              - $ref: '#/components/schemas/GetWorkflowVariablesRequest'
+              - $ref: '#/components/schemas/GetVariablesByUeTagRequest'
+              - $ref: '#/components/schemas/GetTagTypesRequest'
+              - $ref: '#/components/schemas/GetTagsRequest'
+              - $ref: '#/components/schemas/CreateTagRequest'
+              - $ref: '#/components/schemas/GetDatatableTagsRequest'
+    WorkflowActivationRequest:
+      description: Workflow activation request
+      content:
+        application/json:
+          schema:
+            $ref: "#/components/schemas/WorkflowActivationRequest"
+    initUshurRequest:
+      description: Init Ushur request for Simulator
+      content:
+        application/json:
+          schema:
+            $ref: "#/components/schemas/initUshurRequest"
+    continueUshurRequest:
+      description: Continue Ushur request for Simulator
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/continueUshurRequest'
+    GetVariablesByUeTagRequest:
+      description: Get variables by uetag
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/GetVariablesByUeTagRequest'
+    GetTagTypesRequest:
+      description: Get variable types
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/GetTagTypesRequest'
+    GetTagsRequest:
+      description: Get tags
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/GetTagsRequest'
+    CreateTagRequest:
+      description: Create tag
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/CreateTagRequest'
+    GetDatatableTagsRequest:
+      description: Get datatable tags
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/GetDatatableTagsRequest'
+  responses:
+    CreateWorkflowResponse:
+      description: Success
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              status:
+                type: string
+              respCode:
+                type: number
+              infoText:
+                type: string
+              data:
+                $ref: "#/components/schemas/Workflow"
+    GetWorkflowResponse:
+      description: Success
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              status:
+                type: string
+              respCode:
+                type: number
+              infoText:
+                type: string
+              data:
+                $ref: "#/components/schemas/Workflow"
+    PatchWorkflowResponse:
+      description: Success
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              status:
+                type: string
+              respCode:
+                type: number
+              infoText:
+                type: string
+              data:
+                $ref: "#/components/schemas/Workflow"
+    GetWorkflowsResponse:
+      description: Success
+      content:
+        application/json:
+          schema:
+            type: array
+            items:
+              $ref: "#/components/schemas/Workflow"
+    CreateWorkflowStepResponse:
+      description: Success
+      content:
+        application/json:
+          schema:
+            $ref: "#/components/schemas/Workflow"
+    GetWorkflowStepResponse:
+      description: Success
+      content:
+        application/json:
+          schema:
+            $ref: "#/components/schemas/Workflow"
+    PatchWorkStepflowResponse:
+      description: Success
+      content:
+        application/json:
+          schema:
+            $ref: "#/components/schemas/Workflow"
+    GetWorkflowStepsResponse:
+      description: Success
+      content:
+        application/json:
+          schema:
+            $ref: "#/components/schemas/Workflow"
+    CreateWorkflowStepModuleResponse:
+      description: Success
+      content:
+        application/json:
+          schema:
+            $ref: "#/components/schemas/Workflow"
+    GetWorkflowStepModulesResponse:
+      description: Success
+      content:
+        application/json:
+          schema:
+            $ref: "#/components/schemas/Workflow"
+    WorkflowLegacyResponse:
+      description: Success
+      content:
+        application/json:
+          schema:
+            oneOf:
+              - $ref: "#/components/schemas/LegacyWorkflow"
+              - $ref: "#/components/schemas/LegacyWorkflowUpdateResponse"
+    WorkflowActivationResponse:
+      description: Success
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              status:
+                type: string
+              responseCode:
+                type: number
+              data:
+                type: string
+                nullable: true
+              infoText:
+                type: string
+    initUshurResponse:
+      description: Success
+      content:
+        application/json:
+          schema:
+            $ref: "#/components/schemas/initUshurResponse"
+    continueUshurResponse:
+      description: Success
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/continueUshurResponse'
+    GetVariablesByUeTagResponse:
+      description: Success
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/GetVariablesByUeTagResponse'
+    GetTagTypesResponse:
+      description: Success
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/GetTagTypesResponse'
+    GetTagsResponse:
+      description: Success
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/GetTagsResponse'
+    CreateTagResponse:
+      description: Success
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/CreateTagResponse'
+    GetDatatableTagsResponse:
+      description: Success
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/GetDatatableTagsResponse'

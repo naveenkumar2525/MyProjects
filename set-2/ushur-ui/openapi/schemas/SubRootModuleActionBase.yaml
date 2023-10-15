@@ -1,0 +1,41 @@
+SubRootModuleActionBase:
+      type: object
+      properties:
+        action:
+          type: string
+        next:
+          type: object
+          properties:
+            routine:
+              type: string
+        params:
+          type: object
+          properties:
+            menuId:
+              type: string
+            stayInCampaign:
+              type: string
+            data:
+              type: array
+              items:
+                type: object
+                properties:
+                  index:
+                    type: number
+                  type:
+                    type: string
+                  text:
+                    type: string
+                  storeVariable:
+                    type: string
+                  validationType:
+                    type: string
+                  passString:
+                    $ref: './passString.yaml#/passString'
+                  displayCondition:
+                    type: object
+                    properties:
+                      variable:
+                        type: string
+                      value:
+                        type: string

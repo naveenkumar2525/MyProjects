@@ -1,0 +1,28 @@
+SubRootModuleDataBase:
+      type: object
+      properties:
+        id:
+          type: string
+        UeTag:
+          type: string
+        module:
+          type: string
+        skipMenu:
+          type: boolean
+        routines:
+          type: object
+          properties:
+            Ushur_Initial_Routine:
+              $ref: './SubRootModuleActionBase.yaml#/SubRootModuleActionBase'
+            storeVariable:
+              $ref: './SubRootModuleActionBase.yaml#/SubRootModuleActionBase'
+            performValidation:
+              $ref: './SubRootModuleActionBase.yaml#/SubRootModuleActionBase'
+            goToNextSection:
+              $ref: './SubRootModuleActionBase.yaml#/SubRootModuleActionBase'
+        private:
+          type: string
+        passString:
+          $ref: './passString.yaml#/passString'
+        version:
+          type: string

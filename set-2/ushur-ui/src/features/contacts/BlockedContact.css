@@ -1,0 +1,20 @@
+.blocklist-icon {
+  width: 24px;
+  height: 24px;
+  background: #F3F3F3;
+  color: #FF4545;
+  border-radius: 50%;
+}
+.blocklist-icon svg {
+  width: 1em !important;
+}
+.blocklist-tooltip.tooltip {
+  pointer-events: none;
+  inset: auto auto 2px -3px !important;
+}
+.blocklist-tooltip .tooltip-inner {
+  text-align: left;
+}
+.blocklist-tooltip .tooltip-arrow::before {
+  border-width: 8px;
+}

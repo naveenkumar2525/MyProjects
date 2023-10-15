@@ -1,0 +1,29 @@
+.create-workflow-modal .modal-header, .create-project-modal .modal-header{
+  padding-left: 1rem;
+  border-bottom: none;
+}
+
+.create-workflow-modal .modal-footer, .create-project-modal .modal-footer {
+  border-top: none;
+}
+
+.create-project-modal .modal-header {
+  height: 4.5rem;
+  align-items: flex-start;
+}
+
+.modal-dialog-scrollable .modal-content {
+  padding: 8px;
+}
+
+.workflow-Modal{
+  padding-top: 8px;
+}
+
+.ushur-label {
+  margin-bottom: 0px !important;
+}
+
+.create-workflow-modal .dropdown-menu.show {
+  width: 93%;
+}

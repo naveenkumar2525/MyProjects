@@ -1,0 +1,31 @@
+.workflow-dropdown .dropdown-item {
+  width: inherit;
+}
+.workflow-dropdown .truncate-title {
+  color: #332E20;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+.workflow-dropdown  .dropdown-toggle {
+  min-height: 32px;
+}
+.workflow-dropdown .sub-label {
+  color: #A7A8A9;
+}
+.workflow-dropdown .options-header.dropdown-header {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.workflow-dropdown {
+  width: var(--project-dropdown-width);
+}
+
+.searchable-selectedSubcategoryIcon,
+.searchable-optionsMenuIcon {
+  font-size: 0.73rem;
+}
+
+.searchable-optionsMenuIcon {
+  font-size: 0.83rem;
+}

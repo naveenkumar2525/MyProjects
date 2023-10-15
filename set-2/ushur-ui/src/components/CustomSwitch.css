@@ -1,0 +1,62 @@
+.switch_container {
+    width: 100px;
+    height: 28px;
+    color: white;
+    position: relative;
+    border-radius: 16px;
+    padding: 0px 10px;
+    display: grid;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .swc_right {
+    padding-left: 12px;
+  }
+  
+  .swc_left {
+    padding-left: 32px;
+  }
+  
+  .switch_button {
+    width: 18px;
+    height: 18px;
+    background: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 5px;
+  }
+  
+  .swb_right {
+    right: 5px;
+  }
+  
+  .swb_left {
+    left: 5px;
+  }
+  .tooltiptext {
+    width: 135px;
+    background-color:#373D3F;
+    color: #fff;
+    text-align: left;
+    border-radius: 6px;
+    padding: 5px;
+    font-size: 10px;
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: 0%;
+    margin-left: 40px; 
+    margin-top: 5px;
+  }
+  .tooltiptext::after {
+    content: " ";
+    position: absolute;
+    bottom: 100%;  /* At the top of the tooltip */
+    left: 20%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent #373D3F transparent;
+  }

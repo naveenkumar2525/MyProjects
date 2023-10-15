@@ -1,0 +1,29 @@
+.unpublished {
+  color: #414141;
+  background: #f3f3f3;
+  width: 90px;
+}
+
+.published {
+  color: #414141;
+  background-color: #6fcf97;
+  width: 75px;
+}
+
+.linked {
+  color: #fff;
+  background-color: #5376c8;
+  width: 60px;
+}
+/*Keeping this code, as it might be used later*/
+/* .error {
+    color: #fff;
+    background-color: #FF0000;
+    width: 50px;
+} */
+
+.pill {
+  border-radius: 20px;
+  text-transform: capitalize;
+  padding: 5px 10px;
+}

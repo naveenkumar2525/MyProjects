@@ -1,0 +1,300 @@
+.popover-positioned {
+  background: #ffffff;
+  box-shadow: 1px 2px 4px rgb(0 0 0 / 25%);
+  border-radius: 4px;
+  border-width: 0px;
+  margin-top: 2px;
+  position: absolute;
+  z-index: 6;
+  top: 100%;
+  left: 0%;
+  margin-left: -3.8rem;
+}
+
+.popover-positioned::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 92%;
+  margin-left: -15px;
+  margin-top: -15px;
+  width: 0;
+  z-index: 1;
+  height: 0;
+  border-bottom: solid 15px #fff;
+  border-left: solid 11px transparent;
+  border-right: solid 11px transparent;
+}
+
+.popover-positioned ul {
+  padding: 5px 30px 5px 13px;
+  margin-bottom: 0rem;
+}
+
+    .popover-title{
+      min-height: 34px;
+      vertical-align: middle;
+      color: inherit;
+      font-family: Open Sans;
+      font-weight: 700;
+      font-size: 14px;
+      color: #CCCCCC;
+      letter-spacing: 0.00938em;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+    .popover-normal{
+      min-height: 34px;
+      cursor: pointer;
+      vertical-align: middle;
+      color: #332E20;
+      font-family: Open Sans;
+      font-weight: 400;
+      font-size: 14px;
+      letter-spacing: 0.00938em;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+    .popover-normal.unpub,
+    .popover-normal.unpub .feather-arrow-up-right{
+      color: #ccc;
+      cursor: default;
+    }
+    .popover-delete{
+    min-height: 34px;
+    cursor: pointer;
+    vertical-align: middle;
+    color: inherit;
+    font-family: Open Sans;
+    font-weight: 400;
+    font-size: 14px;
+    color: red;
+    letter-spacing: 0.00938em;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    }
+    
+    #p-menu-body {
+    background-color: white;
+    padding: 32px;
+    }
+    .accordion-button.collapsed:hover .popover-button {
+    display: "inline-flex";
+    background: "white";
+    border-radius: 8px;
+    border-width: 2px;
+    border-color :"rgba(47, 128, 237, 1)";
+    cursor: "pointer";
+    z-index: 1;
+    }
+    .accordion-button:hover .popover-button-icon{
+    fill :#2F80ED;
+    z-index: 10;
+    margin-left: 2px;
+    }
+    .popover-button {
+    border-color: white;
+    display: "none";
+    background: "transparent";
+    border-radius: 8px;
+    border-width: 2px;
+    cursor: "pointer";
+    border-color: transparent;
+    }
+    .popover-button-icon{
+    fill: transparent
+    }
+    .accordion-button:not(.collapsed) .popover-button-icon{
+    fill :#2F80ED;
+    z-index: 10;
+    margin-left: 2px;
+    }
+    .accordion-button:not(.collapsed) .popover-button {
+    display: "inline-flex";
+    background: "white";
+    border-radius: 8px;
+    border-width: 2px;
+    border-color :"rgba(47, 128, 237, 1)";
+    cursor: "pointer";
+    border-color: #2F80ED;
+    z-index: 10;
+    }
+    .popover-button-display{
+      display: "inline-flex";
+    background: "white";
+    border-radius: 8px;
+    border-width: 2px;
+    border-color :"rgba(47, 128, 237, 1)";
+    cursor: "pointer";
+    border-color: #2F80ED;
+    z-index: 10;
+    }
+    .menu-icon-button {
+      display: flex;
+      background-color: transparent ;
+      height : 32px;
+      width : 32px;
+      justify-content: center;
+    }
+.submenu-popover-positioned {
+  background: #ffffff;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+  width: 14rem;
+  border-width: 0px;
+  margin-top: -5px;
+  position: absolute;
+  z-index: 6;
+  top: 100%;
+  left: 0%;
+  margin-left: 2.9rem;
+}
+.submenu-popover-positioned::after {
+  content: " ";
+  position: absolute;
+  bottom: 100%; /* At the top of the tooltip */
+  left: 8%;
+  /* margin-left: -5px; */
+  border-width: 14px;
+  border-style: solid;
+  border-color: transparent transparent #ffffff transparent;
+}
+
+#right-arrow {
+  margin-right: 5.1rem;
+}
+
+.popover .popover-arrow {
+  display: none;
+}
+
+.popover-title {
+  min-height: 34px;
+  vertical-align: middle;
+  color: inherit;
+  font-family: Open Sans;
+  font-weight: 700;
+  font-size: 14px;
+  color: #cccccc;
+  letter-spacing: 0.00938em;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.popover-normal {
+  min-height: 34px;
+  cursor: pointer;
+  vertical-align: middle;
+  color: #332e20;
+  font-family: Open Sans;
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 0.00938em;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.popover-normal div {
+  width: 75%;
+}
+.popover-normal span {
+  width: auto !important;
+  flex: auto;
+}
+.popover-normal.unpub,
+.popover-normal.unpub .feather-arrow-up-right {
+  color: #ccc !important;
+  cursor: default;
+}
+.popover-delete {
+  min-height: 34px;
+  cursor: pointer;
+  vertical-align: middle;
+  color: inherit;
+  font-family: Open Sans;
+  font-weight: 400;
+  font-size: 14px;
+  color: red;
+  letter-spacing: 0.00938em;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#p-menu-body {
+  background-color: white;
+  padding: 32px;
+}
+.accordion-button.collapsed:hover .popover-button {
+  display: "inline-flex";
+  background: "white";
+  border-radius: 8px;
+  border-width: 2px;
+  border-color: "rgba(47, 128, 237, 1)";
+  cursor: "pointer";
+  z-index: 1;
+}
+.accordion-button:hover .popover-button-icon {
+  fill: #2f80ed;
+  z-index: 10;
+  margin-left: 2px;
+}
+.popover-button {
+  border-color: white;
+  display: "none";
+  background: "transparent";
+  border-radius: 8px;
+  border-width: 2px;
+  cursor: "pointer";
+  border-color: transparent;
+}
+.popover-button-icon {
+  fill: transparent;
+}
+.accordion-button:not(.collapsed) .popover-button-icon {
+  fill: #2f80ed;
+  z-index: 10;
+  margin-left: 2px;
+}
+.accordion-button:not(.collapsed) .popover-button {
+  display: "inline-flex";
+  background: "white";
+  border-radius: 8px;
+  border-width: 2px;
+  border-color: "rgba(47, 128, 237, 1)";
+  cursor: "pointer";
+  border-color: #2f80ed;
+  z-index: 10;
+}
+.popover-button-display {
+  display: "inline-flex";
+  background: "white";
+  border-radius: 8px;
+  border-width: 2px;
+  border-color: "rgba(47, 128, 237, 1)";
+  cursor: "pointer";
+  border-color: #2f80ed;
+  z-index: 10;
+}
+.menu-icon-button {
+  display: flex;
+  background-color: transparent;
+  height: 32px;
+  width: 32px;
+  justify-content: center;
+}
+
+.menu-icon-button {
+  display: flex;
+  background-color: transparent;
+  height: 32px;
+  width: 32px;
+  justify-content: center;
+}
+.feather-arrow-up-right {
+  float: right;
+  color: #332e20;
+}

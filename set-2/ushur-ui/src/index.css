@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind variants;
+@import "tailwindcss/tailwind";
+
+@font-face {
+  font-family: "Proxima Nova Light";
+  src: url("./fonts/proxima-nova/proxima-nova-light.otf");
+}
+
+@font-face {
+  font-family: "Proxima Nova Bold";
+  src: url("./fonts/proxima-nova/proxima-nova-bold.otf");
+}
+
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("./fonts/proxima-nova/proxima-nova.otf");
+}
+
+
+body {
+  margin: 0;
+  font-family: var(--family-1), var(--family-2), "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+@layer base {
+  :root {
+    --primary-1: #2f80ed;  /* Blue Color */
+
+    --secondary-1: #a7a8a9; /* Dark Grey */
+    --secondary-2: #f3f3f3; /* light Grey */
+    --secondary-3: #a7a8a9; /*  Grey */
+    --secondary-4: #d9d8d6; /*  Grey */
+
+    /* Spacing */
+    --ushur-space-base: 0.25rem; /* 4px */
+    --space-2: calc(var(--ushur-space-base) * 0.5);  /* 2px */
+    --space-4: calc(var(--ushur-space-base) * 1);
+    --space-8: calc(var(--ushur-space-base) * 2);
+    --space-12: calc(var(--ushur-space-base) * 3);
+    --space-16: calc(var(--ushur-space-base) * 4);
+    --space-24: calc(var(--ushur-space-base) * 6);
+    --space-32: calc(var(--ushur-space-base) * 8);
+    --space-40: calc(var(--ushur-space-base) * 10);
+    --space-48: calc(var(--ushur-space-base) * 12);
+    --space-64: calc(var(--ushur-space-base) * 16);
+    --space-80: calc(var(--ushur-space-base) * 20); /* 80px */
+
+    /* Typography */
+    --family-1: "Open Sans";
+    --family-2: sans-serif;
+
+    /* Font Size */
+    --ushur-font-base-unit: 0.125rem; /* 2px */
+    --size-10: calc(var(--ushur-font-base-unit) * 5); /* 10px */
+    --size-12: calc(var(--ushur-font-base-unit) * 6);
+    --size-14: calc(var(--ushur-font-base-unit) * 7);
+    --size-16: calc(var(--ushur-font-base-unit) * 8);
+    --size-20: calc(var(--ushur-font-base-unit) * 10);
+    --size-24: calc(var(--ushur-font-base-unit) * 12);
+    --size-40: calc(var(--ushur-font-base-unit) * 20);
+    --size-48: calc(var(--ushur-font-base-unit) * 24); /* 48px */
+
+    /* Font Weight */
+    --weight-100: 100;
+    --weight-200: 200;
+    --weight-400: 400;
+    --weight-700: 700;
+    --weight-900: 900;
+
+    /* Line Height */
+    --ushur-line-base-unit: 1;
+    --line-1: calc(var(--ushur-line-base-unit) * 1.1); /* 1.1 */
+    --line-3: calc(var(--ushur-line-base-unit) * 1.3);
+    --line-5: calc(var(--ushur-line-base-unit) * 1.5);
+  }
+}

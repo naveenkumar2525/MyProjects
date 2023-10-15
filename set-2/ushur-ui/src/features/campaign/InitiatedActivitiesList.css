@@ -1,0 +1,80 @@
+.initiated-activities-list .data-card {
+  height: 100%;
+}
+
+.initiated-activities-list .data-card .card-title {
+  font-weight: 700;
+  line-height: 21px;
+  font-size: 0.875rem;
+}
+.data-card.Initiated .card-title {
+  color: #828282;
+}
+.data-card.Egressed .card-title {
+  color: #FFCD00;
+}
+.data-card.Engaged .card-title {
+  color: #A5C8FF;
+}
+.data-card.Completed .card-title {
+  color: #6FCF97;
+}
+.data-card.Expired .card-title {
+  color: #FF8C8C;
+}
+.initiated-activities-list .data-card .card-subtitle {
+  color: #332E20;
+}
+.initiated-activities-list th {
+  text-transform: uppercase;
+}
+.ia-status-Initiated {
+  background-color: #F3F3F3;
+}
+.ia-status-Egressed {
+  background-color: #FFF7A1;
+}
+.ia-status-Engaged {
+  background-color: #D1F3FF;
+}
+
+.ia-status-Completed {
+  background-color: #B3F9D0;
+}
+
+.ia-status-Expired {
+  background-color: #FFAB99;
+}
+
+.initiated-activities-list .react-bootstrap-table-pagination {
+  display: none;
+}
+
+.ia-stats-tooltip .tooltip-arrow::before, .pill-tooltip .tooltip-arrow::before {
+  border-bottom-color: #373d3f;
+  border-bottom-width: 0.438rem;
+}
+
+.temp-div-statuses {
+  visibility: hidden;
+  width: fit-content;
+  display: flex;
+  grid-gap: 0.25rem;
+  height: 0px;
+}
+
+.campaign-table:not(.empty-table) tbody tr:not(>td.react-bs-table-no-data):hover {
+  background-color: #EDFAFF;
+}
+
+.campaign-table tr:hover td.react-bs-table-no-data {
+  --bs-table-accent-bg: none;
+}
+
+.latest-statuses-wrapper .custom-pill:not(:last-child), .temp-div-statuses .custom-pill {
+  margin-right: 5px;
+}
+
+.initiated-activities-list .each-data-card {
+  margin-right: 20px;
+}

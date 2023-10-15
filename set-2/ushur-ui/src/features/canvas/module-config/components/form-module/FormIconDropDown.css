@@ -1,0 +1,51 @@
+.formMenu-container .add-data-dropdown .ushur-dropdown .dropdown-toggle {
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.formMenu-container .dropdown-toggle {
+  height: 24px !important;
+  position: absolute;
+  right: 5px !important;
+  top: -29px;
+  background: #f4f5f7 !important;
+  box-shadow: none !important;
+  border-radius: 0.125rem !important;
+  text-align: center;
+}
+
+.formMenu-container .add-data-dropdown .ushur-dropdown .dropdown-toggle {
+  width: 24px !important;
+}
+
+.formMenu-container .ushur-dropdown .dropdown-toggle::after {
+  display: none;
+}
+
+.formMenu-container .ushur-dropdown .dropdown-menu {
+  overflow-x: hidden;
+  width: 10.524rem !important;
+  left: 20rem !important;
+}
+
+.formMenu-container .dropdown-toggle {
+  color: #2f80ed;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 0.813rem;
+  line-height: 0.813rem;
+}
+
+.formMenu-container
+  .add-data-dropdown
+  .ushur-dropdown
+  button[aria-expanded="true"].dropdown-toggle,
+.formMenu-container button[aria-expanded="false"].dropdown-toggle:hover {
+  border: 0.063rem solid #2f80ed !important;
+}
+
+.formMenu-container {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}

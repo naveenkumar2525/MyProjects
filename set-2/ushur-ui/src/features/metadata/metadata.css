@@ -1,0 +1,57 @@
+.ushur-accordion-wrap .header-btn {
+  left: 33%;
+}
+.ushur-accordion-wrap .ushur-checkbox {
+  margin-top: 8px;
+  margin-bottom: 0;
+}
+.create-variable .modal-body, .edit-variable-modal .modal-body {
+  padding: 8px;
+}
+.metadata-table .no-data-text, .properties-table .no-data-text {
+  color: #332E20;
+  font-size: 0.875rem;
+}
+.metadata-table .nav-link, .properties-table .nav-link {
+  padding: 0px;
+  color: #2F80ED;
+  font-weight: 400;
+}
+.metadata-table .ushur-link:focus, .properties-table .ushur-link:focus {
+  border: none;
+}
+.create-variable .modal-dialog, .property-edit .modal-dialog{
+  max-width: 527px;
+}
+
+.ushur-datatable-download-dropdown {
+  position: absolute;
+  right: 6rem;
+}
+
+.download-data-icons svg{
+  margin-right: 0.25rem;
+}
+.metadata-table tr td {
+  height: 2.0625rem;
+}
+
+.metadata-table thead th > span:first-child {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  float: left;
+}
+/* 21px is width of sort icon */
+.metadata-table th.primaryColumn > span:first-child,
+.metadata-table th.encryptedColumn > span:first-child {
+  max-width: calc(100% - 1rem - 1.3125rem);
+}
+.metadata-table th.primaryEncryptedColumn > span:first-child {
+  max-width: calc(100% - 1rem - 1rem - 1.3125rem);
+}
+.metadata-table th > span:first-child {
+  max-width: calc(100% - 1.3125rem);
+}
+
+

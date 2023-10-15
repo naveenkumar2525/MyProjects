@@ -1,0 +1,83 @@
+.acceleratorModal :global .modal-title {
+  font-size: 1.5rem;
+  color: #3d3f65;
+  font-weight: 300;
+  font-family: Proxima Nova !important;
+}
+.acceleratorModal :global .modal-sub-title {
+  color: #a7a8a9;
+  font-size: 0.875rem;
+  font-family: Proxima Nova !important;
+}
+.acceleratorModal :global .modal-dialog {
+  width: 725px;
+  min-height: 500px
+}
+.acceleratorModal :global .modal-body {
+  display: flex;
+  flex-direction: row;
+  grid-gap: 1rem;
+  flex-wrap: wrap;
+  padding: 26px 8px;
+}
+.acceleratorModal :global .modal-header {
+    border-bottom: none;
+}
+.cardWrapper {
+  width: 160px;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  height: 15rem;
+}
+.cardWrapper:hover, .cardWrapper.active {
+  border: 1px solid;
+  background: linear-gradient(157.05deg, #00A7E1 0%, #8A69FF 98.6%), linear-gradient(0deg, #D1F3FF, #D1F3FF);
+  border-image-source: linear-gradient(157.05deg, #00A7E1 0%, #8A69FF 98.6%);
+  box-shadow: 0px 0px 16px rgb(138 105 255 / 50%);
+}
+.cardHead {
+  height: 34%;
+  font-size: 1.5rem;
+  background: #fff7a1;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 4px 4px 0px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cardBody {
+  padding: 12px;
+  background: #ffffff;
+  border-radius: 0px 0px 4px 4px;
+  line-height: 17px;
+  color: #3d3f65;
+  font-family: Proxima Nova;
+  height: 66%;
+  overflow-y: scroll;
+}
+.cardBody h2 {
+  font-weight: 700;
+  font-size: 0.875rem;
+}
+.cardBody p {
+  font-weight: 300;
+  font-size: 0.875rem;
+}
+.acceleratorModal :global .footer-text {
+  color: #ff4545 !important;
+  font-size: 0.75rem !important;
+}
+.acceleratorModal :global .modal-footer svg {
+  background: none;
+  width: 1rem;
+  height: 1rem;
+}
+.acceleratorSelectedState {
+  border: 1px solid #3D3F65;
+  border-radius: 100%;
+}
+.acceleratorSelectedState svg {
+  width: var(--size-12) !important;
+}

@@ -1,0 +1,185 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "jest/globals": true
+  },
+  "ignorePatterns": ["src/api/**/*"],
+  "extends": [
+    "airbnb",
+    "airbnb-typescript",
+    "prettier",
+    "plugin:storybook/recommended",
+    "plugin:testing-library/react",
+    "plugin:promise/recommended",
+    "plugin:import/recommended"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "project": "./tsconfig.json",
+    "ecmaVersion": 12,
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "sourceType": "module",
+    "emitWarning": true
+  },
+  "plugins": [
+    "@typescript-eslint",
+    "prettier",
+    "jest",
+    "testing-library",
+    "jsdoc",
+    "spellcheck"
+  ],
+  "overrides": [
+    {
+      "files": [
+        "**/__tests__/**/*.[jt]s?(x)",
+        "**/?(*.)+(spec|test).[jt]s?(x)"
+      ],
+      "extends": ["plugin:testing-library/react"]
+    },
+    {
+      "files": ["*.ts", "*.tsx"],
+      "extends": [
+        "plugin:@typescript-eslint/recommended",
+        "plugin:@typescript-eslint/recommended-requiring-type-checking"
+      ],
+      "parserOptions": {
+        "project": "./tsconfig.json"
+      }
+    }
+  ],
+  "rules": {
+    "complexity": ["error", 6],
+    "max-lines": [
+      "error",
+      { "max": 300, "skipBlankLines": true, "skipComments": true }
+    ],
+    "max-classes-per-file": ["error", 1],
+    "max-lines-per-function": [
+      "error",
+      { "max": 140, "skipBlankLines": true, "skipComments": true }
+    ],
+    "max-params": ["error", 3],
+    "no-param-reassign": [
+      "error",
+      { "props": true, "ignorePropertyModificationsFor": ["state"] }
+    ],
+    "max-depth": ["error", 2],
+    "max-len": ["error", 140],
+    "no-use-before-define": "off",
+    "@typescript-eslint/no-use-before-define": ["error"],
+    "prettier/prettier": "error",
+    "react/jsx-filename-extension": [
+      "error",
+      {
+        "extensions": [".ts", ".tsx"]
+      }
+    ],
+    "no-restricted-syntax": "off",
+    "react/react-in-jsx-scope": "off",
+    "no-continue": "off",
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        "devDependencies": [
+          "**/*.test.ts",
+          "**/*.test.tsx",
+          "**/*.stories.tsx",
+          "tests/**/*.ts",
+          "src/utils/test.utils.tsx",
+          "src/mocks/**/*.ts",
+          "scripts/**/*.ts"
+        ]
+      }
+    ],
+    "@typescript-eslint/no-unused-vars": [
+      "error",
+      {
+        "argsIgnorePattern": "^_",
+        "varsIgnorePattern": "^_",
+        "caughtErrorsIgnorePattern": "^_"
+      }
+    ],
+    "jsdoc/check-access": "error",
+    "jsdoc/check-alignment": "error",
+    "jsdoc/check-examples": 0,
+    "jsdoc/check-indentation": "error",
+    "jsdoc/check-line-alignment": "error",
+    "jsdoc/check-param-names": "error",
+    "jsdoc/check-property-names": "error",
+    "jsdoc/check-syntax": "error",
+    "jsdoc/check-tag-names": "error",
+    "jsdoc/check-types": "error",
+    "jsdoc/check-values": "error",
+    "jsdoc/empty-tags": "error",
+    "jsdoc/implements-on-classes": "error",
+    "jsdoc/match-description": "error",
+    "jsdoc/multiline-blocks": "error",
+    "jsdoc/newline-after-description": "error",
+    "jsdoc/no-bad-blocks": "error",
+    "jsdoc/no-defaults": "error",
+    "jsdoc/no-multi-asterisks": "error",
+    "jsdoc/no-restricted-syntax": "off",
+    "jsdoc/no-types": "error",
+    "jsdoc/no-undefined-types": "error",
+    "jsdoc/require-asterisk-prefix": "error",
+    "jsdoc/require-description": "error",
+    "jsdoc/require-description-complete-sentence": "error",
+    "jsdoc/require-example": "off",
+    "jsdoc/require-hyphen-before-param-description": "off",
+    "jsdoc/require-param": "error",
+    "jsdoc/require-param-description": "error",
+    "jsdoc/require-param-name": "error",
+    "jsdoc/require-param-type": "off",
+    "jsdoc/require-property": "error",
+    "jsdoc/require-property-description": "error",
+    "jsdoc/require-property-name": "error",
+    "jsdoc/require-property-type": "error",
+    "jsdoc/require-returns": "error",
+    "jsdoc/require-returns-check": "error",
+    "jsdoc/require-returns-description": "error",
+    "jsdoc/require-returns-type": "off",
+    "jsdoc/require-throws": "error",
+    "jsdoc/require-yields": "error",
+    "jsdoc/require-yields-check": "error",
+    "jsdoc/tag-lines": "error",
+    "jsdoc/valid-types": "error",
+    "jest/no-focused-tests": "error",
+    "jest/no-identical-title": "error",
+    "jest/prefer-to-have-length": "error",
+    "jest/valid-expect": "error",
+    "spaced-comment": "error",
+    "spellcheck/spell-checker": [
+      "error",
+      {
+        "comments": true,
+        "strings": false,
+        "identifiers": false,
+        "lang": "en_US",
+        "skipWords": [
+          // Add words here to ignore for spell checking
+          "mouseover",
+          "tooltip",
+          "Ushur",
+          "tinymce",
+          "proxima",
+          "nowrap",
+          "cmd"
+        ],
+        "skipIfMatch": [
+          "http://[^s]*",
+          "eslint",
+          "tslint",
+          "rappid",
+          "uid",
+          "boxable"
+        ],
+        "minLength": 3
+      }
+    ],
+    "react/require-default-props": "off"
+  }
+}

@@ -1,0 +1,55 @@
+:root{
+  --font-size-simulator-xxs:clamp(0.20rem, 0.5vw, 1rem);
+  --font-size-simulator-xs:clamp(0.37rem, 0.9vw, 1.25rem);
+  --font-size-simulator-sm:clamp(1rem, 1.2vw, 2rem);
+  --font-size-simulator-md:clamp(1rem, 2.5vw, 4rem);
+  --font-size-simulator-lg:clamp(2rem, 5vw, 8rem); /*the complete range for now. Will remove if not required in future*/
+}
+.engagementEndStyle {
+  font-size: var(--font-size-simulator-xs);
+  font-style: italic;
+}
+
+a {
+  color: gray;
+}
+
+.customFont {
+  font-family: "Quicksand", sans-serif;
+}
+
+.mobile_simulator_outer{
+  border: 0.125rem solid #A7A7A7;
+  box-shadow: 29.3541px 44.0312px 58.7082px rgb(0 0 0 / 15%), inset -1.46771px -7.33853px 14.6771px rgb(0 0 0 / 20%);
+  border-radius: clamp(2rem, 2.5vw, 3rem);
+  height: 90%;
+  margin-top: 5%;
+  aspect-ratio: 1 / 2;
+  min-height: 60vh;
+}
+
+@media screen and (min-width: 0px) and (max-width: 576px) {
+  .mobile_simulator_outer{
+    height: 70%;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  .mobile_simulator_outer{
+    height: 70%;
+  }
+}
+@media (orientation: portrait) {
+  .mobile_simulator_outer{
+    height: 40%;
+  }
+}
+@media (min-width: 576px) and (max-width: 992px) and (orientation: portrait) {
+  .mobile_simulator_outer{
+    height: 70%;
+  }
+}
+.mobile_simulator_inner{
+  margin:0.2rem;
+  border-radius: clamp(1.5rem, 2vw, 2.5rem);
+  overflow:hidden;
+}

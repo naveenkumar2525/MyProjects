@@ -1,0 +1,41 @@
+.sort-projects-select .dropdown-header {
+  text-transform: uppercase;
+}
+
+.sort-projects-select .dropdown-item {
+  color: unset;
+  padding: 0.5rem 1rem;
+}
+
+.sort-projects-select .bi-chevron-up::before {
+  color: #2f80ed;
+}
+
+.sort-projects-select .custom-dropdown {
+  width: 11rem;
+}
+
+.sort-projects-select .dropdown-item svg path {
+  fill: #53565a;
+}
+
+.sort-projects-select .dropdown-item.selected svg path {
+  fill: #2F80ED;
+}
+
+.sort-projects-select .title-box {
+  width: auto;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.sort-projects-select .custom-dropdown>div {
+  align-items: center;
+}
+
+.sort-projects-select .custom-dropdown .bi {
+  margin: 0 7px;
+}
+.sort-projects-select .title-box+span {
+  position: static !important;
+}

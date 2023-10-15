@@ -1,0 +1,44 @@
+.configured-modules-container {
+  min-height: 180px;
+}
+.configured-item-blue {
+  height: 3rem;
+  background: #d1f3ff;
+}
+.configurable-item-blue {
+  height: 2.5rem;
+  width: 14.5rem;
+  background: #d1f3ff;
+}
+.configured-item-pink {
+  height: 3rem;
+  background: #d4c8ff;
+}
+.configurable-item-pink {
+  height: 2.5rem;
+  width: 14.5rem;
+  background: #d4c8ff;
+}
+.configured-item-yellow {
+  height: 3rem;
+  background: #FFF7A1;
+}
+.configurable-item-yellow {
+  height: 2.5rem;
+  width: 14.5rem;
+  background: #FFF7A1;
+}
+.configured-item-grey {
+  height: 3rem;
+  background: transparent;
+  border: 1px dashed #cccccc;
+}
+.configurable-item-grey {
+  height: 2.5rem;
+  width: 14.5rem;
+  background: transparent;
+  border: 1px dashed #cccccc;
+}
+.canvas .ia-link-border {
+  border-color:rgb(90,153,241) !important;
+}

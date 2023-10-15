@@ -1,0 +1,8 @@
+.one-workflow .ushur-input {
+  border: none;
+}
+
+.one-workflow .ushur-input:focus,
+.one-workflow .ushur-input:focus-visible {
+  outline: none;
+}

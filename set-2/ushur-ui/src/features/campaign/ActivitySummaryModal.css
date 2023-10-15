@@ -1,0 +1,44 @@
+.activity-summary-modal .modal-header {
+  border-bottom: none;
+}
+
+.activity-summary-modal .modal-body {
+  padding: 0.5rem 0rem;
+}
+
+.activity-summary-modal .modal-dialog {
+  max-width: 37.5rem;
+}
+
+.activity-summary-modal .actions-row .icon-control {
+  background-color: #f4f5f7;
+  width: 2.5rem;
+  height: 2.5rem;
+  display: grid;
+  place-items: center;
+  border-radius: 0.313rem;
+  cursor: pointer;
+}
+
+.activity-summary-modal .actions-row .icon-control:hover {
+  box-shadow: 0px 0px 4px rgba(0,0,0,.25);
+  border: 1px solid #2F80ED;
+}
+
+.activity-summary-modal .actions-row .icon-control:active {
+  box-shadow: 1px 1px 4px rgba(0,0,0,.25);
+  -webkit-filter: drop-shadow(0 0 4px #2f80ed);
+  filter: drop-shadow(0 0 4px #2F80ED);
+}
+
+.activity-summary-modal .actions-row .icon-control:focus {
+  color: #2F80ED;
+  box-shadow: 1px 1px 4px rgba(0,0,0,.25);
+}
+
+.summary-details {
+  overflow-x: hidden;
+}
+.activity-summary-modal .modal-dialog .modal-content {
+  padding: 0;
+}

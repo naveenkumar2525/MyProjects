@@ -1,0 +1,407 @@
+.react-daterange-picker__wrapper {
+  border: none !important;
+  border-radius: 5px;
+  padding: 3px 10px;
+  background: #f4f5f7;
+}
+
+.react-daterange-picker__wrapper input,
+.react-daterange-picker__wrapper span {
+  color: #2f80ed;
+}
+
+.sl-actions .ushur-secondary-btn {
+  background: #f4f5f7;
+  border: none;
+  box-shadow: none;
+}
+
+.sl-refresh button {
+  border: 1px solid #2f80ed;
+}
+
+.title-h1 {
+  display: flex;
+  align-items: center;
+}
+
+.validation-header {
+  display: flex;
+  align-items: flex-start;
+}
+
+.validation-header .validation-edit-dc {
+  width: 50%;
+  min-height: 57px;
+  display: flex;
+  background: #fff;
+  margin-top: 20px;
+  border-radius: 0.5rem;
+  padding-left: 1%;
+  margin-right: 1rem;
+}
+
+.phrase-type {
+  align-content: space-between;
+  align-items: center;
+  justify-content: center;
+}
+
+.key-phrase {
+  font-weight: 700;
+  color: rgba(130, 130, 130, 1);
+  display: flex;
+  justify-content: center;
+}
+
+.dropdown-item.active .validationtabstext {
+  color: white !important;
+}
+
+.dropdown-item.active svg {
+  color: inherit !important;
+}
+
+.display-phrase {
+  display: flex;
+  justify-content: center;
+  font-size: 0.625rem;
+  border-radius: 0.25rem;
+  padding: 0.25rem;
+  gap: 0.625rem;
+  color: #332E20;
+}
+
+.validation-edit-dc .campaign-link-box {
+  width: 7%;
+  height: 2rem;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 1.5%;
+  padding-bottom: 1.5%;
+  align-items: center;
+  margin-top: 0.75rem;
+  background: #f4f5f7;
+}
+
+.validation-header .card-wrap {
+  margin-right: 1.25rem;
+}
+
+.conditional-section .c-header {
+  background: #d1f3ff;
+  border-radius: 8px 8px 0px 0px;
+  display: inline-block;
+  padding: 8px;
+}
+
+.conditional-section .c-body {
+  background: #f3f3f3;
+  border-radius: 0px 8px 8px 0px;
+  padding: 15px 0px;
+}
+
+.conditional-section.false-section .c-header {
+  background: #ffd5d5;
+}
+
+.validations-page .ushur-label.form-label {
+  width: 100%;
+}
+
+.validation-edit-dc>div {
+  width: 90%;
+  margin-right: 2%;
+}
+
+.validation-edit-dc>svg {
+  margin-bottom: 1%;
+}
+
+.validation-form-text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 200%;
+  padding: 1rem;
+}
+
+.validation-form-text .card {
+  border: none;
+  height: 56vh;
+  overflow-y: scroll;
+}
+
+.validation-form-text .form-variables {
+  height: 60vh;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+
+.validation-phrase-section .dropdown-menu.show {
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.validation-form-text .card::-webkit-scrollbar,
+.validation-phrase-section .dropdown-menu.show::-webkit-scrollbar,
+.validation-form-text .form-variables::-webkit-scrollbar {
+  width: 0.375rem;
+  height: 2rem;
+}
+
+.validation-form-text .card::-webkit-scrollbar-track,
+.validation-phrase-section .dropdown-menu.show::-webkit-scrollbar-track,
+.validation-form-text .form-variables::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.validation-form-text .card::-webkit-scrollbar-thumb,
+.validation-phrase-section .dropdown-menu.show::-webkit-scrollbar-thumb,
+.validation-form-text .form-variables::-webkit-scrollbar-thumb {
+  background-color: rgba(167, 168, 169, 1);
+  border-radius: 1.25rem;
+  border: transparent;
+}
+
+.validation-highlighter {
+  background: #ffeaea;
+  border-radius: 0.25rem;
+}
+
+.validation-highlighter-text {
+  background: #E8F1FF;
+  border-radius: 0.25rem;
+}
+
+.validation-highlighter-text:hover,
+.text-hover {
+  border: 1px solid #00A7E1;
+  cursor: pointer;
+}
+
+.validation-highlighter-special-character {
+  background: #CBFFE1;
+  border-radius: 0.25rem;
+}
+
+.validation-highlighter-special-character:hover,
+.special-char-hover {
+  border: 1px solid #19AF58;
+  cursor: pointer;
+}
+
+.validation-highlighter-acronym {
+  background: #E1D9FF;
+  border-radius: 0.25rem;
+}
+
+.validation-highlighter-acronym:hover,
+.acronym-hover {
+  border: 1px solid #8A69FF;
+  cursor: pointer;
+}
+
+.validation-highlighter-number {
+  background: #FFF7A1;
+  border-radius: 0.25rem;
+}
+
+.validation-highlighter-number:hover,
+.number-hover {
+  border: 1px solid #FFCD00;
+  cursor: pointer;
+}
+
+.acronym>svg {
+  color: #E1D9FF;
+  float: right;
+}
+
+.acronym>svg>path {
+  stroke: #8A69FF;
+  stroke-width: 25;
+}
+
+.text>svg {
+  color: #E8F1FF;
+  float: right;
+}
+
+.text>svg>path {
+  stroke: #00A7E1;
+  stroke-width: 25;
+}
+
+
+.number>svg {
+  color: #FFF7A1;
+  float: right;
+}
+
+.number>svg>path {
+  stroke: #FFCD00;
+  stroke-width: 25;
+}
+
+.special-character>svg {
+  color: #CBFFE1;
+  float: right;
+}
+
+.special-character>svg>path {
+  stroke: #19AF58;
+  stroke-width: 25;
+}
+
+.rpv-search__highlight.special-character:hover {
+  border: 1px solid #19AF58 !important;
+  cursor: pointer !important;
+}
+
+.rpv-search__highlight.number:hover {
+  border: 1px solid #FFCD00 !important;
+  cursor: pointer !important;
+}
+
+.rpv-search__highlight {
+  border: none;
+}
+
+.rpv-search__highlight:hover {
+  cursor: pointer !important;
+  border: none;
+}
+
+.rpv-search__highlight.text:hover {
+  border: 1px solid #00A7E1 !important;
+  cursor: pointer !important;
+}
+
+.rpv-search__highlight.acronym:hover {
+  border: 1px solid #8A69FF !important;
+  cursor: pointer !important;
+}
+
+.validation-content-background {
+  padding: 5px;
+}
+
+.validations-page .ushur-input.form-control {
+  cursor: pointer;
+}
+
+.validations-page .ushur-input.form-control:hover,
+.hover-triggered {
+  border: 1px solid #2f80ed !important;
+  box-shadow: 0px 0px 2px #2f80ed !important;
+}
+
+.validation-body {
+  display: flex;
+  justify-content: space-between;
+  height: 80vh;
+}
+
+.validation-form-text .dt-header-row {
+  margin: auto !important;
+}
+
+.validation-form-text .dt-header-row .row-icon {
+  margin-right: 0 !important;
+}
+
+.validation-form-text .dt-header-row .variable-type-dropdown {
+  width: 64%;
+}
+
+.validation-section {
+  background-color: white;
+  margin: 12px 0px;
+  border-radius: 5px;
+  justify-content: space-between;
+}
+
+.validation-form-section {
+  width: 29.5%;
+  overflow-x: clip;
+}
+
+.validation-section-divider {
+  width: 0.5%;
+}
+
+.validation-phrase-section .tab-content {
+  background: #F4F5F7;
+  border-radius: 0px 4px 0px 0px;
+  height: 64vh;
+  padding: 1.5rem;
+}
+
+.rpv-core__inner-pages {
+  overflow-x: clip !important;
+}
+
+.validation-phrase-section {
+  width: 70%;
+}
+
+.pr-4 {
+  padding-right: 1.5rem;
+}
+
+.tab-content {
+  max-height: 100%;
+}
+
+.validation-phrase-section .row {
+  width: auto;
+  max-height: 100%;
+}
+
+.validation-phrase-section .col-sm-12 {
+  max-height: 71vh;
+}
+
+.validation-tab-content {
+  overflow-y: scroll;
+  width: 100%;
+}
+
+/*This code is a temporary fix and should be removed and the styling shpuld behandled in Datatable: start*/
+.react-bootstrap-table-pagination.pinned {
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+.react-bootstrap-table-pagination>div:first-child.pinned {
+  margin-bottom: 2.5rem;
+  flex-direction: column;
+}
+
+.validationtabs {
+  align-items: center;
+  cursor: pointer;
+  display: inline-flex;
+  width: 10rem;
+}
+
+.validationtabstext {
+  color: #2F80ED;
+  width: 10rem;
+  max-width: 10rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-weight: normal;
+  padding-left: 0.5rem;
+  white-space: nowrap;
+}
+
+.form-search-section {
+  display: inline-flex;
+  align-items: flex-start;
+  margin-top: 2%;
+  width: 100%;
+}
+
+/*This code is a temporary fix and should be removed and the styling shpuld behandled in Datatable: end*/

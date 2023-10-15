@@ -1,0 +1,159 @@
+.contact-border {
+  border: 1px solid #2f80ed;
+  border-radius: 4px;
+}
+.contact-border-ushur {
+  border-radius: 4px;
+  border: 1px solid #cccccc;
+}
+.ushur-dropdown .dropdown-toggle.contactsblue {
+  background-color: #fff;
+  color: #ccc;
+  background: #ffffff;
+  border: none !important;
+  box-sizing: border-box;
+  border-radius: 4px;
+  font-size: 12px;
+  min-width: 20px;
+  text-align: left;
+  width: 100%;
+  padding: 4px 8px 4px 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.custom-pagination {
+  font-size: 12px !important;
+  color: #7a7a7a;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.custom-pagination .btn {
+  font-size: 12px !important;
+  background-color: #fff;
+  border-color: #dee2e6;
+}
+.page-sizes-wrap .dropdown button.each-option {
+  border: none;
+}
+.contacts-page .react-bootstrap-table-pagination {
+  display: none;
+}
+.custom-pagination .pagination {
+  width: max-content;
+}
+.custom-pagination .dropdown-menu button {
+  height: 22px;
+}
+.custom-pagination .dropdown-menu {
+  padding: 0.3rem 0;
+}
+/* Updated Modal css */
+@media (min-width: 992px) {
+  .add-contact-modal .modal-lg,
+  .add-contact-modal .modal-xl {
+    max-width: 523px;
+  }
+}
+.add-contact-modal .modal-header {
+  border-bottom: none;
+  height: max-content;
+  display: flex;
+  align-items: flex-start;
+  padding-left: 0px !important;
+}
+
+.add-contact-modal .modal-body {
+  padding: 7px 7px;
+  padding-top: 0;
+  overflow: visible;
+}
+.add-contact-modal .ushur-label.form-label {
+  padding: 5px 0px;
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+}
+.add-contact-modal .modal-footer {
+  border-top: none;
+  padding-top: 0px;
+}
+.add-contact-modal .footer-text {
+  margin-left: auto !important;
+  color: #ff4545 !important;
+}
+.add-contact-modal .footer-text svg {
+  font-size: 11px;
+}
+.add-contact-modal .constructive-btn-group {
+  margin-left: inherit !important;
+}
+.add-contact-modal .flag-dropdown {
+  background-color: transparent !important;
+  border-right-color: #ffffff !important;
+  border-right-width: 0px;
+  border-width: 1px 0px 1px 1px !important;
+}
+.react-tel-input:hover .flag-dropdown {
+  border: 1px solid #2f80ed;
+}
+.flag-dropdown:hover + .contact-input {
+  border: 1px solid #2f80ed;
+}
+.react-tel-input .ushur-input.error + .flag-dropdown {
+  border: 1px solid red;
+}
+.add-contact-modal .blockListInfo {
+  color: #a7a8a9;
+  font-size: 10px;
+}
+.add-contact-modal .react-tel-input :disabled {
+  background: #f0f0f0 !important;
+}
+.contacts-table tbody > tr {
+  height: 40px;
+  vertical-align: middle;
+}
+.contacts-export-btn {
+  position: absolute;
+  right: 8.25rem;
+}
+.contacts-page .header-wrap .ushur-dropdown {
+  margin-top: 0;
+}
+.add-contact-modal .react-tel-input .flag-dropdown {
+  border: none;
+}
+.react-tel-input .ushur-input:hover:not(:disabled),
+.react-tel-input .ushur-input:focus {
+  border: 1px solid #2f80ed;
+}
+.react-tel-input .selected-flag:hover,
+.react-tel-input .selected-flag:focus {
+  background: none !important;
+}
+.add-contact-modal .selected-flag.open {
+  background: none !important;
+}
+.add-contact-modal .variable-type-dropdown .dropdown-toggle:hover:disabled {
+  border: 1px solid #cccccc;
+}
+.add-contact-modal .modal-dialog-scrollable .modal-content {
+  overflow: visible;
+  max-height: 100%;
+}
+
+/* /css for zoomed in modal */
+.variable-type-dropdown.contactGroup .ushur-dropdown .dropdown-menu {
+  width: 94%;
+  max-height: 6rem;
+}
+.add-contact-modal .modal-body {
+  max-height: 100%;
+  overflow: auto;
+}
+.add-contact-modal .modal-body,
+.modal-body .dropdown {
+  position: static !important;
+}

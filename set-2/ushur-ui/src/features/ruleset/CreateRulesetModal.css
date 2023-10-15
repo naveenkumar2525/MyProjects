@@ -1,0 +1,11 @@
+#drop_zone {
+  border: 2px dashed #ccc;
+  height: 130px;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+}
+
+#tags {
+  border: 1px solid #ccc;
+}

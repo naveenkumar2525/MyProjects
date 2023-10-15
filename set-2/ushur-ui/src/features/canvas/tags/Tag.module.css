@@ -1,0 +1,10 @@
+.tag {
+  background-color: #8a69ff;
+  color: #fff;
+  padding-bottom: 2px;
+  padding-top: 2px;
+}
+
+.tag svg {
+  background: transparent;
+}

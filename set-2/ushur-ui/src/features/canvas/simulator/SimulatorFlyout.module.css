@@ -1,0 +1,93 @@
+:root{
+  --boxdim: 0.65vw;
+  --font-size-simulator-xs:clamp(0.25rem, 0.6vw, 1rem);
+  --font-size-simulator-sm:clamp(0.5rem, 1.2vw, 2rem);
+  --font-size-simulator-md:clamp(1rem, 2.5vw, 4rem);
+  --font-size-simulator-lg:clamp(2rem, 5vw, 8rem);/*Keeping complete range for now. Will remove if not required in future*/
+}
+.mobilesimulator{
+  width:33%!important;
+}
+
+.flyout_header{
+  font-size:var(--font-size-simulator-sm);
+}
+
+.flyout_header_close_button{
+  font-size:var(--font-size-simulator-sm);
+}
+
+.panel_splitter:hover{
+  background:#000;
+  color:#000;
+  
+}
+.panel2{
+  margin:2%;
+  overflow-y: scroll;
+}
+.panel2_top{
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-right: 5%;
+}
+
+.panel2_top .h4 {
+  color:#646584;
+  font-weight:400;
+}
+
+.panel2_top .icon_expand{
+  color:#2F80ED;
+}
+
+.legend {
+  color: #3D3F65;
+}
+
+.dt_box{
+  width: var(--boxdim);
+  height: var(--boxdim);
+  background: #AECCF4;
+  border-radius: 1.89845px;
+  margin-left:1vw;
+  margin-right:0.5vw;
+}
+
+.warn_box{
+  width: var(--boxdim);
+  height: var(--boxdim);
+  background: #FFCD00;
+  border-radius: 1.89845px;
+  margin-left:1vw;
+  margin-right:0.5vw;
+}
+
+.var_box{
+  width: var(--boxdim);
+  height: var(--boxdim);
+  background: #E9BCFF;
+  border-radius: 1.89845px;
+  margin-left:1vw;
+  margin-right:0.5vw;
+}
+
+.err_box{
+  width: var(--boxdim);
+  height: var(--boxdim);
+  background: #FF8C8C;
+  border-radius: 1.89845px;
+  margin-left:1vw;
+  margin-right:0.5vw;
+}
+
+.var_section{
+  height: 80%;
+  background: white;
+  width: 95%;
+  margin: 1%;
+  min-height: 200px;
+  overflow-y: scroll;
+}

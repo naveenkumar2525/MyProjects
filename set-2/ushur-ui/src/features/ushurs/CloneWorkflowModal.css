@@ -1,0 +1,8 @@
+.clone-workflow-modal .modal-header {
+  padding-left: 1rem;
+  border-bottom: none;
+}
+
+.clone-workflow-modal .modal-footer {
+  border-top: none;
+}

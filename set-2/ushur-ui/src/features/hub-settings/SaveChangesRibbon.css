@@ -1,0 +1,6 @@
+.save-changes-ribbon {
+  position: sticky;
+  bottom: 1.5rem;
+  border-radius: 0.75rem;
+  box-shadow: 0px 0px 16px 0px rgb(0 0 0 / 25%);
+}

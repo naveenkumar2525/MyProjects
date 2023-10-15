@@ -1,0 +1,13 @@
+.actionhighlighter {
+  padding: 2px;
+  border-radius: 15%;
+}
+.green {
+  background-color: #b3f9d0;
+}
+.red {
+  background-color: #ffd4d4;
+}
+.grid {
+  align-items: baseline;
+}

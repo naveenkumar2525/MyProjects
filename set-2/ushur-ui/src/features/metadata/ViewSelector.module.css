@@ -1,0 +1,110 @@
+:root {
+  --switches-bg-color: var(--u-color-background-1);
+  --switches-label-color: #A7A8A9;
+  --switch-bg-color: white;
+  --switch-text-color: #2F80ED;
+}
+
+/* container for all of the switch elements 
+  - adjust "width" to fit the content accordingly 
+*/
+.switchesContainer {
+  width: 13.4rem;
+  position: relative;
+  background: var(--switches-bg-color);
+  border: 2px solid #FFFFFF;
+  /* box-shadow: inset 1px 2px 4px rgba(0, 0, 0, 0.25); */
+  border-radius: 24px;
+  font-size: 0.875rem;
+  padding: 0;
+  line-height: 2rem;
+  position: absolute;
+  right: 8.5rem;
+}
+
+/* input (radio) for toggling. hidden - use labels for clicking on */
+.switchesContainer input {
+  display: none;
+}
+
+/* labels for the input (radio) boxes - something to click on */
+.switchesContainer label {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  cursor: pointer;
+  color: var(--switches-label-color);
+  width: 50%;
+}
+
+.switchesContainer label svg {
+  margin-right: 4px;
+  width: 14px !important;
+  color: var(--switches-label-color);
+}
+
+/* switch highlighters wrapper (sliding left / right) 
+  - need wrapper to enable the even margins around the highlight box
+*/
+.switchWrapper {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 50%;
+  z-index: 3;
+  transition: transform .5s cubic-bezier(.77, 0, .175, 1);
+}
+
+/* switch box highlighter */
+.switch {
+  border-radius: 3rem;
+  background: var(--switch-bg-color);
+  border: 1px solid var(--switch-text-color);
+  height: 100%;
+}
+
+/* switch box labels
+  - default setup
+  - toggle afterwards based on radio:checked status 
+*/
+.switch div {
+  width: 100%;
+  text-align: center;
+  opacity: 0;
+  display: block;
+  color: var(--switch-text-color) ;
+  transition: opacity .2s cubic-bezier(.77, 0, .175, 1) .125s;
+  will-change: opacity;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.switchWrapper .switch svg {
+  margin-right: 4px;
+  width: 14px;
+}
+
+.switch svg path {
+  fill: var(--switch-text-color);
+}
+
+/* slide the switch box from right to left */
+.switchesContainer input:nth-of-type(1):checked~.switchWrapper {
+  transform: translateX(0%);
+}
+
+/* slide the switch box from left to right */
+.switchesContainer input:nth-of-type(2):checked~.switchWrapper {
+  transform: translateX(100%);
+}
+
+/* toggle the switch box labels - first checkbox:checked - show first switch div */
+.switchesContainer input:nth-of-type(1):checked~.switchWrapper .switch div:nth-of-type(1) {
+  opacity: 1;
+}
+
+/* toggle the switch box labels - second checkbox:checked - show second switch div */
+.switchesContainer input:nth-of-type(2):checked~.switchWrapper .switch div:nth-of-type(2) {
+  opacity: 1;
+}

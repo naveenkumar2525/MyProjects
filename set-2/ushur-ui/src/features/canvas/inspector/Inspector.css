@@ -1,0 +1,49 @@
+.canvas-inspector {
+  height: 100%;
+  top: 0;
+  box-sizing: border-box;
+  right: 0;
+  width: 520px;
+  overflow: auto;
+  border-left: 1px solid #d4d4d4;
+  background: #ffffff;
+  box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.25);
+  z-index: 1;
+}
+
+.canvas-inspector h1 {
+  text-align: left;
+  font-family: Open Sans;
+  font-size: 12px;
+  line-height: 19px;
+  margin: 0 0 16px 0;
+  letter-spacing: 0;
+  color: #191919;
+  opacity: 1;
+}
+.canvas-inspector p,
+.canvas-inspector h2,
+.canvas-inspector h3,
+.canvas-inspector h4 {
+  font-family: Open Sans;
+}
+
+.canvas-inspector input {
+  display: flex;
+  box-sizing: border-box;
+  padding: 8px;
+  padding-right: 6rem;
+  text-overflow: ellipsis;
+  outline: none;
+  height: 35px;
+  background: #ffffff;
+  border: 1px solid #d4d4d4;
+  opacity: 1;
+  text-align: left;
+  font-family: Open Sans;
+  font-size: 12px;
+  letter-spacing: 0;
+  color: #191919;
+  margin-bottom: 0.2rem;
+  margin-top: 3px;
+}

@@ -1,0 +1,4 @@
+.create-variable.overflow-show .modal-content,
+.create-variable.overflow-show .modal-content .modal-body {
+  overflow: visible;
+}

@@ -1,0 +1,58 @@
+.access-role-card {
+  background: #F4F5F7;
+}
+.access-role-new {
+  background: #FFFFFF;
+  border: 1px solid #D9D8D6;
+}
+.access-role-card .grid {
+  align-items: center;
+}
+.role-actions {
+  justify-content: end;
+}
+.role-actions button:first-child {
+  margin-right: 15px;
+}
+.access-role-editing {
+  background: #FFFFFF;
+  border: 1px solid #D9D8D6;
+}
+.access-role-card .switch_container {
+  margin-top: 0.313rem;
+  font-size: 0.75rem;
+  height: 1.5rem !important;
+  width: 5.625rem !important;
+}
+.access-role-card .switch_container .switch_button {
+  width: 0.938rem;
+  height: 0.938rem;
+}
+.swc_left_disabled {
+  background-color: #BBBBBB;
+  padding-left: 2rem !important;
+}
+.fa-disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  color: #BBBBBB;
+}
+.input-container {
+  position: relative;
+}
+.access-role-card .input-container>.ushur-label{
+  position: absolute;
+  right: 0;
+  width: 1.25rem;
+  top: 0.5rem;
+}
+.workflow-type, .workflow-status {
+  margin-bottom: 0;
+}
+.ushur-radio label.form-check-label {
+  position: relative;
+  top: 0.125rem;
+}
+.ushur-input.form-control:hover {
+  box-shadow: none;
+}

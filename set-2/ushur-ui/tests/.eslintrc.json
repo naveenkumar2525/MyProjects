@@ -1,0 +1,9 @@
+{
+  "extends": "../.eslintrc.json",
+  "rules": {
+    "func-names": "off"
+  },
+  "parserOptions": {
+    "project": "tests/tsconfig.json"
+  }
+}

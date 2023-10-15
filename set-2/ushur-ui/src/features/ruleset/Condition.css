@@ -1,0 +1,12 @@
+.one-workflow .ushur-input {
+  border: none;
+}
+
+.one-workflow .ushur-input:focus,
+.one-workflow .ushur-input:focus-visible {
+  outline: none;
+}
+
+.condition-row .ushur-label {
+  display: none;
+}

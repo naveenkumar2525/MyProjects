@@ -1,0 +1,21 @@
+passString:
+      type: object
+      properties:
+        module:
+          type: string
+        userResponseParagraph:
+          type: boolean
+        userResponseSingleLine:
+          type: boolean
+        fieldValue:
+          type: string
+        validation:
+          type: string
+        validationErrorTxt:
+          type: string
+        autoComplete:
+          type: string
+        helpInfo:
+          type: string
+        iAppProps:
+          $ref: './iAppProps.yaml#/iAppProps'

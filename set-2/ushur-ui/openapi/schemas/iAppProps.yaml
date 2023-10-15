@@ -1,0 +1,19 @@
+iAppProps:
+  type: object
+  properties:
+    centerAlign:
+      type: boolean
+    hideResponse:
+      type: boolean
+    toggleResponse:
+      type: boolean
+    optionalResponse:
+      type: boolean
+    typePassword:
+      type: boolean
+    multiSelectOptions:
+      type: boolean
+    locSearchLabel:
+      type: string
+    enableHTML:
+      type: string

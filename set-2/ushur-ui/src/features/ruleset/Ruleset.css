@@ -1,0 +1,74 @@
+.react-daterange-picker__wrapper {
+  border: none !important;
+  border-radius: 5px;
+  padding: 3px 10px;
+  background: #f4f5f7;
+}
+
+.react-daterange-picker__wrapper input,
+.react-daterange-picker__wrapper span {
+  color: #2f80ed;
+}
+
+.sl-actions .ushur-secondary-btn {
+  background: #f4f5f7;
+  border: none;
+  box-shadow: none;
+}
+
+.sl-refresh button {
+  border: 1px solid #2f80ed;
+}
+.title-h1 {
+  display: flex;
+  align-items: center;
+}
+.ruleset-header {
+  display: flex;
+  align-items: flex-start;
+}
+.ruleset-header .ruleset-edit-dc {
+  width: 50%;
+  min-height: 130px;
+  display: flex;
+  background: #fff;
+  margin-top: 20px;
+  border-radius: 2%;
+}
+.rulesetmetadata {
+  width: 85%;
+}
+.rulesetmetabutton {
+  margin: 10% 5% 0% 10%;
+  display: inline-flex;
+}
+.rulesetmetabutton .bi {
+  margin-left: 5px;
+}
+.rulesetmetabutton .bi-trash,
+.delete-confirmation-modal .ushur-primary-btn {
+  color: #cf4022;
+  background: #fff;
+  border: 1px solid #cf4022;
+}
+.ruleset-header .card-wrap {
+  /* width: 175px; */ /*Keeping it as it might be required later*/
+  margin-right: 20px;
+}
+
+.conditional-section .c-header {
+  background: #d1f3ff;
+  border-radius: 8px 8px 0px 0px;
+  display: inline-block;
+  padding: 8px;
+}
+
+.conditional-section .c-body {
+  background: #f3f3f3;
+  border-radius: 0px 8px 8px 0px;
+  padding: 15px 0px;
+}
+
+.conditional-section.false-section .c-header {
+  background: #ffd5d5;
+}

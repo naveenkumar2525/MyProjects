@@ -1,0 +1,13 @@
+.container :global .bi-chevron-up::before {
+  color: #2f80ed;
+}
+
+.container :global .dropdown-item {
+  color: unset;
+  padding: 0.5rem 1rem;
+}
+
+.container :global .custom-dropdown {
+  background-color: var(--u-color-background-1) !important;
+  border: none !important;
+}

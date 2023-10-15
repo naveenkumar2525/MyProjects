@@ -1,0 +1,48 @@
+.edit-variable-modal .modal-header {
+  border-bottom: none;
+}
+
+.edit-variable-modal .modal-footer {
+  border-top: none;
+}
+
+.edit-variable-modal .modal-dialog .modal-content {
+  max-height: 34rem;
+  min-width: 544px;
+}
+
+.ushur-accordion-wrap .header-btn {
+  left: 30%;
+}
+
+.ushur-label.form-label::first-letter {
+  text-transform: capitalize;
+}
+
+.edit-variable-modal .input-icon svg {
+  width: 12px;
+  margin-right: 0px;
+}
+.edit-variable-modal .ushur-input.form-control:disabled{
+background: #F0F0F0;
+cursor: not-allowed;
+}
+.create-data-modal .input-group .input-group-text {
+  padding: .375rem 0.25rem;
+  background: #ffffff;
+}
+.create-data-modal .input-group .input-group-text svg {
+  width: 0.8125rem;
+}
+.create-data-modal .ushur-field-btn .input-group {
+  max-width: 100%;
+}
+.create-data-modal .input-group .icon-btn .field-action-btn.no-action-btn {
+  padding: 0.125rem;
+}
+.create-data-modal .input-group .icon-btn:last-child .field-action-btn.no-action-btn {
+  padding-right: 0.5rem;
+}
+.create-data-modal input[type="text"]:disabled~.icon-btn button {
+  background: #F0F0F0;
+}

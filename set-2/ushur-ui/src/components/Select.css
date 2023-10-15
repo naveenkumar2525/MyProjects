@@ -1,0 +1,12 @@
+.ushur-select select:focus {
+  outline: none;
+}
+
+.tooltip-icon {
+  color: #2F80ED;
+  cursor: help;
+}
+
+.error-icon {
+  color: #FF4545;
+}

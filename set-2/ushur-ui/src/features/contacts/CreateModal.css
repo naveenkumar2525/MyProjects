@@ -1,0 +1,24 @@
+#drop_zone {
+  border: 2px dashed #ccc;
+  height: 130px;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+}
+
+#tags {
+  border: 1px solid #ccc;
+}
+.contact-width {
+  width: 100% !important;
+}
+
+.ushur-input.error,
+.ushur-input.error:focus:active,
+.ushur-input.error:hover,
+.ushur-text-area.error,
+.ushur-text-area.error:focus:active,
+.ushur-text-area.error:hover {
+  border: 1px solid #ff4545 !important;
+  box-shadow: inset 1px 1px 4px rgb(0 0 0 / 25%);
+}

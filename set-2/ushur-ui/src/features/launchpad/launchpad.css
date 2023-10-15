@@ -1,0 +1,164 @@
+.pillbadge {
+  background: #f4f5f7;
+  border-radius: 88px;
+  padding: 8px 10px 8px 16px;
+  width: fit-content;
+  flex-wrap: wrap;
+}
+
+.font-bold.pr-3 {
+  font-size: 12px;
+  color: #828282;
+}
+
+.empty-data-wrapper {
+  margin: 34px auto;
+  color: #7a7a7a;
+}
+
+.copy-text {
+  color: #332e20;
+}
+
+.edit-footer-actions {
+  background-color: #2f80ed;
+  display: flex;
+  justify-content: space-between;
+  margin-left: -1rem;
+  margin-right: -1rem;
+  margin-bottom: -35px;
+  padding: 8px;
+  align-items: center;
+  position: relative;
+  top: -88px;
+}
+
+.launchpad .nav-tabs {
+  background-color: #ffffff;
+  padding: 0 16px;
+}
+
+.ushur-table-wrap .react-bootstrap-table {
+  margin-left: -1rem;
+  margin-right: -1rem;
+}
+
+.ushur-table-wrap .table-header {
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+.badge-group-outer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 24px;
+  min-width: 71px;
+  background: #F3F3F3;
+  border-radius: 40px;
+  transition: all 300ms ease-in-out;
+}
+
+.badge-title-inner {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  color: #828282;
+  padding: 2px 12px 2px 12px;
+  transition: all 300ms ease-in-out;
+}
+
+.badge-btn-inner {
+  padding-right: 6px !important;
+  color: #828282;
+  font-size: 11px;
+  line-height: 11px;
+  cursor: pointer;
+  display: none;
+  padding-left: 4px;
+  transition: all 300ms ease-in-out;
+}
+
+.badge-group-outer:hover .badge-title-inner {
+  padding: 2px 0px 2px 8px;
+}
+
+.badge-group-outer:hover .badge-btn-inner {
+  display: block;
+}
+
+.badge-btn-inner:hover {
+  color: #2F80ED;
+  padding-left: 2px;
+  padding-right: 6px;
+}
+
+@keyframes inAnimation {
+  0% {
+    height: 0px;
+  }
+
+  60% {
+    height: 20px;
+  }
+
+  100% {
+    height: 50px;
+  }
+}
+
+@keyframes outAnimation {
+  20% {
+    height: 50px;
+  }
+
+  60% {
+    height: 20px;
+  }
+
+  100% {
+    height: 0px
+  }
+}
+
+.react-bs-table-no-data {
+  border-bottom: 0;
+}
+
+.launchpad .tab-pane {
+  width: 100%;
+}
+
+.launchpad .contacts-checked .react-bootstrap-table-pagination {
+  margin-top: 4rem;
+}
+
+.launchpad .ushur-table-wrap .react-bootstrap-table {
+  min-height: inherit;
+}
+
+/* tooltip when recipients count exceeds max number */
+.launch-contacts-total:hover .launch-error-tooltip {
+  visibility: visible;
+}
+
+.launch-error-tooltip {
+  top: -48px;
+  left: -60px;
+  max-width: 155px;
+  height: 40px;
+  text-align: left;
+}
+
+.launch-error-tooltip::after {
+  left: 60px;
+  border-width: 8px;
+}
+
+.launch-contacts-total {
+  position: relative;
+  font-size: unset;
+}

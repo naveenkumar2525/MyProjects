@@ -1,0 +1,45 @@
+.switch_container {
+  height: 28px;
+  color: white;
+  position: relative;
+  border-radius: 16px;
+  padding: 0px 10px;
+  display: grid;
+  align-items: center;
+  cursor: pointer;
+}
+
+.swc_right {
+  width: 74px;
+  background: #19af58;
+  padding-left: 16px;
+  background: linear-gradient(104.17deg, #2bd5c4 0%, #4851f0 100%);
+  box-shadow: inset 1px 2px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 97px;
+}
+
+.swc_left {
+  width: 64px;
+  background: #d9d8d6;
+  padding-left: 32px;
+  background: #d9d8d6;
+  box-shadow: inset 1px 2px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 97px;
+}
+
+.switch_button {
+  width: 18px;
+  height: 18px;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 5px;
+}
+
+.swb_right {
+  right: 10px;
+}
+
+.swb_left {
+  left: 10px;
+}

@@ -1,0 +1,70 @@
+.simulator_top_section {
+  width: 100%;
+  height: 13%;
+  background: #f1f1f2;
+  box-shadow: 0px 0.381773px 0px #b2b2b2;
+  border-radius: 28px 28px 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  overflow-y: visible;
+}
+.simulator_top_firstrow{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.simulator_top_left {
+  width: 15%;
+  font-size: small;
+  margin-left: 7%;
+  margin-top: 1%;
+}
+.simulator_top_center {
+  display: flex;
+  flex-direction: column;
+  font-size: var(--font-size-simulator-sm);
+  align-items: center;
+}
+.simulator_top_center_no{
+  font-size: var(--font-size-simulator-xxs);
+}
+.simulator_top_right {
+  margin-right: 1.5vw;
+  width: 25%;
+  display: flex;
+  justify-content: space-around;
+  gap: 0.5vw;
+  font-size:var(--font-size-simulator-sm);
+}
+.simulator_top_right_icon{
+  height:1.4vh;
+  width:1.4vw;
+}
+.simulator-top-right > svg {
+  width:1.5vw!important;
+  height:1.5vh!important;
+}
+.simulator-top-right .fa-battery-full {
+  color: #a8a8a9;
+}
+
+.simulator_user_icon {
+  width: 3vw !important;
+  height: 3vh !important;
+
+  font-family: "Font Awesome 6 Pro";
+  font-style: normal;
+  font-weight: 900;
+
+  color:  #a2a9b7;
+}
+  
+.simulator_forward_icon {
+  width: 1vw !important;
+  height: 1vh !important;
+  color: #909093 !important;
+}

@@ -1,0 +1,24 @@
+.project-card .dropdown-item {
+  width: inherit;
+  max-width: inherit !important;
+}
+
+.project-card .truncate-title {
+  color: #332E20;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.context-drop-down {
+  padding: 0.5rem;
+  padding-bottom: 0.875rem;
+}
+
+.search-select-placeholder-text {
+  color: #ccc;
+  font-size: 0.875rem;
+}
+
+.project-card {
+  width: var(--project-dropdown-width);
+}

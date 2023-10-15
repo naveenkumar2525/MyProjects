@@ -1,0 +1,37 @@
+.modal {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  left: 100%;
+  padding: 0 15px;
+  width: 520px;
+}
+
+.modal table p {
+  margin-bottom: 0;
+}
+
+.modalHeader {
+  border: 0;
+  padding: 0;
+}
+
+.modalFooter {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.modalFooter > * {
+  margin: 0;
+}
+
+.modalFooter button[aria-label="Cancel"] + div,
+.modalFooter button[aria-label="New datatable property"] {
+  min-width: 0;
+  overflow: hidden;
+}
+
+.modalFooter button span + span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

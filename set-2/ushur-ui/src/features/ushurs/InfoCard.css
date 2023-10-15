@@ -1,0 +1,299 @@
+/* Infocard styles(Workflow , data table cards) */
+.info-card {
+    height: 180px !important;
+    border-radius: 8px;
+    position: relative;
+    cursor: pointer;
+  }
+  .info-card .card-body {
+    padding: 0.5rem 0.5rem !important;
+  }
+  .info-card hr {
+    margin: 0 !important;
+  }
+  .info-card .status-info {
+    height: 40px;
+  }
+  .info-card-title {
+    word-wrap: break-word;
+  }
+  .info-card .card-icon {
+    background: #eef0f4;
+    box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    padding: 10px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+  }
+  .info-card .pill {
+    background: #f4f5f7;
+    border-radius: 52px;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    color: #a7a8a9;
+    display: flex;
+    text-transform: none !important;
+    height: 28px;
+    position: relative;
+  }
+  .number-circles .circle {
+    border: 1px solid #eeeff2;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    color: #eeeff2;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 8px;
+    font-size: 12px;
+  }
+  .info-card .status-text {
+    font-size: 11px;
+    color: #d9d8d6;
+  }
+  .cards-wrapper {
+    margin-left: 6px;
+    margin-right: 6px;
+    grid-gap: 24px;
+    padding-bottom: 16px;
+  }
+  .cards-wrapper .card-item {
+    padding: 0px;
+    width: 320px;
+  }
+  .cards-wrapper .additional-info {
+    display: flex;
+    grid-gap: 8px;
+    flex-wrap: wrap;
+    height: 49%;
+    align-content: flex-start;
+  }
+  .font-weight-bold {
+    font-weight: 600;
+  }
+  .workflow-card .status-text.active, .faq-card .status-text.active {
+    color: #19af58;
+    display: flex;
+    align-items: center;
+}
+.workflow-card.active, .faq-card.active {
+  background-image: url("./images/circle-check.png");
+  background-repeat: no-repeat;
+  background-position: right 0px top 0px;
+  background-size: 145px 145px;
+}
+
+/* Workflow card hover styles */
+.workflow-card:hover .card-icon {
+  background: linear-gradient(134.36deg, #2f80ed 1.09%, #8a69ff 100%);
+}
+.info-card:hover .card-icon path {
+  fill: #ffffff;
+}
+.info-card .Group-button {
+  display: none;
+}
+.info-card:hover .Group-button {
+  display: inline-flex;
+}
+.info-card .group-active-button.Group-button{
+  visibility: visible;
+}
+.info-card:hover button, .info-card:hover .customBtn  {
+  visibility: visible;
+}
+/* Data table card hover styles */
+.data-table-card:hover .card-icon {
+  background: linear-gradient(135deg, #ffdd9b 0.93%, #ff6b00 100%);
+}
+
+/* faq table card hover styles */
+.faq-card:hover .card-icon {
+  background: linear-gradient(135deg, #A5C8FF 1.93%, #00A7E1 100%);
+}
+
+/* Glow effect on card hover */
+:root {
+  --card-height: 204px;
+  --card-width: 395px;
+}
+.info-card {
+  width: var(--card-width);
+  height: var(--card-height);
+}
+.info-card:hover::before,
+.info-card:hover::after {
+  animation: none;
+  opacity: 1;
+}
+.info-card::after {
+  position: absolute;
+  content: "";
+  top: -2.5%;
+  left: -2.5%;
+  right: 0;
+  z-index: -1;
+  height: 105%;
+  width: 105%;
+  margin: 0 auto;
+  transform: scale(0.8);
+  filter: blur(calc(var(--card-height) / 6));
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.active-card::after {
+  position: absolute;
+  content: "";
+  top: -2.5%;
+  left: -2.5%;
+  right: 0;
+  z-index: -1;
+  height: 105%;
+  width: 105%;
+  margin: 0 auto;
+  transform: scale(0.8);
+  filter: blur(calc(var(--card-height) / 6));
+  background-image: linear-gradient(132deg, #2f80ed, #00a7e1 23%, #8a69ff);
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.workflow-card::after {
+  background-image: linear-gradient(132deg, #2f80ed, #00a7e1 23%, #8a69ff);
+}
+.data-table-card::after {
+  background-image: linear-gradient(135deg, #FFDD9B 0.93%, #FF6B00 100%);
+}
+.faq-card::after {
+  background: radial-gradient(100% 100% at 0% 0%, #A5C8FF 0%, #00A7E1 100%)
+}
+
+.inforcardBtn .popover-button-icon {
+  fill: #fff;
+}
+
+
+.cardtitle{
+  width: 180px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+} 
+.info-card .customBtn {
+  background-color:#2F80ED;
+  height: 32px;
+  padding: .2rem 0.2rem;
+  border-radius: .3rem;
+  border-bottom-left-radius: 0px;
+  border-top-left-radius: 0px;
+}
+.active-button {
+  background-color:#2F80ED;
+  height: 32px;
+  padding: .2rem 0.2rem;
+  border-bottom-left-radius: 0px;
+  border-top-left-radius: 0px;
+}
+.active-button .popover-button-icon{
+  fill: #fff;
+} 
+
+
+.customBtn .popover-button-icon{
+  fill: #fff;
+}
+
+.submenu-custom-positioned{
+  background: #FFFFFF;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+  width: 12rem;
+  border-width: 0px;
+  margin-top: 0px;
+  position: absolute;
+  z-index: 6;
+  top: 100%;
+  margin-left: -80px;
+  }
+  .submenu-custom-positioned ul{ 
+  padding-left: 1em;
+  }
+  .submenu-custom-positioned::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 93%;
+    margin-left: -15px;
+    margin-top: -15px;
+    bottom: 100%;
+    width: 0;
+    z-index: 1;
+    height: 0;
+    border-bottom: solid 15px #fff;
+    border-left: solid 11px transparent;
+    border-right: solid 11px transparent;
+  }
+
+
+  .active-card .card-icon {
+    background: linear-gradient(134.36deg, #2f80ed 1.09%, #8a69ff 100%);
+  }
+  .active-card .card-icon path {
+    fill: #ffffff;
+  }
+  .active-card{
+    width: 100% !important;
+    border-radius: 8px;
+    position: relative;
+    cursor: pointer;
+  }
+  .active-card{
+    width: var(--card-width);
+    height: var(--card-height); 
+  }
+  .active-card::after path {
+    animation: none;
+    opacity: 1;
+    position: absolute;
+    content: "";
+    top: -2.5%;
+    left: -2.5%;
+    right: 0;
+    z-index: -1;
+    height: 105%;
+    width: 105%;
+    margin: 0 auto;
+    transform: scale(0.8);
+    filter: blur(calc(var(--card-height) / 6));
+    opacity: 0;
+    transition: opacity 0.5s;
+  }
+
+/* Pill icon tooltip css */
+.pill-tooltip {
+  top: -23px;
+  left: 0px;
+}
+.pill-tooltip::after {
+  left: 13px;
+}
+.pill:hover .pill-tooltip {
+  visibility: visible;
+}
+
+/* info card title tooltip css */
+.card-title-tooltip {
+  top: -14px;
+  left: 64px;
+  font-weight: normal;
+}
+.card-title-tooltip::after {
+  left: 50px;
+  border-width: 7px;
+}
+.cardtitle:hover .card-title-tooltip {
+  visibility: visible;
+}

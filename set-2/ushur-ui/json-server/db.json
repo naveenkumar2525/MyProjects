@@ -1,0 +1,1688 @@
+{
+  "infoQuery": {
+    "campaignList": [
+      {
+        "campaignId": "jil",
+        "templateId": null,
+        "lastEdited": "2022-05-09T17:26:09.791Z",
+        "author": "test_admin@ushurdummy.me",
+        "AppContext": "TestAutomation"
+      },
+      {
+        "campaignId": "Siva123",
+        "templateId": null,
+        "lastEdited": "2022-05-09T17:38:18.064Z",
+        "author": "TEST_ADMIN@USHURDUMMY.ME",
+        "AppContext": "Main",
+        "Languages": "{ }"
+      },
+      {
+        "campaignId": "testtest1",
+        "templateId": null,
+        "lastEdited": "2022-05-10T06:13:31.885Z",
+        "author": "test_admin@ushurdummy.me",
+        "AppContext": "TestAutomation"
+      },
+      {
+        "campaignId": "yuyuyu1",
+        "templateId": null,
+        "lastEdited": "2022-05-10T06:14:44.868Z",
+        "author": "test_admin@ushurdummy.me",
+        "AppContext": "TestAutomation",
+        "Languages": "{ }"
+      },
+      {
+        "campaignId": "Test1test1test1",
+        "templateId": null,
+        "lastEdited": "2022-05-10T08:49:34.789Z",
+        "author": "test_admin@ushurdummy.me",
+        "AppContext": "TestAutomation",
+        "Languages": "{ }"
+      },
+      {
+        "campaignId": "siva2-clone2",
+        "templateId": null,
+        "lastEdited": "2022-05-20T00:06:22.201Z",
+        "author": "TEST_ADMIN@USHURDUMMY.ME",
+        "AppContext": "Main",
+        "Languages": "{ }"
+      }
+    ]
+  },
+  "users": [
+    {
+      "userName": "Siva K",
+      "userPhoneNo": "+14088052692",
+      "userEmail": "",
+      "address": "",
+      "Method": "api"
+    }
+  ],
+  "getAllCampaignAssociations": {
+    "__payload": {
+      "userName": "siva.kondapi@ushur.com"
+    },
+    "__path": "/rest/upnTable/v2/getAllCampaignAssociations",
+    "status": "success",
+    "respCode": 200,
+    "data": [
+      {
+        "jsonData": [
+          {
+            "callbackNum": "+14088052692",
+            "regCmd": "UshurDefault_Hello_671560",
+            "campaignDesc": "",
+            "campaignId": "Hello",
+            "active": "Y"
+          },
+          {
+            "regCmd": "UshurDefault_TestTemplates_450665",
+            "campaignId": "TestTemplates",
+            "active": "N"
+          }
+        ],
+        "virtualPhoneNo": "14157671510"
+      }
+    ],
+    "infoText": "Json data retrieved successfully."
+  },
+  "getShortLinksListRequestUrl": {
+    "batchCount": 1,
+    "totalCount": 1,
+    "lastRecordId": "615f46bc9099ab0d070e2abf",
+    "result": [
+      {
+        "surl": "https://ianightingale420.ushur.dev/u/Dg3K8A",
+        "longUrl": "google.com/abcbljkdfdijkjldfdkjjiejkpackbyxbodefineladndkefde",
+        "createdTimestamp": "Thu Oct 07 19:13:00 UTC 2021",
+        "tags": [
+          "be",
+          "fullstack",
+          "fe"
+        ]
+      },
+      {
+        "assetName": "IMG_20190707_103958.jpg",
+        "isAssetUrl": true,
+        "surl": "https://ianightingale420.ushur.dev/u/Ab5f3",
+        "longUrl": "ushur.com",
+        "createdTimestamp": "Thu Oct 07 19:13:00 UTC 2021",
+        "tags": []
+      }
+    ]
+  },
+  "getSurlVisitCountRequestUrl": {
+    "result": [
+      {
+        "surl": "https://iabluebird.ushur.dev/u/Dg3K8A",
+        "longUrl": "google.com",
+        "visits": 2,
+        "createdTimestamp": "Thu Oct 07 02:40:20 UTC 2021"
+      },
+      {
+        "surl": "https://iabluebird.ushur.dev/u/Ab5f3",
+        "longUrl": "ushur.com",
+        "visits": 4,
+        "createdTimestamp": "Thu Oct 07 02:40:20 UTC 2021"
+      }
+    ]
+  },
+  "createShortLinkRequestUrl": {
+    "apiVer": "2.1",
+    "cmd": "getSurl",
+    "tokenId": "",
+    "longUrl": "",
+    "tags": [],
+    "useExisting": true
+  },
+  "createShortLinkForFileRequestUrl": {},
+  "getVariablesListRequestUrl": {
+    "id": "EVarMap",
+    "content": [
+      {
+        "_id": {
+          "$oid": "619bc3342368c75777ef0801"
+        },
+        "e_PhoneNumber": {
+          "id": "phonenumber",
+          "desc": "enter phonenumber",
+          "prefix": "",
+          "suffix": "",
+          "type": "uid_phoneNo",
+          "sec": "no",
+          "key": "no"
+        },
+        "e_FirstName": {
+          "variableName": "FirstName",
+          "id": "firstName",
+          "desc": "Enter First Name",
+          "prefix": "",
+          "suffix": "",
+          "type": "uid_string",
+          "sec": "no",
+          "key": "no"
+        },
+        "e_LastName": {
+          "variableName": "LastName",
+          "id": "lastName",
+          "desc": "Enter Last Name",
+          "prefix": "",
+          "suffix": "",
+          "type": "uid_string",
+          "sec": "no",
+          "key": "no"
+        },
+        "e_EmailVariable": {
+          "id": "EmailVariable",
+          "desc": "Enter Email id",
+          "prefix": "",
+          "suffix": "",
+          "type": "uid_email",
+          "sec": "no",
+          "key": "no"
+        },
+        "e_Address": {
+          "id": "address",
+          "desc": "address",
+          "prefix": "",
+          "suffix": "",
+          "type": "uid_address",
+          "sec": "no",
+          "key": "no"
+        }
+      }
+    ]
+  },
+  "getVariableTypesRequest": {
+    "id": "UshurDataTypeMap",
+    "content": [
+      {
+        "_id": {
+          "$oid": "6127ead1f0ad0d678dd13829"
+        },
+        "type": "uid_string",
+        "title": "Text",
+        "desc": "Accept any text",
+        "computeOperations": "add",
+        "errorTxt": "Please enter the value again."
+      },
+      {
+        "_id": {
+          "$oid": "6127ead1f0ad0d678dd1382a"
+        },
+        "type": "uid_email",
+        "title": "Email",
+        "desc": "Accept email addresses",
+        "computeOperations": "add",
+        "errorTxt": "Please enter the email in the form of username@domain.xxx"
+      },
+      {
+        "_id": {
+          "$oid": "6127ead1f0ad0d678dd1382b"
+        },
+        "type": "uid_numeric_string",
+        "title": "Numeric",
+        "desc": "Accept numbers only",
+        "computeOperations": "add,subtract,multiply,divide",
+        "errorTxt": "Please enter a numeric text only."
+      },
+      {
+        "_id": {
+          "$oid": "6127ead1f0ad0d678dd1382c"
+        },
+        "type": "uid_address",
+        "title": "Address",
+        "desc": "Accept physical addresses",
+        "computeOperations": "add",
+        "errorTxt": "Please enter your address with the street, city, state and zip code"
+      },
+      {
+        "_id": {
+          "$oid": "6127ead1f0ad0d678dd1382d"
+        },
+        "type": "uid_alpha_numeric_string",
+        "title": "Alphanumeric",
+        "desc": "Accept a continuous combination of numbers and letters",
+        "computeOperations": "add",
+        "errorTxt": "Please enter an alpha-numeric text only."
+      },
+      {
+        "_id": {
+          "$oid": "6127ead1f0ad0d678dd1382e"
+        },
+        "type": "uid_fixed_length_numeric_string",
+        "title": "Fixed Length Numeric",
+        "desc": "Accept only numbers of fixed length",
+        "attributes": [
+          {
+            "value": "length"
+          }
+        ],
+        "computeOperations": "add,subtract,multiply,divide",
+        "errorTxt": "Please enter a numeric text of length $length",
+        "promptTxt": "Please enter a numeric text of length $length"
+      },
+      {
+        "_id": {
+          "$oid": "6127ead1f0ad0d678dd1382f"
+        },
+        "type": "uid_fixed_length_string",
+        "title": "Fixed Length Text",
+        "desc": "Accept any text of fixed length",
+        "attributes": [
+          {
+            "value": "length"
+          }
+        ],
+        "computeOperations": "add",
+        "errorTxt": "Please enter a text of length $length",
+        "promptTxt": "Please enter a text of length $length"
+      },
+      {
+        "_id": {
+          "$oid": "6127ead1f0ad0d678dd13830"
+        },
+        "type": "uid_fixed_length_alpha_numeric_string",
+        "title": "Fixed Length Alphanumeric",
+        "desc": "Accept only numbers and letters of fixed length",
+        "attributes": [
+          {
+            "value": "length"
+          }
+        ],
+        "computeOperations": "add",
+        "errorTxt": "Please enter an alpha-numeric text of length $length",
+        "promptTxt": "Please enter an alpha-numeric text of length $length"
+      },
+      {
+        "_id": {
+          "$oid": "6127ead1f0ad0d678dd13831"
+        },
+        "type": "uid_date",
+        "title": "Date",
+        "desc": "Accept dates",
+        "errorTxt": "Please enter the date in the form of $format",
+        "ops": "getMonth(),getDate(),getYear(),getDayOfWeek()",
+        "computeOperations": "add,subtract",
+        "attributes": [
+          {
+            "value": "format",
+            "desc": "Allowable Date Formats",
+            "options": [
+              "MM/DD/YY",
+              "MM-DD-YY",
+              "MM.DD.YY",
+              "MM DD YY",
+              "YY/MM/DD",
+              "YY-MM-DD",
+              "YY.MM.DD",
+              "YY MM DD",
+              "MM/DD/YYYY",
+              "MM-DD-YYYY",
+              "MM.DD.YYYY",
+              "MM DD YYYY",
+              "YYYY-MM-DD",
+              "YYYY.MM.DD",
+              "YYYY MM DD",
+              "YYYY/MM/DD",
+              "M/DD/YYYY",
+              "MM/D/YYYY",
+              "M-DD-YYYY",
+              "MM-D-YYYY",
+              "M.DD.YYYY",
+              "MM.D.YYYY",
+              "M DD YYYY",
+              "MM D YYYY",
+              "YYYY/DD/M",
+              "YYYY/D/MM",
+              "YYYY-DD-M",
+              "YYYY-D-MM",
+              "YYYY.DD.M",
+              "YYYY.D.MM",
+              "YYYY DD M",
+              "YYYY D MM"
+            ]
+          }
+        ]
+      },
+      {
+        "_id": {
+          "$oid": "6127ead1f0ad0d678dd13832"
+        },
+        "type": "uid_phoneNo",
+        "title": "Phone Number",
+        "desc": "Accept phone number",
+        "computeOperations": "add",
+        "errorTxt": "Please enter a valid Telephone number."
+      },
+      {
+        "_id": {
+          "$oid": "6127ead1f0ad0d678dd13833"
+        },
+        "type": "uid_range_float",
+        "title": "Decimal Range",
+        "desc": "Accept a decimal number within a number range",
+        "attributes": [
+          {
+            "value": "LowerBound",
+            "desc": "Lowest allowed value"
+          },
+          {
+            "value": "UpperBound",
+            "desc": "Highest allowed value"
+          }
+        ],
+        "computeOperations": "add,subtract,multiply,divide",
+        "errorTxt": "Please enter a decimal number in the range between $LowerBound and $UpperBound",
+        "promptTxt": "Please respond with a number between $LowerBound (lowest) and $UpperBound (highest)."
+      },
+      {
+        "_id": {
+          "$oid": "6127ead1f0ad0d678dd13834"
+        },
+        "type": "uid_range_int",
+        "title": "Numeric Range",
+        "desc": "Accept a whole number within a number range",
+        "attributes": [
+          {
+            "value": "LowerBound",
+            "desc": "Lowest allowed value"
+          },
+          {
+            "value": "UpperBound",
+            "desc": "Highest allowed value"
+          }
+        ],
+        "computeOperations": "add,subtract,multiply,divide",
+        "errorTxt": "Please enter an integer number in the range between $LowerBound and $UpperBound",
+        "promptTxt": "Please respond with a number between $LowerBound (lowest) and $UpperBound (highest)."
+      },
+      {
+        "_id": {
+          "$oid": "6127ead1f0ad0d678dd13835"
+        },
+        "type": "uid_sendPhoneNo",
+        "desc": "The phone number to which the trigger is scheduling the Ushur",
+        "computeOperations": "add",
+        "errorTxt": "Please enter a valid Telephone number.",
+        "triggerFeature": true
+      },
+      {
+        "_id": {
+          "$oid": "6127ead1f0ad0d678dd13836"
+        },
+        "type": "uid_senddate",
+        "desc": "The date and time to schedule the Ushur as part of trigger. The format is: mm/dd/yyyy hh:mm am/pm",
+        "ops": "getMonth(),getDate(),getYear(),getHours(),getMinutes()",
+        "computeOperations": "add,subtract",
+        "errorTxt": "The format expected is: mm/dd/yyyy hh:mm am/pm",
+        "triggerFeature": true
+      },
+      {
+        "_id": {
+          "$oid": "6127ead1f0ad0d678dd13837"
+        },
+        "type": "uid_sendPrimaryKeyId",
+        "desc": "The primary key identifier for the remote enterprise",
+        "computeOperations": "add",
+        "errorTxt": "Should be a globally unique identifier",
+        "triggerFeature": true
+      },
+      {
+        "_id": {
+          "$oid": "6127ead1f0ad0d678dd13838"
+        },
+        "type": "uid_creditcardinfo",
+        "title": "Credit Card",
+        "desc": "Accept credit card information",
+        "computeOperations": "add",
+        "errorTxt": "Please enter a valid credit card account number, expiration date and cvv"
+      },
+      {
+        "_id": {
+          "$oid": "6127ead1f0ad0d678dd13839"
+        },
+        "type": "uid_ushurname",
+        "desc": "Name of the Ushur",
+        "computeOperations": "add",
+        "errorTxt": "Typical Ushur Name which means without space and other special characters.",
+        "triggerFeature": true
+      },
+      {
+        "_id": {
+          "$oid": "6127ead1f0ad0d678dd1383a"
+        },
+        "type": "uid_location",
+        "title": "Location",
+        "desc": "Location Info with latitude and longitude",
+        "computeOperations": "add",
+        "errorTxt": "Please select proper location"
+      },
+      {
+        "_id": {
+          "$oid": "6127ead1f0ad0d678dd1383b"
+        },
+        "type": "uid_range_date",
+        "title": "Date Range",
+        "desc": "Accept a date within a range of dates",
+        "ops": "getMonth(),getDate(),getYear()",
+        "computeOperations": "add,subtract",
+        "attributes": [
+          {
+            "value": "LowerBound",
+            "desc": "Lowest allowed date"
+          },
+          {
+            "value": "UpperBound",
+            "desc": "Highest allowed date"
+          },
+          {
+            "value": "format",
+            "desc": "Allowable Date Formats",
+            "options": [
+              "MM/DD/YY",
+              "MM-DD-YY",
+              "MM.DD.YY",
+              "MM DD YY",
+              "YY/MM/DD",
+              "YY-MM-DD",
+              "YY.MM.DD",
+              "YY MM DD",
+              "MM/DD/YYYY",
+              "MM-DD-YYYY",
+              "MM.DD.YYYY",
+              "MM DD YYYY",
+              "YYYY-MM-DD",
+              "YYYY.MM.DD",
+              "YYYY MM DD",
+              "YYYY/MM/DD",
+              "M/DD/YYYY",
+              "MM/D/YYYY",
+              "M-DD-YYYY",
+              "MM-D-YYYY",
+              "M.DD.YYYY",
+              "MM.D.YYYY",
+              "M DD YYYY",
+              "MM D YYYY",
+              "YYYY/DD/M",
+              "YYYY/D/MM",
+              "YYYY-DD-M",
+              "YYYY-D-MM",
+              "YYYY.DD.M",
+              "YYYY.D.MM",
+              "YYYY DD M",
+              "YYYY D MM"
+            ]
+          }
+        ],
+        "errorTxt": "Please enter a date in the range between $LowerBound and $UpperBound in the format $format",
+        "promptTxt": "Please respond with a date between $LowerBound (lowest) and $UpperBound (highest)."
+      },
+      {
+        "_id": {
+          "$oid": "6127ead1f0ad0d678dd1383c"
+        },
+        "type": "uid_timestamp",
+        "title": "Timestamp",
+        "desc": "Accept formatted time timestamp",
+        "computeOperations": "add,subtract,tmz",
+        "errorTxt": "Please enter the timestamp in $format format again.",
+        "ops": "getMonth(),getDate(),getYear(),getHours(),getMinutes(),getDayOfWeek()",
+        "attributes": [
+          {
+            "value": "Zone",
+            "desc": "TimeZone"
+          },
+          {
+            "value": "format",
+            "desc": "Allowable Date Formats",
+            "options": [
+              "YYYY-MM-DDTHH:mm:ss.SSSZ",
+              "YYYY-MM-DDTHH:mm:ssZ",
+              "YYYY-MM-DDTHH:mmZ",
+              "MM/DD/YYYY hh:mm:ss A",
+              "MM/DD/YYYY hh:mm A",
+              "MM/DD/YYYY h:m A",
+              "MM/DD/YYYY HH:mm:ss",
+              "MM/DD/YYYY HH:mm",
+              "MM/DD/YYYY H:m",
+              "YYYY/MM/DD hh:mm:ss A",
+              "YYYY/MM/DD hh:mm A",
+              "YYYY/MM/DD h:m A",
+              "YYYY/MM/DD HH:mm:ss",
+              "YYYY/MM/DD HH:mm",
+              "YYYY/MM/DD H:m",
+              "DD/MM/YYYY hh:mm:ss A",
+              "DD/MM/YYYY hh:mm A",
+              "DD/MM/YYYY h:m A",
+              "DD/MM/YYYY HH:mm:ss",
+              "DD/MM/YYYY HH:mm",
+              "DD/MM/YYYY H:m"
+            ]
+          }
+        ]
+      },
+      {
+        "_id": {
+          "$oid": "6127ead1f0ad0d678dd1383d"
+        },
+        "type": "uid_string_list",
+        "title": "List",
+        "desc": "Accept a comma separated list of text",
+        "computeOperations": "add",
+        "ops": "getLength(),getItem()",
+        "errorTxt": "Please enter the value again."
+      },
+      {
+        "_id": {
+          "$oid": "6127ead1f0ad0d678dd1383e"
+        },
+        "type": "uid_assetId",
+        "title": "Asset Data",
+        "desc": "Asset data",
+        "computeOperations": "add",
+        "ops": "getBase64()",
+        "errorTxt": "Please enter the value again."
+      },
+      {
+        "_id": {
+          "$oid": "6127ead1f0ad0d678dd1383f"
+        },
+        "type": "uid_triggersend",
+        "desc": "A string boolean if this is a trigger or not",
+        "errorTxt": "Only yes or no is applicable value.",
+        "computeOperations": "add",
+        "triggerFeature": true
+      },
+      {
+        "_id": {
+          "$oid": "6127ead1f0ad0d678dd13840"
+        },
+        "type": "uid_sendTimezone",
+        "desc": "The timezone of the user for DND and scheduling. Accept formats EST or Eastern Standard Time or America/New_York",
+        "computeOperations": "add",
+        "errorTxt": "Please enter a valid Timezone.",
+        "triggerFeature": true
+      },
+      {
+        "_id": {
+          "$oid": "6127ead1f0ad0d678dd13841"
+        },
+        "type": "uid_sendEmailId",
+        "desc": "The Email ID which can be used in ushur",
+        "computeOperations": "add",
+        "errorTxt": "Please enter a valid Email ID",
+        "triggerFeature": true
+      }
+    ]
+  },
+  "createVariableRequestUrl": {
+    "status": "success",
+    "respCode": 200,
+    "respText": "Uneda content update successful"
+  },
+  "getKeysListRequest": {
+    "id": "ReqKeys",
+    "content": [
+      {
+        "_id": {
+          "$oid": "61b22e562368c75777ef0af0"
+        },
+        "OR": [
+          {
+            "var": "lastName",
+            "uvar": "e_LastName"
+          }
+        ]
+      }
+    ]
+  },
+  "updateKeyRequestUrl": {
+    "status": "success",
+    "respCode": 200,
+    "respText": "Uneda content update successful"
+  },
+  "editVariableRequestUrl": {
+    "status": "success",
+    "respCode": 200,
+    "respText": "Uneda content update successful"
+  },
+  "getLogsHistoryRequestUrl": {
+    "data": [
+      {
+        "context": "Uneda_Ftp_Push",
+        "message": "Uploaded  file with name : JSON-Metadata-Template_1635800369582.json",
+        "result": "successful",
+        "timestamp": {
+          "$date": "2021-11-01T20:59:29.583Z"
+        }
+      },
+      {
+        "context": "Uneda_Ftp_Push",
+        "message": "Copied files: EDataJSON-Metadata-Template_1635800369582.json to Uneda External Folder for id radheshyammadirajuushurcom59447",
+        "result": "successful",
+        "timestamp": {
+          "$date": "2021-11-01T20:59:29.586Z"
+        }
+      },
+      {
+        "context": "Uneda_Ftp_Push",
+        "message": "Uploaded  file with name : JSON-Metadata-Template_1635800380077.json",
+        "result": "successful",
+        "timestamp": {
+          "$date": "2021-11-01T20:59:40.078Z"
+        }
+      },
+      {
+        "context": "Uneda_Ftp_Push",
+        "message": "Copied files: EDataJSON-Metadata-Template_1635800380077.json to Uneda External Folder for id radheshyammadirajuushurcom59447",
+        "result": "successful",
+        "timestamp": {
+          "$date": "2021-11-01T20:59:40.079Z"
+        }
+      },
+      {
+        "context": "Uneda_Parser",
+        "message": "Trigger Feature is InActive",
+        "result": "successful",
+        "timestamp": {
+          "$date": "2021-11-01T20:59:40.494Z"
+        }
+      },
+      {
+        "context": "Uneda_Parser",
+        "message": "Successfully Parsed json file: EDataJSON-Metadata-Template_1635800369582.json Number of records : 1",
+        "result": "successful",
+        "timestamp": {
+          "$date": "2021-11-01T20:59:40.495Z"
+        }
+      },
+      {
+        "context": "Uneda_Parser",
+        "message": "Trigger Feature is InActive",
+        "result": "successful",
+        "timestamp": {
+          "$date": "2021-11-01T20:59:40.497Z"
+        }
+      },
+      {
+        "context": "Uneda_Parser",
+        "message": "Successfully Parsed json file: EDataJSON-Metadata-Template_1635800380077.json Number of records : 1",
+        "result": "successful",
+        "timestamp": {
+          "$date": "2021-11-01T20:59:40.498Z"
+        }
+      },
+      {
+        "context": "Uneda_Parser",
+        "message": "Parsed  2 json Files from External folder and moved 2 Files to Internal folder.",
+        "result": "successful",
+        "timestamp": {
+          "$date": "2021-11-01T20:59:40.503Z"
+        }
+      },
+      {
+        "context": "Uneda_Ftp_Push",
+        "message": "Uploaded  file with name : JSON-Metadata-Template_1635800401610.json",
+        "result": "successful",
+        "timestamp": {
+          "$date": "2021-11-01T21:00:01.611Z"
+        }
+      },
+      {
+        "context": "Uneda_Ftp_Push",
+        "message": "Copied files: EDataJSON-Metadata-Template_1635800401610.json to Uneda External Folder for id radheshyammadirajuushurcom59447",
+        "result": "successful",
+        "timestamp": {
+          "$date": "2021-11-01T21:00:01.612Z"
+        }
+      },
+      {
+        "context": "Uneda_Import",
+        "message": "Imported File EDataJSON-Metadata-Template_1635800369582.json into database. Number of new records imported : 1. Total Number of records after import : 1 ",
+        "result": "successful",
+        "timestamp": {
+          "$date": "2021-11-01T21:00:04.138Z"
+        }
+      },
+      {
+        "context": "Uneda_Import",
+        "message": "Imported File EDataJSON-Metadata-Template_1635800380077.json into database. Number of new records imported : 0. Total Number of records after import : 1 ",
+        "result": "successful",
+        "timestamp": {
+          "$date": "2021-11-01T21:00:04.459Z"
+        }
+      },
+      {
+        "context": "Uneda_Parser",
+        "message": "Trigger Feature is InActive",
+        "result": "successful",
+        "timestamp": {
+          "$date": "2021-11-01T21:00:06.535Z"
+        }
+      },
+      {
+        "context": "Uneda_Parser",
+        "message": "Successfully Parsed json file: EDataJSON-Metadata-Template_1635800401610.json Number of records : 1",
+        "result": "successful",
+        "timestamp": {
+          "$date": "2021-11-01T21:00:06.535Z"
+        }
+      },
+      {
+        "context": "Uneda_Parser",
+        "message": "Parsed  1 json Files from External folder and moved 1 Files to Internal folder.",
+        "result": "successful",
+        "timestamp": {
+          "$date": "2021-11-01T21:00:06.538Z"
+        }
+      },
+      {
+        "context": "Uneda_Ftp_Push",
+        "message": "Uploaded  file with name : JSON-Metadata-Template_1635800430682.json",
+        "result": "successful",
+        "timestamp": {
+          "$date": "2021-11-01T21:00:30.682Z"
+        }
+      },
+      {
+        "context": "Uneda_Ftp_Push",
+        "message": "Copied files: EDataJSON-Metadata-Template_1635800430682.json to Uneda External Folder for id radheshyammadirajuushurcom59447",
+        "result": "successful",
+        "timestamp": {
+          "$date": "2021-11-01T21:00:30.682Z"
+        }
+      },
+      {
+        "context": "Uneda_Parser",
+        "message": "Trigger Feature is InActive",
+        "result": "successful",
+        "timestamp": {
+          "$date": "2021-11-01T21:00:32.573Z"
+        }
+      },
+      {
+        "context": "Uneda_Parser",
+        "message": "Successfully Parsed json file: EDataJSON-Metadata-Template_1635800430682.json Number of records : 1",
+        "result": "successful",
+        "timestamp": {
+          "$date": "2021-11-01T21:00:32.574Z"
+        }
+      },
+      {
+        "context": "Uneda_Parser",
+        "message": "Parsed  1 json Files from External folder and moved 1 Files to Internal folder.",
+        "result": "successful",
+        "timestamp": {
+          "$date": "2021-11-01T21:00:32.577Z"
+        }
+      },
+      {
+        "context": "Uneda_Import",
+        "message": "Imported File EDataJSON-Metadata-Template_1635800430682.json into database. Number of new records imported : 0. Total Number of records after import : 1 ",
+        "result": "successful",
+        "timestamp": {
+          "$date": "2021-11-01T21:01:08.856Z"
+        }
+      },
+      {
+        "context": "Uneda_Import",
+        "message": "Imported File EDataJSON-Metadata-Template_1635800401610.json into database. Number of new records imported : 0. Total Number of records after import : 1 ",
+        "result": "successful",
+        "timestamp": {
+          "$date": "2021-11-01T21:01:08.542Z"
+        }
+      }
+    ],
+    "totalRecords": 23,
+    "lastRecordId": "61805594bce3b77e58f0b242"
+  },
+  "integrationsList": [
+    {
+      "integrationId": "1001",
+      "displayName": "Dynamics",
+      "logo": "https://bluebird.ushur.dev/uintgw/static/salesforce.svg",
+      "connected": false
+    },
+    {
+      "integrationId": "1002",
+      "displayName": "ServiceNow",
+      "logo": "https://bluebird.ushur.dev/uintgw/static/servicenow.svg",
+      "connected": false
+    },
+    {
+      "integrationId": "1003",
+      "displayName": "Atlassian",
+      "logo": "https://bluebird.ushur.dev/uintgw/static/atlassian.svg",
+      "connected": false
+    },
+    {
+      "integrationId": "2480d2f7-02f3-4f99-b63e-883a58e916ae",
+      "displayName": "Salesforce (Tray)",
+      "logo": "https://bluebird.ushur.dev/uintgw/static/salesforce.svg",
+      "connected": false
+    },
+    {
+      "integrationId": "f16e07f4-15d9-4e95-9243-87ecf04627e4",
+      "displayName": "Dynamics (Tray) ",
+      "logo": "https://bluebird.ushur.dev/uintgw/static/dynamics.svg",
+      "connected": true
+    }
+  ],
+  "integrations_1001": [
+    {
+      "fieldId": "clientId",
+      "fieldDisplay": "Client ID",
+      "mandatory": true
+    },
+    {
+      "fieldId": "clientSecret",
+      "fieldDisplay": "Client Secret",
+      "mandatory": true
+    }
+  ],
+  "integrations_1002": [
+    {
+      "fieldId": "clientId",
+      "fieldDisplay": "Client ID",
+      "mandatory": true
+    },
+    {
+      "fieldId": "clientSecret",
+      "fieldDisplay": "Client Secret",
+      "mandatory": true
+    },
+    {
+      "fieldId": "instance",
+      "fieldDisplay": "Instance",
+      "mandatory": true
+    }
+  ],
+  "integrations_f16e07f4-15d9-4e95-9243-87ecf04627e4": [
+    {
+      "integrationId": "f16e07f4-15d9-4e95-9243-87ecf04627e4",
+      "displayName": "Dynamics (Tray) ",
+      "logo": "https://bluebird.ushur.dev/uintgw/static/dynamics.svg",
+      "connected": true
+    }
+  ],
+  "getSettingsUrl": {
+    "fields": "InvisiblePortalHostname",
+    "tokenId": ""
+  },
+  "getDataSecurityRuleUrl": {
+    "status": "success",
+    "respCode": 200,
+    "data": {
+      "GlobalDataSecurity": "Yes"
+    },
+    "infoText": "Json data retrieved successfully."
+  },
+  "getMetaDataUrl": {
+    "data": [
+      {
+        "EmailVariable": "susannewalker@zillatide.com",
+        "firstName": "Nicholson",
+        "lastName": "Weiss",
+        "phonenumber": 5539492623,
+        "address": "729 Gatling Place, Oley, Idaho, 3777",
+        "ushurRecordId": "619b16729bf303cb703bdb2c"
+      },
+      {
+        "EmailVariable": "weisswalker@zillatide.com",
+        "firstName": "Gibson",
+        "lastName": "Tammi",
+        "phonenumber": 9433221036,
+        "address": "391 Story Court, Fresno, South Carolina, 4066",
+        "ushurRecordId": "619b16720d595470371360cc"
+      },
+      {
+        "EmailVariable": "tammiwalker@zillatide.com",
+        "firstName": "Dolores",
+        "lastName": "Hines",
+        "phonenumber": 8598696449,
+        "address": "926 Jackson Street, Gadsden, Alabama, 3385",
+        "ushurRecordId": "619b16721377f87b8b29d1a9"
+      },
+      {
+        "EmailVariable": "hineswalker@zillatide.com",
+        "firstName": "Daphne",
+        "lastName": "Suzette",
+        "phonenumber": 4104037101,
+        "address": "269 Forbell Street, Hickory, Vermont, 2622",
+        "ushurRecordId": "619b1672ecf4ae2803726bbe"
+      },
+      {
+        "EmailVariable": "suzettewalker@zillatide.com",
+        "firstName": "Butler",
+        "lastName": "Barnett",
+        "phonenumber": 7351265840,
+        "address": "880 Grove Street, Bascom, New York, 6286",
+        "ushurRecordId": "619b16729c4e10be9f2c9708"
+      },
+      {
+        "EmailVariable": "barnettwalker@zillatide.com",
+        "firstName": "Whitaker",
+        "lastName": "Pamela",
+        "phonenumber": 5831530248,
+        "address": "778 Fuller Place, Croom, Minnesota, 4954",
+        "ushurRecordId": "619b1672d7636e5c50552135"
+      },
+      {
+        "EmailVariable": "pamelawalker@zillatide.com",
+        "firstName": "Decker",
+        "lastName": "Toni",
+        "phonenumber": 5262210609,
+        "address": "853 Colin Place, Cobbtown, Puerto Rico, 7881",
+        "ushurRecordId": "619b16729331fa5d9e4e8a2b"
+      },
+      {
+        "EmailVariable": "toniwalker@zillatide.com",
+        "firstName": "Marissa",
+        "lastName": "Doreen",
+        "phonenumber": 3267141014,
+        "address": "742 Middleton Street, Clay, Virginia, 5407",
+        "ushurRecordId": "619b1672998ab8cb21ef75f4"
+      },
+      {
+        "EmailVariable": "doreenwalker@zillatide.com",
+        "firstName": "Lena",
+        "lastName": "Elizabeth",
+        "phonenumber": 8907812470,
+        "address": "466 Gates Avenue, Shaft, South Dakota, 7586",
+        "ushurRecordId": "619b1672e93474b107f4ee16"
+      },
+      {
+        "EmailVariable": "elizabethwalker@zillatide.com",
+        "firstName": "Lidia",
+        "lastName": "Jordan",
+        "phonenumber": 6317155259,
+        "address": "752 Schaefer Street, Succasunna, Tennessee, 6717",
+        "ushurRecordId": "619b1672ed8324531667d4a9"
+      },
+      {
+        "EmailVariable": "jordanwalker@zillatide.com",
+        "firstName": "Santos",
+        "lastName": "Parks",
+        "phonenumber": 9615889129,
+        "address": "187 Joval Court, Fontanelle, New Mexico, 1822",
+        "ushurRecordId": "619b1672a254a5379db6dce7"
+      }
+    ],
+    "counts": 11,
+    "totalRecords": 11,
+    "lastRecordId": "619b1672a254a5379db6dce7"
+  },
+  "addMetaDataUrl": {
+    "success": true,
+    "respText": "Uneda Data update successful",
+    "respCount": 1
+  },
+  "deleteMetaDataUrl": {
+    "success": true,
+    "respText": "Uneda Data deletion successful",
+    "respCount": 1
+  },
+  "bulkUploadDataUrl": {
+    "resp": "<html><head></head><body>File JSON-Metadata-Template (5).json uploaded successfully.<br><a href='UploadDownloadFileServlet?fileName=JSON-Metadata-Template (5).json'>Download JSON-Metadata-Template (5).json</a></body></html>"
+  },
+  "workflows": {
+    "status": "success",
+    "respCode": 200,
+    "data": [
+      {
+        "workflowId": null,
+        "ushurName": "AddressUpdateSubmission",
+        "friendlyName": "Quote Request",
+        "base64Logo": "data:image/png;base64,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",
+        "logo": "76d9957b-9f06-4c74-a969-8dd61a831100",
+        "logoUrl": "https://ip.ushur.dev/rest/asset/v2/sfdownload/76d9957b-9f06-4c74-a969-8dd61a831100",
+        "description": "Submit census file and additional information such as effective date to receive your quote. ",
+        "showDescription": "false",
+        "showActiveHistory": null,
+        "showAccountInfo": null,
+        "customWorkflow": "false",
+        "secondary": {
+          "ushurName": "AddressUpdateTransformation",
+          "friendlyName": "Upload Histroy",
+          "numRecords": 15,
+          "useVariables": true,
+          "variables": [
+            {
+              "varName": "incomingtime",
+              "varFriendlyName": "date",
+              "authRoles": [
+                "enduser",
+                "businessuser"
+              ]
+            },
+            {
+              "varName": "portalUser",
+              "varFriendlyName": "Submitted By",
+              "authRoles": [
+                "enduser",
+                "businessuser"
+              ]
+            },
+            {
+              "varName": "endUserStatus",
+              "varFriendlyName": "Status",
+              "authRoles": [
+                "businessuser"
+              ]
+            },
+            {
+              "varName": "incomingfile",
+              "varFriendlyName": "File",
+              "authRoles": [
+                "businessuser"
+              ]
+            }
+          ],
+          "enabled": true,
+          "secondaryEmpty": false
+        },
+        "authRoles": null
+      },
+      {
+        "workflowId": null,
+        "ushurName": "submission_ushur",
+        "friendlyName": "Enrollment ",
+        "base64Logo": "data:image/png;base64,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",
+        "logo": "f745f19f-3c9e-4973-b5fc-37c31cbc82e5",
+        "logoUrl": "https://ip.ushur.dev/rest/asset/v2/sfdownload/f745f19f-3c9e-4973-b5fc-37c31cbc82e5",
+        "description": null,
+        "showDescription": "false",
+        "showActiveHistory": null,
+        "showAccountInfo": null,
+        "customWorkflow": "false",
+        "secondary": {
+          "ushurName": "",
+          "friendlyName": "",
+          "numRecords": 0,
+          "useVariables": false,
+          "variables": [],
+          "enabled": true,
+          "secondaryEmpty": false
+        },
+        "authRoles": null
+      },
+      {
+        "workflowId": null,
+        "ushurName": "sample1_3",
+        "friendlyName": "Available Plans",
+        "base64Logo": "data:image/png;base64,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",
+        "logo": "e5550ee1-4f3d-4a25-bf30-6ac4f29db6c8",
+        "logoUrl": "https://ip.ushur.dev/rest/asset/v2/sfdownload/e5550ee1-4f3d-4a25-bf30-6ac4f29db6c8",
+        "description": "Submit your monthly estimate documentation ",
+        "showDescription": "false",
+        "showActiveHistory": null,
+        "showAccountInfo": null,
+        "customWorkflow": "false",
+        "secondary": {
+          "ushurName": "sample1_3",
+          "friendlyName": "Submission History ",
+          "numRecords": 0,
+          "useVariables": true,
+          "variables": [
+            {
+              "varName": "time2",
+              "varFriendlyName": "Date ",
+              "authRoles": [
+                "enduser",
+                "businessuser"
+              ]
+            },
+            {
+              "varName": "Launchbyuser",
+              "varFriendlyName": "Name",
+              "authRoles": [
+                "enduser",
+                "businessuser"
+              ]
+            },
+            {
+              "varName": "status",
+              "varFriendlyName": "Status",
+              "authRoles": [
+                "enduser",
+                "businessuser"
+              ]
+            },
+            {
+              "varName": "file",
+              "varFriendlyName": "Download",
+              "authRoles": [
+                "enduser",
+                "businessuser"
+              ]
+            }
+          ],
+          "enabled": true,
+          "secondaryEmpty": false
+        },
+        "authRoles": null
+      },
+      {
+        "workflowId": null,
+        "ushurName": "sample1_3",
+        "friendlyName": "test-vikas-workflow",
+        "base64Logo": null,
+        "logo": null,
+        "logoUrl": null,
+        "description": "des",
+        "showDescription": "false",
+        "showActiveHistory": null,
+        "showAccountInfo": null,
+        "customWorkflow": "false",
+        "secondary": {
+          "ushurName": "sample1_3",
+          "friendlyName": "Secondary Workflow Name",
+          "numRecords": 15,
+          "useVariables": true,
+          "variables": [
+            {
+              "varName": "id",
+              "varFriendlyName": "CFN-ID",
+              "authRoles": [
+                "630c72c125c3d307ce8118cf"
+              ]
+            },
+            {
+              "varName": "token",
+              "varFriendlyName": "CFN-TOKEN",
+              "authRoles": [
+                "630c72c125c3d307ce8118d0"
+              ]
+            },
+            {
+              "varName": "status",
+              "varFriendlyName": "CFN-STATUS",
+              "authRoles": [
+                "630c72c125c3d307ce8118cf",
+                "630c75a525c3d307ce8118d1"
+              ]
+            },
+            {
+              "varName": "launchdate",
+              "varFriendlyName": "CFN-DATE",
+              "authRoles": [
+                "630c72c125c3d307ce8118cf",
+                "630c75a525c3d307ce8118d1",
+                "630c72c125c3d307ce8118d0",
+                "630c77b025c3d307ce8118d4"
+              ]
+            }
+          ],
+          "enabled": true,
+          "secondaryEmpty": false
+        },
+        "authRoles": [
+          "630c72c125c3d307ce8118cf",
+          "630c75a525c3d307ce8118d1",
+          "630c72c125c3d307ce8118d0",
+          "630c77b025c3d307ce8118d4"
+        ]
+      },
+      {
+        "workflowId": null,
+        "ushurName": "sample1_3",
+        "friendlyName": "testing123",
+        "base64Logo": null,
+        "logo": null,
+        "logoUrl": null,
+        "description": "dddd",
+        "showDescription": "false",
+        "showActiveHistory": null,
+        "showAccountInfo": null,
+        "customWorkflow": "false",
+        "secondary": {
+          "ushurName": "sample1_3",
+          "friendlyName": "",
+          "numRecords": 15,
+          "useVariables": true,
+          "variables": [
+            {
+              "varName": "id",
+              "varFriendlyName": "cfn-id",
+              "authRoles": [
+                "630c72c125c3d307ce8118cf",
+                "630c75a525c3d307ce8118d1"
+              ]
+            }
+          ],
+          "enabled": true,
+          "secondaryEmpty": false
+        },
+        "authRoles": [
+          "630c72c125c3d307ce8118cf",
+          "630c75a525c3d307ce8118d1",
+          "630c72c125c3d307ce8118d0",
+          "630c77b025c3d307ce8118d4"
+        ]
+      }
+    ],
+    "infoText": "Hub portal workflows retrieved successfully."
+  },
+  "accessRole": {
+    "status": "success",
+    "respCode": 200,
+    "data": [
+      {
+        "roleId": "630c72c125c3d307ce8118cf",
+        "roleType": "Enterprise-internal",
+        "roleName": "internal1",
+        "status": "inActive"
+      },
+      {
+        "roleId": "630c72c125c3d307ce8118d0",
+        "roleType": "Enduser-external",
+        "roleName": "external1",
+        "status": "Active"
+      },
+      {
+        "roleId": "630c75a525c3d307ce8118d1",
+        "roleType": "Enterprise-internal",
+        "roleName": "internal2",
+        "status": "Active"
+      },
+      {
+        "roleId": "630c77b025c3d307ce8118d4",
+        "roleType": "Enduser-external",
+        "roleName": "external2",
+        "status": "Active"
+      }
+    ],
+    "infoText": "Hub portal access roles retrieved successfully."
+  },
+  "accessRoles": {
+    "updateAccessRoles": [],
+    "addAccessRoles": [
+      {
+        "roleType": "Enterprise-internal",
+        "roleName": "adfadf",
+        "status": "inActive",
+        "disabled": true,
+        "deleted": false,
+        "emptyName": false
+      }
+    ],
+    "deleteAccessRoles": []
+  },
+  "hubSettings": {
+    "status": "success",
+    "respCode": 200,
+    "data": [
+      {
+        "id": "62889e8c25c3d364700dc785",
+        "name": "Circle Insurance ",
+        "description": "Welcome to the Circle Portal. This is a secure portal to manage your insurance policies by sending updates, making changes, and sharing files. Select a workflow on the right to get started."
+      }
+    ],
+    "infoText": "Hub portals retrieved successfully."
+  },
+  "hubList": {
+    "status": "success",
+    "respCode": 200,
+    "data": [
+      {
+        "id": "62889e8c25c3d364700dc785",
+        "name": "Circle Insurance ",
+        "description": "Welcome to the Circle Portal. This is a secure portal to manage your insurance policies by sending updates, making changes, and sharing files. Select a workflow on the right to get started."
+      }
+    ],
+    "infoText": "Hub portals retrieved successfully."
+  },
+  "ushurVariables": {
+    "id": "CVarMap",
+    "content": [
+      {
+        "_id": {
+          "$oid": "62d6da3825c3d32c2ba2cf90"
+        },
+        "campaignId": "sample1_3",
+        "vars": [
+          {
+            "c_uVar_id": "uid_string",
+            "private": "no",
+            "variable": "c_uVar_id",
+            "type": "uid_string",
+            "desc": "id"
+          },
+          {
+            "c_uVar_token": "uid_string",
+            "private": "no",
+            "variable": "c_uVar_token",
+            "type": "uid_string",
+            "desc": "token"
+          },
+          {
+            "private": "no",
+            "c_uVar_status": "uid_string",
+            "variable": "c_uVar_status",
+            "type": "uid_string",
+            "desc": "status"
+          },
+          {
+            "c_uVar_file": "uid_assetId",
+            "private": "no",
+            "variable": "c_uVar_file",
+            "type": "uid_assetId",
+            "desc": "file"
+          },
+          {
+            "c_uVar_launchdate": "uid_string",
+            "private": "no",
+            "variable": "c_uVar_launchdate",
+            "type": "uid_string",
+            "desc": "launchdate"
+          },
+          {
+            "private": "no",
+            "c_uVar_launchuser": "uid_string",
+            "variable": "c_uVar_launchuser",
+            "type": "uid_string",
+            "desc": "launchuser"
+          },
+          {
+            "private": "no",
+            "c_uVar_Organization": "uid_string",
+            "variable": "c_uVar_Organization",
+            "type": "uid_string",
+            "desc": "Organization"
+          },
+          {
+            "c_uVar_Launchbyuser": "uid_string",
+            "private": "no",
+            "variable": "c_uVar_Launchbyuser",
+            "type": "uid_string",
+            "desc": "Launched by"
+          },
+          {
+            "private": "no",
+            "variable": "c_uVar_time2",
+            "validationParams": {
+              "Zone": "Pacific/Pago_Pago",
+              "format": [
+                "MM/DD/YYYY HH:mm:ss"
+              ]
+            },
+            "c_uVar_time2": "uid_timestamp",
+            "type": "uid_timestamp",
+            "desc": "time 2"
+          },
+          {
+            "private": "no",
+            "variable": "c_uVar_Comment",
+            "c_uVar_Comment": "uid_string",
+            "type": "uid_string",
+            "desc": "User Comments"
+          },
+          {
+            "private": "no",
+            "variable": "c_uVar_File2",
+            "c_uVar_File2": "uid_assetId",
+            "type": "uid_assetId",
+            "desc": "file2"
+          }
+        ]
+      }
+    ]
+  },   
+  "tabDataSet": {
+    "resp": [
+      {
+        "extracted_data": [
+          {
+            "dataEx_rfp_ontology": [
+              {
+                "Critical_Illness": {
+                  "participation": [
+                    {
+                      "bounding_box": {
+                        "top": "",
+                        "left": "",
+                        "width": "",
+                        "height": ""
+                      },
+                      "span_information": {
+                        "left_span": "",
+                        "right_span": ""
+                      },
+                      "value": ""
+                    }
+                  ],
+                  "benefit_type": [
+                    {
+                      "bounding_box": {
+                        "top": "",
+                        "left": "",
+                        "width": "",
+                        "height": ""
+                      },
+                      "span_information": {
+                        "left_span": "",
+                        "right_span": ""
+                      },
+                      "value": ""
+                    }
+                  ],
+                  "contributions": [
+                    {
+                      "bounding_box": {
+                        "top": "",
+                        "left": "",
+                        "width": "",
+                        "height": ""
+                      },
+                      "span_information": {
+                        "left_span": "",
+                        "right_span": ""
+                      },
+                      "value": ""
+                    }
+                  ],
+                  "commissions": [
+                    {
+                      "bounding_box": {
+                        "top": "",
+                        "left": "",
+                        "width": "",
+                        "height": ""
+                      },
+                      "span_information": {
+                        "left_span": "",
+                        "right_span": ""
+                      },
+                      "value": ""
+                    }
+                  ],
+                  "gi_type": [
+                    {
+                      "bounding_box": {
+                        "top": "",
+                        "left": "",
+                        "width": "",
+                        "height": ""
+                      },
+                      "span_information": {
+                        "left_span": "",
+                        "right_span": ""
+                      },
+                      "value": ""
+                    }
+                  ],
+                  "increment_amount": [
+                    {
+                      "bounding_box": {
+                        "top": "",
+                        "left": "",
+                        "width": "",
+                        "height": ""
+                      },
+                      "span_information": {
+                        "left_span": "",
+                        "right_span": ""
+                      },
+                      "value": ""
+                    }
+                  ],
+                  "rate_guarantee": [
+                    {
+                      "bounding_box": {
+                        "top": "",
+                        "left": "",
+                        "width": "",
+                        "height": ""
+                      },
+                      "span_information": {
+                        "left_span": "",
+                        "right_span": ""
+                      },
+                      "value": ""
+                    }
+                  ],
+                  "gia": [
+                    {
+                      "bounding_box": {
+                        "top": "",
+                        "left": "",
+                        "width": "",
+                        "height": ""
+                      },
+                      "span_information": {
+                        "left_span": "",
+                        "right_span": ""
+                      },
+                      "value": ""
+                    }
+                  ],
+                  "benefit_amount": [
+                    {
+                      "bounding_box": {
+                        "top": "",
+                        "left": "",
+                        "width": "",
+                        "height": ""
+                      },
+                      "span_information": {
+                        "left_span": "",
+                        "right_span": ""
+                      },
+                      "value": ""
+                    }
+                  ]
+                },
+                "Broker": {
+                  "broker_email": [
+                    {
+                      "bounding_box": {
+                        "top": "",
+                        "left": "",
+                        "width": "",
+                        "height": ""
+                      },
+                      "span_information": {
+                        "left_span": "visors\r\nin MI and TN).\r\n\r\n\r\n\r\n\r\n\r\nFrom: SEquotes <",
+                        "right_span": ">\r\nSent: Wednesday, November 24, 2021 12:40 PM\r\nTo"
+                      },
+                      "value": "SEquotes@gisbenefits.net"
+                    }
+                  ],
+                  "broker_submitter_timestamp": [
+                    {
+                      "bounding_box": {
+                        "top": "",
+                        "left": "",
+                        "width": "",
+                        "height": ""
+                      },
+                      "span_information": {
+                        "left_span": "Sent: ",
+                        "right_span": "\r\n"
+                      },
+                      "value": "Wednesday, November 24, 2021 12:40 PM"
+                    }
+                  ],
+                  "broker_firm": [
+                    {
+                      "bounding_box": {
+                        "top": "",
+                        "left": "",
+                        "width": "",
+                        "height": ""
+                      },
+                      "span_information": {
+                        "left_span": "",
+                        "right_span": ""
+                      },
+                      "value": ""
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ],
+        "incomingData": {
+          "content": "Subject: Fwd: From: Johnson, Thomas <thomas.johnson@equitable.com>\r\n\r\nSent: Monday, November 29, 2021 9:07 AM\r\nTo: EBRFP_East <EBRFP_East@equitable.com>\r\nSubject: FW: GIS RFP- Barney's Pharmacy. due 12/1\r\n\r\n\r\nRFP.\r\n\r\n\r\n\r\nThanks!\r\n-TJ\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\nThomas Johnson | Regional Sales Director\r\n\r\n2002 Commerce Drive N.\r\n\r\nSuite 140\r\n\r\nPeachtree City, GA 30269\r\n\r\nm. (770) 823.4664\r\n\r\nwww.equitable.com <http://www.equitable.com/> |\r\nthomas.johnson@equitable.com\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\nEquitable is the brand name of the retirement and protection subsidiaries\r\nof Equitable Holdings, Inc. including Equitable Financial Life Insurance\r\nCompany (NY, NY), Equitable Financial Life Insurance Company of America, an\r\nAZ stock company with main administrative headquarters in Jersey City, NJ,\r\nand Equitable Distributors, LLC. Equitable Advisors is the brand name of\r\nEquitable Advisors, LLC (member FINRA, SIPC) (Equitable Financial Advisors\r\nin MI and TN).\r\n\r\n\r\n\r\n\r\n\r\nFrom: SEquotes <SEquotes@gisbenefits.net>\r\nSent: Wednesday, November 24, 2021 12:40 PM\r\nTo: SEquotes <SEquotes@gisbenefits.net>\r\nCc: Courtney Guest <Cguest@gisbenefits.net>; Debbie Holmes <\r\ndholmes@gisbenefits.net>\r\nSubject: GIS RFP- Barney's Pharmacy. due 12/1\r\n\r\n\r\n\r\nEXTERNAL EMAIL (Outside EQH Network): Use caution with links and\r\nattachments.\r\n\r\n\r\n\r\nHi,\r\n\r\n\r\n\r\nPlease see the attached for quoting. Let me know if you need anything else.\r\n\r\n\r\n\r\nThank you.\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\nGroup Name:\r\n\r\nBarney's Pharmacy\r\n\r\n\r\nGroup Location:\r\n\r\nAugusta, GA 30906\r\n\r\n\r\nTotal Eligible Lives:\r\n\r\n88\r\n\r\n\r\nBroker Name / Producer:\r\n\r\nThe Pennant Group - Tom Mastny\r\n\r\n\r\n\r\nBroker Location:\r\n\r\nAugusta, GA 30909\r\n\r\n\r\n\r\n\r\n\r\nGIS Producer\r\n\r\nCourtney Guest\r\n\r\n\r\n\r\n\r\n\r\nEffective Date:\r\n\r\n1/1/2022\r\n\r\n\r\nRelease Date:\r\n\r\n11/24/2021\r\n\r\n\r\nDue Date:\r\n\r\n12/1/2021\r\n\r\n\r\nGIS Technology:\r\n\r\nEmployee Navigator\r\n\r\n\r\nTPA:\r\n\r\nYes\r\n\r\n\r\nPlease quote the following broker commissions: level 10% on Dental/Vision,\r\nlevel 15% on Life/Disability.\r\n\r\nPlease note any packaged sale/discounts and product sale contingencies.\r\n\r\n\r\n\r\n\r\nNap Plan\r\n\r\nValue Plan\r\n\r\nAdditional Notes/Considerations\r\n\r\nDental\r\n\r\nCurrent\r\n\r\nCurrent\r\n\r\nCarrier Name (If Current)\r\n\r\nGuardian\r\n\r\nGuardian\r\n\r\n\r\n\r\nER Contribution\r\n\r\n0%\r\n\r\n0%\r\n\r\nIn Network Coinsurance\r\n\r\n100/80/50/50\r\n\r\n100/80/50\r\n\r\nOut of Network Coinsurance\r\n\r\n100/80/50/50\r\n\r\n100/80/50\r\n\r\nCalendar Year Deductible\r\n\r\n$50/$150\r\n\r\n$50/$150\r\n\r\nOut of Network Claims\r\n\r\n90th\r\n\r\nMAC\r\n\r\nAnnual Maximum\r\n\r\n$2,000\r\n\r\n$1,000\r\n\r\nOrthodontia Lifetime Maximum\r\n\r\n$1,000\r\n\r\n-\r\n\r\nOrthodontia Coverage\r\n\r\nChild up to age 19\r\n\r\n-\r\n\r\nPeriodontics & Endodontics\r\n\r\nMajor\r\n\r\nMajor\r\n\r\nOral Surgery\r\n\r\nBasic\r\n\r\nBasic\r\n\r\nMonthly Rates\r\n\r\nCurrent\r\n\r\nCurrent\r\n\r\nEmployee Only\r\n\r\n$39.04\r\n\r\n$24.61\r\n\r\nEmployee + Spouse\r\n\r\n$78.09\r\n\r\nUnknown\r\n\r\nEmployee + Child(ren)\r\n\r\n$81.61\r\n\r\n$51.59\r\n\r\nEmployee + Family\r\n\r\nUnknown\r\n\r\n$79.01\r\n\r\n\r\n\r\n\r\nVision\r\n\r\nCurrent\r\n\r\nAdditional Notes/Considerations\r\n\r\n\r\nCarrier Name (If Current)\r\n\r\nVSP\r\n\r\n\r\n\r\n\r\nER Contribution\r\n\r\n0%\r\n\r\n\r\nVision Frequency\r\n\r\n12/12/24\r\n\r\n\r\nCo-Pay Exam/Materials\r\n\r\n$10/$25\r\n\r\n\r\nFrames Allowance\r\n\r\n$130\r\n\r\n\r\nContacts Allowance\r\n\r\n$130\r\n\r\n\r\nMonthly Rates\r\n\r\nCurrent\r\n\r\n\r\nEmployee Only\r\n\r\n$6.46\r\n\r\n\r\nEmployee + Spouse\r\n\r\n$12.93\r\n\r\n\r\nEmployee + Child(ren)\r\n\r\n$13.84\r\n\r\n\r\nEmployee + Family\r\n\r\n$22.12\r\n\r\n\r\n\r\nBasic Life/AD&D\r\n\r\nCurrent\r\n\r\nAdditional Notes/Considerations\r\n\r\n\r\nCarrier Name (If Current)\r\n\r\nMetLife\r\n\r\nOnly those enrolled in medical are eligible\r\n\r\n\r\nER Contribution\r\n\r\n100%\r\n\r\n\r\nBenefit\r\n\r\nFlat $10,000\r\n\r\n\r\n\r\n\r\nGuarantee Issue\r\n\r\n$10,000\r\n\r\n\r\n\r\n\r\nConversion\r\n\r\nYes\r\n\r\n\r\n\r\n\r\nPortability\r\n\r\nNo\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\nMonthly Rates\r\n\r\nCurrent\r\n\r\n\r\n\r\n\r\nLife/AD&D $1000\r\n\r\n$0.120\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\nEmployee\r\n\r\nDependent\r\n\r\nAdditional Notes/Considerations\r\n\r\nVoluntary Life/AD&D\r\n\r\nCurrent\r\n\r\nCurrent\r\n\r\nCarrier Name (If Current)\r\n\r\nMetLife\r\n\r\nSpouse $5k increments / Child $5k, $10k\r\n\r\nInclude AD&D on dependent life\r\n\r\nBenefit\r\n\r\n$10,000 increments\r\n\r\n\r\nMaximum\r\n\r\nHighest Available\r\n\r\nHighest Available\r\n\r\n\r\nGuarantee Issue\r\n\r\nHighest Available\r\n\r\nHighest Available\r\n\r\n\r\n\r\n\r\n\r\nLife Monthly Rates per $1,000\r\n\r\nCurrent\r\n\r\nRenewal\r\n\r\n\r\nEmployee/Spouse\r\n\r\nEmployee/Spouse\r\n\r\n\r\n\r\n< 25\r\n\r\n$0.040\r\n\r\n\r\n\r\n\r\n25 - 29\r\n\r\n$0.040\r\n\r\n\r\n\r\n30 - 34\r\n\r\n$0.060\r\n\r\n\r\n\r\n35 - 39\r\n\r\n$0.070\r\n\r\n\r\n\r\n\r\n\r\n40 - 44\r\n\r\n$0.080\r\n\r\n\r\n\r\n\r\n\r\n45 - 49\r\n\r\n$0.120\r\n\r\n\r\n\r\n\r\n\r\n50 - 54\r\n\r\n$0.200\r\n\r\n\r\n\r\n\r\n\r\n55 - 59\r\n\r\n$0.320\r\n\r\n\r\n\r\n\r\n\r\n60 - 64\r\n\r\n$0.550\r\n\r\n\r\n\r\n\r\n\r\n65 - 69\r\n\r\n$1.050\r\n\r\n\r\n\r\n\r\n\r\n70 - 74\r\n\r\n$1.050\r\n\r\n\r\n\r\n\r\n\r\n75 - 79\r\n\r\n$1.050\r\n\r\n\r\n\r\n\r\n\r\n80 - 84\r\n\r\n$1.050\r\n\r\n\r\n\r\n\r\n\r\n85 - 89\r\n\r\n$1.050\r\n\r\n\r\n\r\n\r\n\r\n90 -94\r\n\r\n$1.050\r\n\r\n\r\n\r\n\r\n\r\n95 - 99\r\n\r\n$1.050\r\n\r\n\r\n\r\n\r\n\r\nChild(ren)\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\nAD&D Monthly Rate per $1,000\r\n\r\nCurrent\r\n\r\nRenewal\r\n\r\n\r\n\r\nEmployee/Spouse\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\nChild(ren)\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\nSTD\r\n\r\n\r\n\r\n\r\n\r\nAdditional Notes/Considerations\r\n\r\nCurrent\r\n\r\nAlternate\r\n\r\nER Contribution\r\n\r\n0%\r\n\r\n0%\r\n\r\n\r\n\r\nPercentage\r\n\r\n60%\r\n\r\n60%\r\n\r\nMaximum Benefit\r\n\r\n$3,000\r\n\r\n$3,000\r\n\r\nPlan Design\r\n\r\n14/14/26\r\n\r\n7/7/26\r\n\r\nPre-X\r\n\r\n3/12\r\n\r\n3/12\r\n\r\n\r\nLTD\r\n\r\n\r\n\r\n\r\n\r\nAdditional Notes/Considerations\r\n\r\nCurrent\r\n\r\nAlternate\r\n\r\nER Contribution\r\n\r\n100%\r\n\r\n0%\r\n\r\nER paid, only those enrolled in medical are eligible\r\n\r\nBenefit Percentage\r\n\r\n50%\r\n\r\n60%\r\n\r\nMaximum Monthly Benefit\r\n\r\n$1,000\r\n\r\n$10,000\r\n\r\nInclude EAP\r\n\r\nElimination Period\r\n\r\n180 days\r\n\r\n180 days\r\n\r\n\r\n\r\nOwn Occupation Definition\r\n\r\n2 years\r\n\r\n2 years\r\n\r\n\r\n\r\nBenefit Duration\r\n\r\nSSNRA\r\n\r\nSSNRA\r\n\r\n\r\n\r\nPre-X\r\n\r\n3/12\r\n\r\n3/12\r\n\r\n\r\n\r\n\r\n\r\nGIS EMAIL DISCLAIMER\r\n\r\nThis transmission and any attachment thereto, is intended only for use by\r\nthe addressee(s) named herein or entity named above and contains legally\r\ncopyrighted, privileged and/or confidential information. Any forwarding,\r\ndownloading, reproduction, dissemination, or sharing of these documents\r\nwithout the expressed written consent of GIS Benefits is strictly\r\nforbidden. If you are not the intended recipient of this transmission, you\r\nare hereby notified that any dissemination, distribution or copying of this\r\ntransmission, and any attachments thereto, is strictly prohibited. If you\r\nhave received this transmission in error, please immediately notify GIS\r\nBenefits and permanently delete the original message and any copy of any\r\ntransmission and any printout thereof.\r\n\r\nGIS Benefits <\r\nhttps://clicktime.symantec.com/3Ee28WLvFe3m6FEv1FRrobm6xU?u=http%3A%2F%2Fwww.gisbenefits.net\r\n>\r\nThanks and Regards,\r\nManik Mittal"
+        },
+        "UeTag": "UeTag_457716",
+        "moduleId": "test_disa_static_routin_copy_child_section_278819ae-67f5-44c4-bf94-4b3da6f993d6",
+        "type": "DATA EXTRACTION"
+      },
+      {
+        "extracted_data": [
+          {
+            "disa": [
+              {
+                "Accident": {
+                  "elimination_period": [
+                    {
+                      "file_name": "qvine_ltd.pdf",
+                      "bbox": [],
+                      "asset_id": "1140b090-7264-41dd-8e1c-5e4e8abbd9c3",
+                      "page_no": "1",
+                      "value": "90",
+                      "span": "90 days from the date of your\ndisability"
+                    }
+                  ],
+                  "benefit_percentage": [
+                    {
+                      "file_name": "qvine_ltd.pdf",
+                      "bbox": [],
+                      "asset_id": "1140b090-7264-41dd-8e1c-5e4e8abbd9c3",
+                      "page_no": "1",
+                      "value": "60",
+                      "span": "60% of your Total Monthly"
+                    }
+                  ],
+                  "max_monthly_ben": [
+                    {
+                      "file_name": "qvine_ltd.pdf",
+                      "bbox": [],
+                      "asset_id": "1140b090-7264-41dd-8e1c-5e4e8abbd9c3",
+                      "page_no": "1",
+                      "value": "10,000",
+                      "span": "to $10,000 each month"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ],
+        "incomingData": {
+          "content": "28a7cd7a-0edd-406b-b145-b478b4afbadd,1140b090-7264-41dd-8e1c-5e4e8abbd9c3,d4a61448-95e4-482f-b41c-35ab598d7392,b3f10a30-5c05-440f-9548-17ae242ecfa4"
+        },
+        "UeTag": "",
+        "moduleId": "test_disa_static_routin_copy_child_section_2077f5c2-ba35-4937-8fee-2dbd62312fea",
+        "type": "DISA"
+      }
+    ]
+  },
+  "valList": {
+    "ushurId":"Email_Body_PDF_Extraction",
+    "engagements":[{"date":"2022-09-29T13:54:58.269+00:00","emailId":"test@ushur.com","sessionId":"2bd41e37-66f9-498d-9cc8-96819083f435-uxidxyz-485a7734-2be4-4c74-a702-9b0c3a7402e4","status":"complete"},{"date":"2022-09-29T13:52:01.731+00:00","emailId":"test@ushur.com","sessionId":"0d440287-fddb-4050-a676-224d90c8751f-uxidxyz-7b6988c9-e533-4f6d-98f6-15ccb6b043cb","status":"complete"},{"date":"2022-09-29T12:58:21.001+00:00","emailId":"test43@ushur.com","sessionId":"58c9dbfb-0a67-44e2-89e2-058df9f3b131-uxidxyz-c97b7818-3c6c-44d8-b2b4-c4d93dcff75c","status":"complete"}]
+  }
+}

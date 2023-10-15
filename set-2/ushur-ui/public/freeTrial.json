@@ -1,0 +1,61 @@
+{
+  "accelerators": [],
+  "accelerators_backup": [
+    {
+      "name": "First Notice of Loss",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus vestibulum volutpat lacus imperdiet integer proin.",
+      "ufoPath": "",
+      "iconUrl": "first-notice-of-loss.png",
+      "cardBackgroundColor": "#D1F3FF",
+      "projectName": "project11",
+      "primaryColor": "#0396AA",
+      "logo": "logo.png"
+    },
+    {
+      "name": "Return to Work",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus vestibulum volutpat lacus imperdiet integer proin.",
+      "ufoPath": "",
+      "iconUrl": "person-to-door.png",
+      "cardBackgroundColor": "#FFF7A1",
+      "projectName": "project12",
+      "primaryColor": "#2da44e",
+      "logo": "logo.png"
+    },
+    {
+      "name": "Warm Welcome",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus vestibulum volutpat lacus imperdiet integer proin.",
+      "ufoPath": "",
+      "iconUrl": "hand-wave.png",
+      "cardBackgroundColor": "#FFD4D4",
+      "projectName": "project13",
+      "primaryColor": "#bc4c00",
+      "logo": "logo.png"
+    },
+    {
+      "name": "Health Risk Assess...",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus vestibulum volutpat lacus imperdiet integer proin.",
+      "ufoPath": "",
+      "iconUrl": "stethoscope.png",
+      "cardBackgroundColor": "#B3F9D0",
+      "projectName": "project14",
+      "primaryColor": "#ffebe9",
+      "logo": "logo.png"
+    },
+    {
+      "name": "Claim Acknowledg....",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus vestibulum volutpat lacus imperdiet integer proin.",
+      "ufoPath": "",
+      "iconUrl": "memo-circle-check.png",
+      "cardBackgroundColor": "#DDD3FF",
+      "projectName": "project15",
+      "primaryColor": "#8250df",
+      "logo": "logo.png"
+    }
+  ],
+  "navigator": {
+    "InvisiblePortal": "https://ushur.com/free-trial-invisible-portal/",
+    "Insights": "https://ushur.com/free-trial-insights/",
+    "MLStudio": "https://ushur.com/free-trial-ml-studio/",
+    "Integrations": "https://ushur.com/free-trial-integrations/"
+  }
+}

@@ -1,0 +1,57 @@
+.custom-tooltips .tooltip-inner {
+  max-width: 213px !important;
+}
+
+span.error-toottip-text {
+  display: flex;
+}
+
+.dataCard-primary-Key-Text {
+  margin-right: 5px;
+}
+
+.dataCard-primary-Key-Content {
+  display: flex;
+  align-items: center;
+  align-content: center;
+}
+
+.each-data-card.primary-key .card-title {
+  color: #ff8c8c;
+}
+
+.contant-body {
+  display: flex;
+}
+
+.container-title {
+  position: fixed;
+}
+
+svg.error-tooltip-icon {
+  margin-top: 4px;
+  position: relative;
+  bottom: 3px;
+  cursor: pointer;
+}
+
+.pull-tags-key-icon {
+  margin-top: 3px;
+  margin-left: 4px;
+}
+.project-card .dropdown-item {
+  width: inherit;
+  max-width: inherit !important;
+}
+
+.folder-closed-dropdown {
+  margin-bottom: 2px;
+}
+
+#tooltip-top > .tooltip-arrow::before {
+  border-bottom-color: #373D3F;
+}
+.card-wrap .label{
+  white-space: break-spaces;
+  width: fit-content;
+}

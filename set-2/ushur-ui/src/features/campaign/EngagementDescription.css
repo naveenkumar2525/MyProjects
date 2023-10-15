@@ -1,0 +1,34 @@
+.engagement-description {
+  font-size: 0.75rem;
+  word-break: break-word;
+}
+.engagement-timeline-popup.popover .resp-popover {
+  text-align: center;
+  max-height: 28.125rem;
+  overflow: auto;
+}
+.engagement-timeline-popup.popover .resp-popover .resp-popover-heading {
+  font-weight: 600;
+  display: inline-block;
+  min-width: 50%;
+  border-bottom: 0.125rem solid rgb(51, 51, 51);
+  padding: 0.625rem;
+}
+
+.engagement-timeline-popup.popover .resp-popover .resp-popover-content {
+  margin-top: 0.3125rem;
+  padding: 0.9375rem;
+  text-align: left;
+  width: auto;
+  max-height: 26vh;
+}
+.engagement-timeline-popup.popover {
+  overflow: visible;
+  max-width: 53.125rem;
+  min-width: 31.25rem;
+  color: rgb(51, 51, 51);
+  width: auto;
+}
+.engagement-timeline-popup.popover .popover-arrow {
+  display: block;
+}
